@@ -19,7 +19,7 @@ header {
 }
 
 .logo-website {
-  width: 70px;
+  width: 60px;
   margin-right: 20px;
 }
 
@@ -30,7 +30,7 @@ header {
 }
 
 .menu-icon {
-  width: 40px;
+  width: 30px;
   height: 30px;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ header {
   height: 14%;
   background-color: black;
   border-radius: 30px;
-  transition: all 250ms;
+  transition: width 250ms;
   margin: 3.5px 0 3.5px 0;
 }
 
@@ -53,7 +53,7 @@ header {
   background-color: black;
   border-radius: 30px;
   margin: 3.5px 0 3.5px 0;
-  transition: all 250ms;
+  transition: width 250ms;
 }
 
 .menu-icon-item-3 {
@@ -61,7 +61,7 @@ header {
   height: 14%;
   background-color: black;
   border-radius: 30px;
-  transition: all 250ms;
+  transition: width 250ms;
   margin: 3.5px 0 3.5px 0;
 }
 
@@ -123,7 +123,7 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 250ms;
+  transition: width 250ms;
   overflow-y: scroll;
   overflow-x: hidden;
   backdrop-filter: blur(9px) saturate(18%);
@@ -157,25 +157,30 @@ header {
 }
 
 .nav-item {
-  margin: 8px 0px 8px 0px;
+  padding: 8px 0px 8px 0px;
+  height: 60px;
 }
 
-.nav-link:hover{
-  box-shadow: 0px 0px 6px 3px #8b8b8b;
-  background-color: white;
-  border-radius: 30px;
+.nav-link{
+  padding: 0;
+}
+
+.nav-item:hover{
+  background-color: #3d4eae;
+  border-radius: 10px;
+  color: white;
 }
 
 .navlink-icon-style {
-  width: 65px;
+  width: 50px;
   padding-left: 5px;
 }
 
 .navlink-text-style {
   font-family: "Homa";
-  font-size: 30px;
+  font-size: 20px;
   padding-right: 7px;
-  padding-left: 60px;
+  padding-left: 110px;
 }
 
 
@@ -192,7 +197,7 @@ header {
 .margin-nav {
   margin-top: 20px;
   margin-right: 280px;
-  transition: all 250ms;
+  transition: width 250ms;
 }
 
 .margin100 {
@@ -217,5 +222,3 @@ header {
     display: none;
   }
 }
-
-

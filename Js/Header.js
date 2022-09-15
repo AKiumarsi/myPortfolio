@@ -35,6 +35,9 @@ menuIcon.addEventListener("click", () => {
       navlinkTextStyle[x].classList.remove("displayNone-tablet");
       navlinkTextStyle[x].classList.remove("display-none");
     }
+
+    
+
   } else if (visibility === "false") {
     menuIconItem1.classList.remove("menu-icon-item-1-click");
     menuIconItem2.classList.remove("menu-icon-item-2-click");
@@ -55,8 +58,13 @@ menuIcon.addEventListener("click", () => {
     for (let x = 0; x < navlinkTextStyle.length; x++) {
       navlinkTextStyle[x].classList.add("displayNone-tablet");
     }
+
+    
   }
 });
+
+
+
 
 
 window.addEventListener("resize", navbarHeight);
@@ -64,5 +72,5 @@ navbarHeight();
 function navbarHeight() {
   const navbarNav = document.getElementById("navbarNav");
   let heightnav = window.innerHeight;
-  navbarNav.style.height = heightnav - 100 + "px";
+  navbarNav.style.height = heightnav - 70 + "px";
 }
