@@ -159,13 +159,15 @@ header {
 .nav-item {
   padding: 8px 0px 8px 0px;
   height: 60px;
+  align-items: center;
+  display: flex;
 }
 
-.nav-link{
+.nav-link {
   padding: 0;
 }
 
-.nav-item:hover{
+.nav-item:hover {
   background-color: #3d4eae;
   border-radius: 10px;
   color: white;
@@ -183,21 +185,17 @@ header {
   padding-left: 110px;
 }
 
-
-
-
 @media (min-width: 993px) {
   .displayNone {
     display: none;
   }
 }
 
-
 /*h2---------------MAIN-MARGIN---------------h2*/
 .margin-nav {
   margin-top: 20px;
   margin-right: 280px;
-  transition: width 250ms;
+  transition: all 250ms;
 }
 
 .margin100 {
