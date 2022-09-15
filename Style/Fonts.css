@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Beirut";
+  src: url("/Fonts/Mj_Beirut.ttf") format("ttf"),
+    url("/Fonts/Mj_Beirut.woff") format("woff"),
+    url("/Fonts/Mj_Beirut.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Elham";
+  src: url("/Fonts/Elham.ttf") format("ttf"),
+    url("/Fonts/Elham.woff") format("woff"),
+    url("/Fonts/Elham.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Homa";
+  src: url("/Fonts/BHoma.ttf") format("ttf"),
+    url("/Fonts/BHoma.woff") format("woff"),
+    url("/Fonts/BHoma.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Homa";
+    src: url("../Fonts/BHoma.ttf") format("ttf"),
+      url("../Fonts/BHoma.woff") format("woff"),
+      url("../Fonts/BHoma.woff2") format("woff2");
+  }
+  
+
+
