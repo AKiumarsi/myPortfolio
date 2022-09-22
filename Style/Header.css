@@ -2,6 +2,11 @@
 h1 = 20"-"(2)
 h2 = 15"-"(2) */
 
+:root{
+  --mobile-nav-height : ;
+}
+
+
 /* h1-----------------------------header-one----------------------------- */
 header {
   position: fixed;
@@ -280,14 +285,17 @@ header {
 }
 
 /* h1-----------------------------nav-mobile-576px----------------------------- */
+.taskbar-mobile {
+  display: none;
+}
 @media (max-width: 576px) {
   .header-one {
     padding-right: 10px;
   }
   .nav {
     position: fixed;
-    height: 64px;
-    bottom: 10px;
+    height: 55px;
+    bottom: 7px;
     top: auto;
     width: 92%;
     background-color: white;
@@ -296,6 +304,10 @@ header {
     margin: 0 4% 0 4%;
     overflow-y: hidden;
     border: 2px solid rgb(133 131 131 / 68%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 300ms;
   }
 
   .menu-icon {
@@ -306,16 +318,45 @@ header {
     margin-right: 0;
     margin-top: 0;
     padding-left: 0;
+    display: none;
   }
   .margin-nav {
     margin-right: auto;
   }
+
+  /*h2---------------taskbar-mobile---------------h2*/
+  .taskbar-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 1s;
+    width: inherit;
+    justify-content: space-around;
+  }
+
+  .uil-search {
+    font-size: 30px;
+  }
+
+  .uil-english-to-chinese {
+    font-size: 30px;
+  }
+
+  .uil-angle-double-up {
+    font-size: 36px;
+  }
+
+
+  .mobile-nav-height{
+    height: var(--mobile-nav-height);
+  }
 }
 
+/*h2---------------menu-icon-mobile---------------h2*/
 .menu-icon-mobile {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
+  width: 30px;
+  height: 30px;
+  margin: 0px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -339,4 +380,133 @@ header {
 }
 .menu-icon-item4-mobile {
   background-color: #000000;
+}
+
+/*h2---------------menu-icon-mobile-animate---------------h2*/
+.menu-icon-item1-mobile-animate {
+  animation: menu-icon-item1-mobile-animate 250ms ease-in 0s 1 forwards;
+}
+
+.menu-icon-item2-mobile-animate {
+  animation: menu-icon-item2-mobile-animate 250ms ease 0s 1 forwards;
+}
+
+.menu-icon-item3-mobile-animate {
+  animation: menu-icon-item3-mobile-animate 250ms ease 0s 1 forwards;
+}
+
+.menu-icon-item4-mobile-animate {
+  animation: menu-icon-item4-mobile-animate 400ms ease 0s 1 forwards;
+}
+
+@keyframes menu-icon-item1-mobile-animate {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: "";
+  }
+}
+
+@keyframes menu-icon-item2-mobile-animate {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: "";
+  }
+}
+
+@keyframes menu-icon-item3-mobile-animate {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: "";
+  }
+}
+
+@keyframes menu-icon-item4-mobile-animate {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: #afafaf;
+  }
+  100% {
+    background-color: "";
+  }
+}
+
+.menu-icon-item1-mobile-animate2 {
+  animation: menu-icon-item1-mobile-animate2 250ms ease-in 0s 1 forwards;
+}
+
+.menu-icon-item2-mobile-animate2 {
+  animation: menu-icon-item2-mobile-animate2 250ms ease 0s 1 forwards;
+}
+
+.menu-icon-item3-mobile-animate2 {
+  animation: menu-icon-item3-mobile-animate2 250ms ease 0s 1 forwards;
+}
+
+.menu-icon-item4-mobile-animate2 {
+  animation: menu-icon-item4-mobile-animate2 400ms ease 0s 1 forwards;
+}
+
+@keyframes menu-icon-item1-mobile-animate2 {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: "";
+  }
+}
+
+@keyframes menu-icon-item2-mobile-animate2 {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: "";
+  }
+}
+
+@keyframes menu-icon-item3-mobile-animate2 {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: "";
+  }
+}
+
+@keyframes menu-icon-item4-mobile-animate2 {
+  0% {
+    background-color: "";
+  }
+  50% {
+    background-color: #afafaf;
+  }
+  100% {
+    background-color: "";
+  }
 }
