@@ -24,6 +24,7 @@ h2 = 15"-"(2)-->
 
     <!--h2---------------iconscout--------------->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <!--h2---------------Base Css--------------->
     <link rel="stylesheet" href="Style/Base.css">
     </link>
@@ -34,6 +35,9 @@ h2 = 15"-"(2)-->
     <!--h2---------------Header Css--------------->
     <link rel="stylesheet" href="Style/Header.css">
     </link>
+
+    <!--h2---------------Grid Css--------------->
+    <link rel="stylesheet" href="Style/Grid.css">
 </head>
 
 <body dir="rtl" class="" id="body">
@@ -61,106 +65,122 @@ h2 = 15"-"(2)-->
                 <div class="menu-icon-item-mobile menu-icon-item4-mobile" id="menuIconItem4Mobile"></div>
             </button>
 
-            <div class="search" id="search">
-                <i class="uil uil-search"></i>
-            </div>
-            <div class="translator" id="translator">
+            <button class="search button-unstyle" id="search">
+                <i class="uil uil-search serch-taskbar-icon"></i>
+            </button>
+            <button class="translator button-unstyle" id="translator">
                 <i class="uil uil-english-to-chinese"></i>
-            </div>
-            <div class="arrow-up" id="arrowUp">
+            </button>
+            <a class="arrow-up button-unstyle" id="arrowUpIcon" href="#eee">
                 <i class="uil uil-angle-double-up"></i>
-            </div>
+            </a>
         </div>
 
-        <ul class="navbar-nav" id="navbarNav">
+        <div class="search-ul">
+            <div class="search-box-div" id="searchBoxDiv">
+                <input type="text" name="searchBox" id="searchBox" class="search-box">
+                <i class="uil uil-search search-box-icon"></i>
+            </div>
+            <ul class="navbar-nav" id="navbarNav">
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <img src="Images/Nav-Icons/Home-Icon.png" alt="Home Icon"
+                                class="nav-home-icon navlink-icon-style">
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            خانه
+                        </span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span>
-                        <img src="Images/Nav-Icons/Home-Icon.png" alt="Home Icon"
-                            class="nav-home-icon navlink-icon-style">
-                    </span>
-                    <span class="navlink-text-style display-none" id="navlinkTextStyle">
-                        خانه
-                    </span>
-                </a>
-            </li>
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <img src="Images/Nav-Icons/Aboutme-icon.png" alt="about me icon"
+                                class="nav-aboutme-icon  navlink-icon-style">
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            درباره من
+                        </span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span>
-                        <img src="Images/Nav-Icons/Aboutme-icon.png" alt="about me icon"
-                            class="nav-aboutme-icon  navlink-icon-style">
-                    </span>
-                    <span class="navlink-text-style display-none" id="navlinkTextStyle">
-                        درباره من
-                    </span>
-                </a>
-            </li>
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <img src="Images/Nav-Icons/Skill-Icon.png" alt="skill icon"
+                                class="nav-skill-icon navlink-icon-style">
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            مهارت ها
+                        </span>
+                    </a>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span>
-                        <img src="Images/Nav-Icons/Skill-Icon.png" alt="skill icon"
-                            class="nav-skill-icon navlink-icon-style">
-                    </span>
-                    <span class="navlink-text-style display-none" id="navlinkTextStyle">
-                        مهارت ها
-                    </span>
-                </a>
+                </li>
 
-            </li>
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <img src="Images/Nav-Icons/School-Icon.png" alt="school icon"
+                                class="nav-school-icon navlink-icon-style">
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            تحصیلات
+                        </span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span>
-                        <img src="Images/Nav-Icons/School-Icon.png" alt="school icon"
-                            class="nav-school-icon navlink-icon-style">
-                    </span>
-                    <span class="navlink-text-style display-none" id="navlinkTextStyle">
-                        تحصیلات
-                    </span>
-                </a>
-            </li>
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <img src="Images/Nav-Icons/Projects-Icon.png" alt="prijects icon"
+                                class="nav-projects-icon navlink-icon-style">
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            پروژه ها
+                        </span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span>
-                        <img src="Images/Nav-Icons/Projects-Icon.png" alt="prijects icon"
-                            class="nav-projects-icon navlink-icon-style">
-                    </span>
-                    <span class="navlink-text-style display-none" id="navlinkTextStyle">
-                        پروژه ها
-                    </span>
-                </a>
-            </li>
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <img src="Images/Nav-Icons/services-Icon.png" alt="services icon"
+                                class="nav-services-icon navlink-icon-style">
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            خدمات
+                        </span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span>
-                        <img src="Images/Nav-Icons/services-Icon.png" alt="services icon"
-                            class="nav-services-icon navlink-icon-style">
-                    </span>
-                    <span class="navlink-text-style display-none" id="navlinkTextStyle">
-                        خدمات
-                    </span>
-                </a>
-            </li>
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12">
+                    <a href="#" class="nav-link">
+                        <span>
+                            <img src="Images/Nav-Icons/contact-Icon.png" alt="contact icon"
+                                class="nav-contact-icon navlink-icon-style">
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            راه ارتباطی
+                        </span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span>
-                        <img src="Images/Nav-Icons/contact-Icon.png" alt="contact icon"
-                            class="nav-contact-icon navlink-icon-style">
-                    </span>
-                    <span class="navlink-text-style display-none" id="navlinkTextStyle">
-                        راه ارتباطی
-                    </span>
-                </a>
-            </li>
-        </ul>
+                <li class="nav-item col-4 col-sm-12 col-xsm-6 col-xxsm-12 plus-item">
+                    <a href="#" class="nav-link">
+                        <span class="span-delet-height">
+                            <i class="uil uil-plus-circle"></i>
+                        </span>
+                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                            جدید
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="" id="menuDarkBack">
+    <div class="dark-menu" id="menuDarkBack">
     </div>
 
 

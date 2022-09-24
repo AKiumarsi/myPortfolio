@@ -96,7 +96,11 @@ navbarHeight();
 function navbarHeight() {
   const navbarNav = document.getElementById("navbarNav");
   let heightnav = window.innerHeight;
-  navbarNav.style.height = heightnav + "px";
+  if (window.innerWidth > 576) {
+    navbarNav.style.height = heightnav- 63 + "px";
+  } else if (window.innerWidth < 577) {
+    navbarNav.style.height = "fit-content";
+  }
 }
 
 // h1-----------------------------menu-icon-mobile----------------------------
@@ -109,6 +113,9 @@ menuIconMobile.addEventListener("click", () => {
   const menuIconItem3Mobile = document.getElementById("menuIconItem3Mobile");
   const menuIconItem4Mobile = document.getElementById("menuIconItem4Mobile");
   const root = document.querySelector(":root");
+  const taskbarMobile = document.getElementById("taskbarMobile");
+  const arrowUpIcon = document.getElementById("arrowUpIcon");
+  const searchBoxDiv = document.getElementById("searchBoxDiv");
 
   if (visibilityMobile === "false") {
     // منو فالس و بسته می باشد با کلیک باز می شود موبایل
@@ -121,9 +128,20 @@ menuIconMobile.addEventListener("click", () => {
     menuIconItem2Mobile.classList.remove("menu-icon-item2-mobile-animate2");
     menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate2");
     menuIconItem4Mobile.classList.remove("menu-icon-item4-mobile-animate2");
+    
 
-    // h1-----------------------------navHeight-for-mobile-----------------------------
+// h2---------------navHeight-for-mobile--------------h2
     nav.classList.add("mobile-nav-height");
+
+    taskbarMobile.classList.add("taskbar-borderup");
+
+    navbarNav.classList.add("navbar-nav-block-mobile");
+
+    arrowUpIcon.classList.add("arrowup-toleft");
+
+    menuDarkBack.classList.add("menu-dark-back");
+
+    searchBoxDiv.classList.add("display-none-search-div")
 
     menuIconMobile.setAttribute("data-visible", true);
   } else if (visibilityMobile === "true") {
@@ -139,8 +157,17 @@ menuIconMobile.addEventListener("click", () => {
     menuIconItem3Mobile.classList.add("menu-icon-item3-mobile-animate2");
     menuIconItem4Mobile.classList.add("menu-icon-item4-mobile-animate2");
 
-    // h1-----------------------------navHeight-for-mobile-----------------------------
+    // h2---------------navHeight-for-mobile--------------h2
     nav.classList.remove("mobile-nav-height");
+
+    taskbarMobile.classList.remove("taskbar-borderup");
+
+    navbarNav.classList.remove("navbar-nav-block-mobile");
+
+    arrowUpIcon.classList.remove("arrowup-toleft");
+    menuDarkBack.classList.remove("menu-dark-back");
+
+    searchBoxDiv.classList.remove("display-none-search-div")
 
     menuIconMobile.setAttribute("data-visible", false);
   }
@@ -154,3 +181,50 @@ function mobileNavHeightF() {
   let mobileNavHeight = window.innerHeight - 20 + "px";
   root.style.setProperty("--mobile-nav-height", mobileNavHeight);
 }
+
+
+
+// h1-----------------------------arrow-up-click-----------------------------
+const arrowUpIcon = document.getElementById("arrowUpIcon");
+arrowUpIcon.addEventListener("click", () => {
+  const arrowUpIcontrans = getComputedStyle(arrowUpIcon).getPropertyValue(
+    "transform"
+  );
+  const menuIconItem1Mobile = document.getElementById("menuIconItem1Mobile");
+  const menuIconItem2Mobile = document.getElementById("menuIconItem2Mobile");
+  const menuIconItem3Mobile = document.getElementById("menuIconItem3Mobile");
+  const menuIconItem4Mobile = document.getElementById("menuIconItem4Mobile");
+  const root = document.querySelector(":root");
+  const taskbarMobile = document.getElementById("taskbarMobile");
+  const nav = document.getElementById("nav");
+  const navbarNav = document.getElementById("navbarNav");
+
+
+  if (arrowUpIcontrans == "matrix(1, 0, 0, 1, 0, 0)") {
+    // کلید بازگشت در این حالت منو بسته و با کلیک به بالای صفحه هدایت می شه حالت بدون بازگشت
+    arrowUpIcon.setAttribute("href", "#");
+    
+  } else if (
+    arrowUpIcontrans === "matrix(6.12323e-17, -1, 1, 6.12323e-17, 0, 0)" ||
+    arrowUpIcontrans === "matrix(0, -1, 1, 0, 0, 0)"
+  ) {
+    // کلید بازگشت در این حالت منو باز و باکلیک منو بسته می شه حالت بازگشت
+    menuIconItem1Mobile.classList.remove("menu-icon-item1-mobile-animate");
+    menuIconItem2Mobile.classList.remove("menu-icon-item2-mobile-animate");
+    menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate");
+    menuIconItem4Mobile.classList.remove("menu-icon-item4-mobile-animate");
+
+    nav.classList.remove("mobile-nav-height");
+
+    taskbarMobile.classList.remove("taskbar-borderup");
+
+    navbarNav.classList.remove("navbar-nav-block-mobile");
+
+    arrowUpIcon.classList.remove("arrowup-toleft");
+    arrowUpIcon.setAttribute("href", "#don'tgoup");
+
+    menuDarkBack.classList.remove("menu-dark-back");
+
+    menuIconMobile.setAttribute("data-visible", false);
+  }
+});
