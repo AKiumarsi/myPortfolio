@@ -171,6 +171,7 @@ header {
 }
 /*h2---------------NAVbar-nav-SCROLLBAR---------------h2*/
 .navbar-nav::-webkit-scrollbar {
+  width: 2px;
 }
 
 /* Track */
