@@ -1,3 +1,5 @@
+
+
 html {
   box-sizing: border-box;
   margin: 0px;
@@ -9,3 +11,8 @@ html {
   box-sizing: inherit;
 }
 
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--background-color);
+}

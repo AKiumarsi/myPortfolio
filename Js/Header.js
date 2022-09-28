@@ -97,7 +97,7 @@ function navbarHeight() {
   const navbarNav = document.getElementById("navbarNav");
   let heightnav = window.innerHeight;
   if (window.innerWidth > 576) {
-    navbarNav.style.height = heightnav- 63 + "px";
+    navbarNav.style.height = heightnav - 63 + "px";
   } else if (window.innerWidth < 577) {
     navbarNav.style.height = "fit-content";
   }
@@ -128,9 +128,8 @@ menuIconMobile.addEventListener("click", () => {
     menuIconItem2Mobile.classList.remove("menu-icon-item2-mobile-animate2");
     menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate2");
     menuIconItem4Mobile.classList.remove("menu-icon-item4-mobile-animate2");
-    
 
-// h2---------------navHeight-for-mobile--------------h2
+    // h2---------------navHeight-for-mobile--------------h2
     nav.classList.add("mobile-nav-height");
 
     taskbarMobile.classList.add("taskbar-borderup");
@@ -141,7 +140,7 @@ menuIconMobile.addEventListener("click", () => {
 
     menuDarkBack.classList.add("menu-dark-back");
 
-    searchBoxDiv.classList.add("display-none-search-div")
+    searchBoxDiv.classList.add("display-none-search-div");
 
     menuIconMobile.setAttribute("data-visible", true);
   } else if (visibilityMobile === "true") {
@@ -167,7 +166,7 @@ menuIconMobile.addEventListener("click", () => {
     arrowUpIcon.classList.remove("arrowup-toleft");
     menuDarkBack.classList.remove("menu-dark-back");
 
-    searchBoxDiv.classList.remove("display-none-search-div")
+    searchBoxDiv.classList.remove("display-none-search-div");
 
     menuIconMobile.setAttribute("data-visible", false);
   }
@@ -181,8 +180,6 @@ function mobileNavHeightF() {
   let mobileNavHeight = window.innerHeight - 20 + "px";
   root.style.setProperty("--mobile-nav-height", mobileNavHeight);
 }
-
-
 
 // h1-----------------------------arrow-up-click-----------------------------
 const arrowUpIcon = document.getElementById("arrowUpIcon");
@@ -199,11 +196,9 @@ arrowUpIcon.addEventListener("click", () => {
   const nav = document.getElementById("nav");
   const navbarNav = document.getElementById("navbarNav");
 
-
   if (arrowUpIcontrans == "matrix(1, 0, 0, 1, 0, 0)") {
     // کلید بازگشت در این حالت منو بسته و با کلیک به بالای صفحه هدایت می شه حالت بدون بازگشت
     arrowUpIcon.setAttribute("href", "#");
-    
   } else if (
     arrowUpIcontrans === "matrix(6.12323e-17, -1, 1, 6.12323e-17, 0, 0)" ||
     arrowUpIcontrans === "matrix(0, -1, 1, 0, 0, 0)"
@@ -228,3 +223,44 @@ arrowUpIcon.addEventListener("click", () => {
     menuIconMobile.setAttribute("data-visible", false);
   }
 });
+
+// h1-----------------------------Active-linkItem-----------------------------
+// وقتی که کلیک می شه اکتیو به اون منقل می شود
+
+
+// navItem.forEach((NI) => {
+//   NI.addEventListener("click", () => {
+//     navbarNav.querySelector(".active").classList.remove("active");
+
+//     NI.classList.add("active");
+//   });
+// });
+
+let section = document.querySelectorAll(".section-main");
+const navItem = document.querySelectorAll("#navItem");
+function activeLink(li) {
+  navItem.forEach((item) => item.classList.remove("active"));
+  li.classList.add("active");
+}
+
+// navItem.forEach((item) =>
+//   item.addEventListener("click", function () {
+//     activeLink(this);
+//   })
+// );
+
+window.onscroll = () => {
+  section.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset - 200 && top < offset + height) {
+      const target = document.querySelector(`[href='#${id}']`).parentElement;
+      activeLink(target);
+    }
+  });
+};
+
+
