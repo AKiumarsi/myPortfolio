@@ -1,0 +1,6 @@
+.parg-main{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
