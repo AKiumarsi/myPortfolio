@@ -20,11 +20,9 @@
 }
 
 @font-face {
-    font-family: "Homa";
-    src: url("../Fonts/BHoma.ttf") format("ttf"),
-      url("../Fonts/BHoma.woff") format("woff"),
-      url("../Fonts/BHoma.woff2") format("woff2");
-  }
-  
-
+  font-family: "koodak";
+  src: url("../Fonts/KoodakB.ttf") format("ttf"),
+    url("../Fonts/KoodakBold.woff") format("woff"),
+    url("../Fonts/KoodakB.woff2") format("woff2");
+}
 
