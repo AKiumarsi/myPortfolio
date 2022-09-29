@@ -116,6 +116,8 @@ menuIconMobile.addEventListener("click", () => {
   const taskbarMobile = document.getElementById("taskbarMobile");
   const arrowUpIcon = document.getElementById("arrowUpIcon");
   const searchBoxDiv = document.getElementById("searchBoxDiv");
+  const dateClockMenu = document.getElementById("dateClockMenu");
+  const searchUl = document.getElementById("searchUl");
 
   if (visibilityMobile === "false") {
     // منو فالس و بسته می باشد با کلیک باز می شود موبایل
@@ -142,6 +144,10 @@ menuIconMobile.addEventListener("click", () => {
 
     searchBoxDiv.classList.add("display-none-search-div");
 
+    dateClockMenu.classList.add("display-none-date");
+
+    searchUl.classList.remove("disply-none-searchUl");
+
     menuIconMobile.setAttribute("data-visible", true);
   } else if (visibilityMobile === "true") {
     // منو باز بوده و با کلیک بسته می شود موبایل
@@ -167,6 +173,10 @@ menuIconMobile.addEventListener("click", () => {
     menuDarkBack.classList.remove("menu-dark-back");
 
     searchBoxDiv.classList.remove("display-none-search-div");
+
+    dateClockMenu.classList.remove("display-none-date");
+
+    searchUl.classList.add("disply-none-searchUl");
 
     menuIconMobile.setAttribute("data-visible", false);
   }
@@ -227,15 +237,6 @@ arrowUpIcon.addEventListener("click", () => {
 // h1-----------------------------Active-linkItem-----------------------------
 // وقتی که کلیک می شه اکتیو به اون منقل می شود
 
-
-// navItem.forEach((NI) => {
-//   NI.addEventListener("click", () => {
-//     navbarNav.querySelector(".active").classList.remove("active");
-
-//     NI.classList.add("active");
-//   });
-// });
-
 let section = document.querySelectorAll(".section-main");
 const navItem = document.querySelectorAll("#navItem");
 function activeLink(li) {
@@ -262,5 +263,69 @@ window.onscroll = () => {
     }
   });
 };
+
+// بسته شدن منو در حالت تبلت و موبایل با کلیک روی آیتم ها
+navItem.forEach((NI) => {
+  NI.addEventListener("click", () => {
+    if (window.innerWidth <= 992) {
+      const menuIconItem1Mobile = document.getElementById(
+        "menuIconItem1Mobile"
+      );
+      const menuIconItem2Mobile = document.getElementById(
+        "menuIconItem2Mobile"
+      );
+      const menuIconItem3Mobile = document.getElementById(
+        "menuIconItem3Mobile"
+      );
+      const menuIconItem4Mobile = document.getElementById(
+        "menuIconItem4Mobile"
+      );
+      menuIconItem1Mobile.classList.remove("menu-icon-item1-mobile-animate");
+      menuIconItem2Mobile.classList.remove("menu-icon-item2-mobile-animate");
+      menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate");
+      menuIconItem4Mobile.classList.remove("menu-icon-item4-mobile-animate");
+      nav.classList.remove("mobile-nav-height");
+      menuIcon.setAttribute("data-visible", false);
+
+      taskbarMobile.classList.remove("taskbar-borderup");
+
+      navbarNav.classList.remove("navbar-nav-block-mobile");
+
+      arrowUpIcon.classList.remove("arrowup-toleft");
+      menuDarkBack.classList.remove("menu-dark-back");
+
+      searchBoxDiv.classList.remove("display-none-search-div");
+
+      menuIconMobile.setAttribute("data-visible", false);
+      nav.classList.remove("nav-width-tablet");
+      for (let x = 0; x < navlinkTextStyle.length; x++) {
+        navlinkTextStyle[x].classList.add("displayNone-tablet");
+      }
+    }
+  });
+});
+
+// -------------------------ساعت در منو-------------------------------
+body.addEventListener("load", startTime());
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  let bb = (document.getElementById("dateClockMenu").innerHTML =
+    h + ":" + m + ":" + s);
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  } // add zero in front of numbers < 10
+  return i;
+}
+
+
 
 

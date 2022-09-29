@@ -4,3 +4,12 @@
     background-color: white;
     box-shadow: var(--box-shadow);
 }
+
+@media (max-width : 576px){
+    .parg-main{
+        padding: unset;
+        box-shadow: unset;
+        background-color: unset;
+        border-radius: unset;
+    }
+}
