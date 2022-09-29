@@ -1,0 +1,116 @@
+:root {
+  color-scheme: dark;
+  --box-color: #5b5d72;
+  --color-dark-background: #181a1e;
+  --color-dark-whith: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-dark-light: #00000066;
+  --box-shadow-dark: 0 2rem 3rem var(--color-dark-light);
+  --color-dark: rgba(149, 155, 207, 0.308);
+}
+
+.header-one,
+main,
+.nav {
+  background-color: #19191f;
+  color: white;
+}
+
+.parg-main {
+  background-color: #212429;
+  color: var(--color-dark-whith);
+  box-shadow: var(--box-shadow-dark);
+}
+
+.navlink-text-style {
+  color: white;
+}
+.menu-icon-item-1,
+.menu-icon-item-2,
+.menu-icon-item-3 {
+  background-color: white;
+}
+
+.navbar-nav li.active {
+  background-color:var(--color-dark);
+}
+.navbar-nav li.active:before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: #4c00ff;
+}
+
+.navbar-nav li.active .navlink-text-style {
+  color: #9a6fff;
+}
+
+@media (max-width: 576px) {
+  .header-one {
+    background-color: #181a1e;
+    box-shadow: var(--box-shadow-dark);
+  }
+
+  .active-setting {
+    background-color: #2c4793 !important;
+    color: white;
+  }
+
+  .navlink-text-style {
+    color: white;
+  }
+  .nav {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 3px solid rgb(255 255 255 / 43%);
+    box-shadow: none;
+  }
+
+  .search-box-div,
+  .search-box {
+    background-color: var(--box-color);
+  }
+
+  .date-clock-menu {
+    color: white;
+  }
+
+  .setting-item {
+    background-color: var(--box-color);
+    color: white;
+  }
+  a.nav-link span:first-child {
+    background-color: var(--box-color);
+  }
+
+  .navbar-nav li.active span:first-child {
+    background-color: rgb(44 71 147);
+  }
+
+  .navbar-nav li.active .navlink-text-style {
+    color: #608aff;
+  }
+  .navbar-nav li.active {
+    background-color: unset;
+  }
+  .taskbar-mobile {
+    color: white;
+  }
+  .menu-icon-item1-mobile,
+  .menu-icon-item2-mobile,
+  .menu-icon-item3-mobile,
+  .menu-icon-item4-mobile {
+    background-color: white;
+  }
+
+  main {
+    background-color: #181a1e;
+    color: white;
+  }
+
+  .parg-main{
+    background-color: unset;
+    box-shadow: unset;
+  }
+}
