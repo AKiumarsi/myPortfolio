@@ -18,6 +18,7 @@ menuIcon.addEventListener("click", () => {
   const bodyScroll = scrollY;
   const headerOne = document.getElementById("headerOne");
   const menuDarkBack = document.getElementById("menuDarkBack");
+  const settingItemText = document.querySelectorAll(".setting-item-text");
 
   if (visibility === "true") {
     // این حالتی است که منو باز بوده و باکلیک بسته می شود در حالت دسکتاپ
@@ -36,6 +37,10 @@ menuIcon.addEventListener("click", () => {
     for (let x = 0; x < navlinkTextStyle.length; x++) {
       navlinkTextStyle[x].classList.add("displayNone");
     }
+    settingItemText.forEach((SIT) => {
+      SIT.classList.add("displayNone");
+    });
+
     // h2---------------change-header-padding-from-right---------------h2
     headerOne.classList.add("padding-right-small-headerOne");
   } else if (visibility === "false") {
@@ -55,18 +60,24 @@ menuIcon.addEventListener("click", () => {
     for (let x = 0; x < navlinkTextStyle.length; x++) {
       navlinkTextStyle[x].classList.remove("displayNone");
     }
+    settingItemText.forEach((SIT) => {
+      SIT.classList.remove("displayNone");
+    });
 
     // h2---------------change-header-padding-from-right---------------h2
     headerOne.classList.remove("padding-right-small-headerOne");
   }
 
   // h2---------------NavWidth-tablet---------------h2
-  if ((nav.offsetWidth == 280) & (marginNav.offsetWidth <= 992)) {
+  if ((nav.offsetWidth == 230) & (marginNav.offsetWidth <= 992)) {
     // این حالتی است که منو باز بوده و باکلیک بسته می شود در حالت تبلت
     nav.classList.remove("nav-width-tablet");
     for (let x = 0; x < navlinkTextStyle.length; x++) {
       navlinkTextStyle[x].classList.add("displayNone-tablet");
     }
+    settingItemText.forEach((SIT) => {
+      SIT.classList.add("displayNone-tablet");
+    });
 
     menuDarkBack.classList.remove("menu-dark-back");
 
@@ -77,6 +88,11 @@ menuIcon.addEventListener("click", () => {
       navlinkTextStyle[x].classList.remove("displayNone-tablet");
       navlinkTextStyle[x].classList.remove("display-none");
     }
+    settingItemText.forEach((SIT) => {
+      SIT.classList.remove("displayNone-tablet");
+      SIT.classList.remove("display-none");
+    });
+
     menuDarkBack.classList.add("menu-dark-back");
   }
 });
@@ -97,7 +113,7 @@ function navbarHeight() {
   const navbarNav = document.getElementById("navbarNav");
   let heightnav = window.innerHeight;
   if (window.innerWidth > 576) {
-    navbarNav.style.height = heightnav - 63 + "px";
+    navbarNav.style.height = heightnav - 63 - 80 + "px";
   } else if (window.innerWidth < 577) {
     navbarNav.style.height = "fit-content";
   }
@@ -280,6 +296,7 @@ navItem.forEach((NI) => {
       const menuIconItem4Mobile = document.getElementById(
         "menuIconItem4Mobile"
       );
+      const settingItemText = document.querySelectorAll(".setting-item-text");
       menuIconItem1Mobile.classList.remove("menu-icon-item1-mobile-animate");
       menuIconItem2Mobile.classList.remove("menu-icon-item2-mobile-animate");
       menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate");
@@ -301,6 +318,10 @@ navItem.forEach((NI) => {
       for (let x = 0; x < navlinkTextStyle.length; x++) {
         navlinkTextStyle[x].classList.add("displayNone-tablet");
       }
+
+      settingItemText.forEach((SIT) => {
+        SIT.classList.add("displayNone-tablet");
+      });
     }
   });
 });
@@ -325,7 +346,3 @@ function checkTime(i) {
   } // add zero in front of numbers < 10
   return i;
 }
-
-
-
-

@@ -43,8 +43,8 @@ h2 = 15"-"(2) */
 }
 
 .menu-icon {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 27px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,7 +145,7 @@ h2 = 15"-"(2) */
 /*h2---------------NAV---------------h2*/
 
 .nav {
-  width: 280px;
+  width: 230px;
   text-overflow: ellipsis;
   white-space: nowrap;
   transition: width 250ms;
@@ -193,7 +193,7 @@ h2 = 15"-"(2) */
 
 .nav-item {
   margin: 3px 0px 3px 0px;
-  height: 60px;
+  height: 40px;
   align-items: center;
   display: flex;
   color: black;
@@ -208,7 +208,7 @@ h2 = 15"-"(2) */
 }
 .navbar-nav li.active:before {
   content: "";
-  width: 6px;
+  width: 4px;
   height: 100%;
   background-color: #270083;
 }
@@ -224,15 +224,62 @@ h2 = 15"-"(2) */
 }
 
 .navlink-icon-style {
-  width: 50px;
+  width: 35px;
   padding-left: 5px;
 }
 
 .navlink-text-style {
   font-family: "Homa";
-  font-size: 20px;
-  padding-right: 7px;
+  font-size: 15px;
   padding-left: 110px;
+}
+
+.taskbar-mobile {
+  display: none;
+}
+
+.search-box-div {
+  display: none;
+}
+.search-ul {
+  display: grid;
+  justify-items: start;
+}
+
+.setting {
+  grid-area: 61;
+  margin-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+.setting-1 {
+  padding: 0px 0px 0px 0px;
+}
+
+.setting-2 {
+  padding: 0px 0px 0px 0px;
+}
+.setting-link {
+  display: flex;
+  align-items: center;
+  transition: all 250ms;
+  padding: 2px 0px;
+}
+
+.dark-mode-icon-setting,
+.translate-icon-setting {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.setting-item-text {
+  font-size: 15px;
+  font-family: "Homa";
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-left: 108px;
 }
 
 @media (min-width: 993px) {
@@ -243,7 +290,7 @@ h2 = 15"-"(2) */
 
 /*h2---------------MAIN-MARGIN---------------h2*/
 .margin-nav {
-  margin-right: 280px;
+  margin-right: 230px;
   transition: all 250ms;
 }
 
@@ -254,7 +301,6 @@ h2 = 15"-"(2) */
 .padding-nav-top {
   padding-top: 70px;
 }
-
 
 /* h1-----------------------------nav-tablet-992px----------------------------- */
 .dark-menu {
@@ -291,7 +337,7 @@ h2 = 15"-"(2) */
   }
 
   .nav-width-tablet {
-    width: 280px;
+    width: 230px;
   }
 
   .display-none {
@@ -312,16 +358,6 @@ h2 = 15"-"(2) */
 }
 
 /* h1-----------------------------nav-mobile-576px----------------------------- */
-.taskbar-mobile {
-  display: none;
-}
-
-.search-box-div {
-  display: none;
-}
-.setting {
-  display: none;
-}
 
 @media (max-width: 576px) {
   body {
@@ -330,11 +366,11 @@ h2 = 15"-"(2) */
   .header-one {
     padding-right: 10px;
     background-color: white;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 0px 16px -3px #343434;
   }
   .nav {
     position: fixed;
-    height: 55px;
+    height: 58px;
     bottom: 7px;
     top: auto;
     width: 92%;
@@ -354,7 +390,7 @@ h2 = 15"-"(2) */
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgb(255 255 255 / 95%);
     border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
+    border: 3px solid rgb(197 197 197);
   }
   .mobile-nav-height {
     height: var(--mobile-nav-height);
@@ -400,6 +436,7 @@ h2 = 15"-"(2) */
     overflow: hidden;
     overflow-y: scroll;
     width: inherit;
+    display: block;
   }
 
   .disply-none-searchUl {
@@ -535,6 +572,8 @@ h2 = 15"-"(2) */
     display: flex;
     width: 100%;
     margin: 0;
+    flex-direction: row;
+    height: fit-content;
   }
 
   .setting-item {
@@ -550,7 +589,7 @@ h2 = 15"-"(2) */
   }
 
   .setting-item:hover {
-    background-color: #a5aafa;
+    background-color: #a5abfa8f;
   }
 
   .setting-link {
@@ -568,9 +607,13 @@ h2 = 15"-"(2) */
 
   .setting-1 {
     padding-right: 8px;
+    padding-left: 2px;
+    padding-bottom: 20px;
   }
   .setting-2 {
     padding-left: 8px;
+    padding-right: 2px;
+    padding-bottom: 20px;
   }
 
   .dark-mode-icon-setting,
@@ -578,6 +621,7 @@ h2 = 15"-"(2) */
     font-size: 30px;
   }
   .setting-item-text {
+    display: block;
     font-family: "homa";
     font-size: 17px;
     padding: 3px 0px 0px 0px;

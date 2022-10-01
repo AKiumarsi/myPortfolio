@@ -1,3 +1,7 @@
+main{
+    padding: 0px 20px;
+}
+
 .parg-main{
     padding: 5px;
     border-radius: 15px;
@@ -11,5 +15,8 @@
         box-shadow: unset;
         background-color: unset;
         border-radius: unset;
+    }
+    main{
+        padding: 0px 0px;
     }
 }
