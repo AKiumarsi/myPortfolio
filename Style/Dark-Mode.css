@@ -51,6 +51,10 @@ main,
   color: #9a6fff;
 }
 
+.add-icon{
+  color: white;
+}
+
 @media (max-width: 576px) {
   .header-one {
     background-color: #181a1e;
@@ -66,11 +70,14 @@ main,
     color: white;
   }
   .nav {
-    backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(30px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    background-color: rgba(17, 25, 40, 0.788);
     border: 3px solid rgb(255 255 255 / 43%);
     box-shadow: none;
+  }
+  .mobile-nav-height {
+    box-shadow: 0px 0px 40px 30px #080808;
   }
   .navbar-nav li.active:before {
     content: unset;
@@ -81,6 +88,14 @@ main,
 
   .search-box-div,
   .search-box {
+    background-color: var(--box-color);
+  }
+
+  .search-box-icon{
+    color:white;
+  }
+
+  .search-box:focus {
     background-color: var(--box-color);
   }
 
