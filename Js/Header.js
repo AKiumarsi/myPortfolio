@@ -103,6 +103,9 @@ menuDarkBack.addEventListener("click", () => {
   for (let x = 0; x < navlinkTextStyle.length; x++) {
     navlinkTextStyle[x].classList.add("displayNone-tablet");
   }
+  settingItemText.forEach((SIT) => {
+    SIT.classList.add("displayNone-tablet");
+  });
   menuDarkBack.classList.remove("menu-dark-back");
 });
 
