@@ -43,13 +43,13 @@ h2 = 15"-"(2) */
 }
 
 .menu-icon {
-  width: 25px;
-  height: 27px;
+  width: 22px;
+  height: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 17.5px;
-  margin-top: 10px;
+  margin: 20px 17.5px 5px 0px;
+  justify-content: space-between;
 }
 
 .menu-icon-item-1 {
@@ -58,7 +58,6 @@ h2 = 15"-"(2) */
   background-color: rgb(0, 0, 0);
   border-radius: 30px;
   transition: width 250ms;
-  margin: 3.5px 0 3.5px 0;
 }
 
 .menu-icon-item-2 {
@@ -66,7 +65,6 @@ h2 = 15"-"(2) */
   height: 14%;
   background-color: rgb(0, 0, 0);
   border-radius: 30px;
-  margin: 3.5px 0 3.5px 0;
   transition: width 250ms;
 }
 
@@ -75,7 +73,6 @@ h2 = 15"-"(2) */
   height: 14%;
   border-radius: 30px;
   transition: width 250ms;
-  margin: 3.5px 0 3.5px 0;
   background-color: rgb(0, 0, 0);
 }
 
