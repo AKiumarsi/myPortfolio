@@ -32,6 +32,7 @@ const translate = document.getElementById("translate");
 translate.addEventListener("click", translateF);
 
 function translateF(){
+    const tranST = document.getElementById("tranST");
     const translateVlaue = translate.getAttribute("language");
     const tranTR = document.querySelector(".tran-tr");
     const darkTR = document.querySelector(".darkTR");
@@ -46,6 +47,7 @@ function translateF(){
 
     if(translateVlaue==="persian"){
         translate.classList.remove("active-TR-setting");
+        tranST.setAttribute("href","");
 
         tranTR.textContent = dataTranslate[translateVlaue].tranTR;
         darkTR.textContent = dataTranslate[translateVlaue].darkTR;
@@ -64,6 +66,7 @@ function translateF(){
 
     }else if(translateVlaue === "english"){
         translate.classList.add("active-TR-setting");
+        tranST.setAttribute("href","Style/Translaate-Style.css");
 
 
         tranTR.textContent = dataTranslate[translateVlaue].tranTR;
