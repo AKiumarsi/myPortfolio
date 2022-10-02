@@ -33,7 +33,7 @@ h2 = 15"-"(2)-->
     <link rel="stylesheet" href="Style/Fonts.css">
 
     <!--h2---------------Header Css--------------->
-    <link rel="stylesheet" href="Style/Header.css">
+    <link rel="stylesheet" href="Style/Header$Nav.css">
     </link>
 
     <!--h2---------------Grid Css--------------->
@@ -99,12 +99,12 @@ h2 = 15"-"(2)-->
 
             <div class="setting row">
                 <div class="col-6 setting-1" >
-                    <div class="setting-item">
-                        <button class="setting-link button-unstyle" id="darkModeSetting" mode="false">
+                    <div class="setting-item" id="darkModeSetting" mode="false">
+                        <button class="setting-link button-unstyle" >
                             <span>
                                 <i class="uil uil-moon dark-mode-icon-setting"></i>
                             </span>
-                            <span class="setting-item-text display-none">
+                            <span class="setting-item-text display-none darkTR">
                                 حالت تاریک
                             </span>
                         </button>
@@ -112,12 +112,12 @@ h2 = 15"-"(2)-->
                 </div>
 
                 <div class="col-6 setting-2">
-                    <div class="setting-item">
-                        <button class="setting-link button-unstyle">
+                    <div class="setting-item" id="translate" language="english">
+                        <button class="setting-link button-unstyle" >
                             <span>
                                 <i class="uil uil-english-to-chinese translate-icon-setting"></i>
                             </span>
-                            <span class="setting-item-text display-none">
+                            <span class="setting-item-text display-none tran-tr">
                                 ترجمه صفحه
                             </span>
                         </button>
@@ -132,7 +132,7 @@ h2 = 15"-"(2)-->
                             <img src="Images/Nav-Icons/Home-Icon.png" alt="Home Icon"
                                 class="nav-home-icon navlink-icon-style">
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none homeTR" id="navlinkTextStyle">
                             خانه
                         </span>
                     </a>
@@ -144,7 +144,7 @@ h2 = 15"-"(2)-->
                             <img src="Images/Nav-Icons/Aboutme-icon.png" alt="about me icon"
                                 class="nav-aboutme-icon  navlink-icon-style">
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none aboutTR" id="navlinkTextStyle">
                             درباره من
                         </span>
                     </a>
@@ -156,7 +156,7 @@ h2 = 15"-"(2)-->
                             <img src="Images/Nav-Icons/Skill-Icon.png" alt="skill icon"
                                 class="nav-skill-icon navlink-icon-style">
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none skillTR" id="navlinkTextStyle">
                             مهارت ها
                         </span>
                     </a>
@@ -169,7 +169,7 @@ h2 = 15"-"(2)-->
                             <img src="Images/Nav-Icons/School-Icon.png" alt="school icon"
                                 class="nav-school-icon navlink-icon-style">
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none schoolTR" id="navlinkTextStyle">
                             تحصیلات
                         </span>
                     </a>
@@ -181,7 +181,7 @@ h2 = 15"-"(2)-->
                             <img src="Images/Nav-Icons/Projects-Icon.png" alt="prijects icon"
                                 class="nav-projects-icon navlink-icon-style">
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none projectsTR" id="navlinkTextStyle">
                             پروژه ها
                         </span>
                     </a>
@@ -193,7 +193,7 @@ h2 = 15"-"(2)-->
                             <img src="Images/Nav-Icons/services-Icon.png" alt="services icon"
                                 class="nav-services-icon navlink-icon-style">
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none servicesTR" id="navlinkTextStyle">
                             خدمات
                         </span>
                     </a>
@@ -205,7 +205,7 @@ h2 = 15"-"(2)-->
                             <img src="Images/Nav-Icons/contact-Icon.png" alt="contact icon"
                                 class="nav-contact-icon navlink-icon-style">
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none contactTR" id="navlinkTextStyle">
                             راه ارتباطی
                         </span>
                     </a>
@@ -216,7 +216,7 @@ h2 = 15"-"(2)-->
                         <span class="span-delet-height">
                             <i class="uil uil-plus-circle add-icon"></i>
                         </span>
-                        <span class="navlink-text-style display-none" id="navlinkTextStyle">
+                        <span class="navlink-text-style display-none addTR" id="navlinkTextStyle">
                             جدید
                         </span>
                     </a>
@@ -590,10 +590,13 @@ h2 = 15"-"(2)-->
         crossorigin="anonymous"></script>
 
     <!--h2---------------Header-JS--------------->
-    <script src="Js/Header.js"></script>
+    <script src="Js/Header&Nav.js"></script>
 
      <!--h2---------------darkMode-JS--------------->
      <script src="Js/darkMode.js"></script>
+
+      <!--h2---------------translate-To-English-JS--------------->
+      <script src="Js/translate.js"></script>
 </body>
 
 </html>
