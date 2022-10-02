@@ -288,6 +288,7 @@ window.onscroll = () => {
 // بسته شدن منو در حالت تبلت و موبایل با کلیک روی آیتم ها
 navItem.forEach((NI) => {
   NI.addEventListener("click", () => {
+    const navlinkTextStyle = document.querySelectorAll(".navlink-text-style");
     if (window.innerWidth <= 992) {
       const menuIconItem1Mobile = document.getElementById(
         "menuIconItem1Mobile"
@@ -320,6 +321,7 @@ navItem.forEach((NI) => {
 
       menuIconMobile.setAttribute("data-visible", false);
       nav.classList.remove("nav-width-tablet");
+
       for (let x = 0; x < navlinkTextStyle.length; x++) {
         navlinkTextStyle[x].classList.add("displayNone-tablet");
       }
