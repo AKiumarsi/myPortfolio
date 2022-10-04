@@ -597,7 +597,7 @@ h2 = 15"-"(2) */
   .setting-item {
     height: 45px;
     background-color: #d1d4ff;
-    border-radius: 20px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -618,6 +618,7 @@ h2 = 15"-"(2) */
     justify-content: flex-start;
     width: 100%;
     transition: none;
+    margin-bottom: 0px;
   }
 
   .setting-link span:first-child {
