@@ -1,22 +1,105 @@
-main{
-    padding: 0px 20px;
+main {
+  padding: 0px 20px;
 }
 
-.parg-main{
-    padding: 5px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: var(--box-shadow);
+.parg-main {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: var(--box-shadow);
 }
 
-@media (max-width : 576px){
-    .parg-main{
-        padding: unset;
-        box-shadow: unset;
-        background-color: unset;
-        border-radius: unset;
-    }
-    main{
-        padding: 0px 0px;
-    }
+.home-header {
+  font-family: "promoter";
+  font-size: 40px;
+}
+
+
+.home-sec-cont{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-sec-cont > div > div{
+    display: flex;
+    justify-content: center;
+}
+
+.homeH3{
+    font-family: "Beirut";
+    font-size: 40px;
+}
+
+.homeH3 span{
+    color: var(--color-web-base);
+}
+
+.home-sec-p{
+    font-family: "koodak";
+    font-size: 16px;
+}
+
+.home-sec-but{
+    background-color: var(--color-web-base);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "casa";
+    font-size: 20px;
+}
+.home-sec-links{
+  display: flex;
+  justify-content: start;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.home-sec-links li{
+  list-style: none;
+  margin: 0px 0px 0px 12px;
+}
+
+.home-sec-links i{
+  font-size: 25px;
+  color: var(--color-web-base);
+}
+
+.shape {
+  border-radius: 30% 70% 52% 48% / 30% 30% 70% 70%;
+  background-color: var(--color-web-base);
+  width: 350px;
+  height: 350px;
+  margin: 0px auto;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+.shape img{
+  width: 270px;
+  transition: all 500ms;
+}
+
+.shape:hover{
+  transform: translateX(-15px);
+}
+
+.shape:hover img{
+  transform: scale(1.2);
+}
+
+
+
+
+@media (max-width: 576px) {
+  .parg-main {
+    padding: unset;
+    box-shadow: unset;
+    background-color: unset;
+    border-radius: unset;
+  }
+  main {
+    padding: 0px 0px;
+  }
 }
