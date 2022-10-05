@@ -1,3 +1,5 @@
+/* -----------------------persian-fonts---------------------h1 */
+
 @font-face {
   font-family: "Beirut";
   src: url("../Fonts/Mj_Beirut.ttf") format("ttf"),
@@ -5,12 +7,6 @@
     url("../Fonts/Mj_Beirut.woff2") format("woff2");
 }
 
-@font-face {
-  font-family: "Elham";
-  src: url("../Fonts/Elham.ttf") format("ttf"),
-    url("../Fonts/Elham.woff") format("woff"),
-    url("../Fonts/Elham.woff2") format("woff2");
-}
 
 @font-face {
   font-family: "Homa";
@@ -26,6 +22,24 @@
     url("../Fonts/KoodakB.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "promoter";
+  src: url("../Fonts/Mj_Promoter.ttf") format("ttf"),
+  url("../Fonts/Mj_Promoter.woff") format("woff"),
+  url("../Fonts/Mj_Promoter.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "casa";
+  src: url("../Fonts/Mj_Casablanca.ttf") format("ttf"),
+  url("../Fonts/Mj_Casablanca.woff") format("woff"),
+  url("../Fonts/Mj_Casablanca.woff2") format("woff2");
+}
+
+
+
+
+/* -----------------------english-fonts---------------------h1 */
 @font-face {
   font-family: "pop";
   src: url("../Fonts/MochiyPopOne-Regular.ttf") format("ttf"),
