@@ -11,7 +11,8 @@
 
 .header-one,
 main,
-.nav {
+.nav,
+body {
   background-color: #19191f;
   color: white;
 }

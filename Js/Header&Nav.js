@@ -278,7 +278,7 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
-    if (top >= offset - 200 && top < offset + height) {
+    if (top >= offset - 150 && top < offset + height) {
       const target = document.querySelector(`[href='#${id}']`).parentElement;
       activeLink(target);
     }

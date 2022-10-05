@@ -6,6 +6,7 @@ h2 = 15"-"(2) */
   --background-color: #f6f6f9;
   --color-light: #848bc82e;
   --box-shadow: 0 2rem 3rem var(--color-light);
+  --color-web-base: #372c93;
 }
 
 

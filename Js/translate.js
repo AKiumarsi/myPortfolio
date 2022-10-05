@@ -10,6 +10,8 @@ var dataTranslate = {
         "servicesTR" : "Services",
         "contactTR" : "Contact Us",
         "addTR" : "New",
+        "homeHeaderTR" : "Home",
+        "homeH3TR" : "Hello, I'm Abolfazl"
     },
     "persian" :{
         "tranTR" : "ترجمه صفحه",
@@ -22,6 +24,8 @@ var dataTranslate = {
         "servicesTR" : "خدمات",
         "contactTR" : "راه ارتباطی",
         "addTR" : "جدید",
+        "homeHeaderTR" : "خانه",
+        "homeH3TR" : "سلام،من ابوالفضل هستم"
     }
 }
 
@@ -44,6 +48,8 @@ function translateF(){
     const contactTR = document.querySelector(".contactTR");
     const addTR = document.querySelector(".addTR");
     const homeTR = document.querySelector(".homeTR");
+    const homeHeaderTR = document.querySelector(".homeHeaderTR");
+    const homeH3TR = document.querySelector(".homeH3TR");
 
     if(translateVlaue==="persian"){
         translate.classList.remove("active-TR-setting");
@@ -59,6 +65,8 @@ function translateF(){
         servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
         contactTR.textContent = dataTranslate[translateVlaue].contactTR;
         addTR.textContent = dataTranslate[translateVlaue].addTR;
+        homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
+        homeH3TR.textContent = dataTranslate[translateVlaue].homeH3TR;
 
         
 
@@ -79,6 +87,8 @@ function translateF(){
         servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
         contactTR.textContent = dataTranslate[translateVlaue].contactTR;
         addTR.textContent = dataTranslate[translateVlaue].addTR;
+        homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
+        homeH3TR.textContent = dataTranslate[translateVlaue].homeH3TR;
 
 
 
