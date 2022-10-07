@@ -36,6 +36,13 @@
   url("../Fonts/Mj_Casablanca.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "naz";
+  src: url("../Fonts/Nazanin.ttf") format("ttf"),
+  url("../Fonts/Nazanin.woff") format("woff"),
+  url("../Fonts/Nazanin.woff2") format("woff2");
+}
+
 
 
 
