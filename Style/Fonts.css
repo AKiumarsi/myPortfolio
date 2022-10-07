@@ -46,3 +46,11 @@
   url("../Fonts/MochiyPopOne-Regular.woff") format("woff"),
   url("../Fonts/MochiyPopOne-Regular.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "pin";
+  src: url("../Fonts/Poppins-Medium.ttf") format("ttf"),
+  url("../Fonts/Poppins-Medium.woff") format("woff"),
+  url("../Fonts/Poppins-Medium.woff2") format("woff2");
+}
+
