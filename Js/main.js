@@ -8,7 +8,7 @@ function homeSecPargF() {
 
   if (
     (window.innerWidth > 576) &
-    (window.innerHeight > "465") &
+    (window.innerHeight > 510) &
     (window.innerHeight < 2001) &
     (window.innerWidth < 4001)
   ) {
@@ -17,9 +17,12 @@ function homeSecPargF() {
 }
 
 // این برای حذف راهنمای اسکرول با اسکرول کردنه
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",angleDownScrollF);
+window.addEventListener("resize",angleDownScrollF);
+angleDownScrollF();
+function angleDownScrollF(){
   const angleDownScroll = document.getElementById("angleDownScroll");
-  if (scrollY > 200) {
+  if (scrollY > 100 || window.innerHeight < 500) {
     angleDownScroll.style.display = "none";
   }
-});
+}
