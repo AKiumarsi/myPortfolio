@@ -9,6 +9,5 @@ function homeSecPargF() {
 
   if ((window.innerWidth > 576) & (window.innerHeight > "465")) {
     homeSecParg.style.height = window.innerHeight - 151 + "px";
-    console.log(innerHeight)
   }
 }
