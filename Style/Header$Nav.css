@@ -31,8 +31,6 @@ h2 = 15"-"(2) */
   padding-right: 80px;
 }
 
-.logo-website-link {
-}
 
 .logo-website {
   width: 60px;
@@ -221,8 +219,7 @@ h2 = 15"-"(2) */
 .navbar-nav .nav-item:hover {
   color: #270083;
 }
-.navbar-nav .nav-item:hover .navlink-icon-style {
-}
+
 
 .navlink-icon-style {
   width: 35px;
@@ -645,7 +642,7 @@ h2 = 15"-"(2) */
     display: block;
     font-family: "homa" , "";
     font-size: 17px;
-    padding: 7px 0px 0px 0px;
+    padding: 2px 0px 0px 0px;
     transition: none;
   }
 
