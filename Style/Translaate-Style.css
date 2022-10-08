@@ -9,3 +9,56 @@
   font-family: "pop";
   font-size: 12px;
 }
+
+.sec1-home {
+  direction: ltr;
+}
+
+.home-header {
+  font-family: "osw";
+}
+
+.homeH3 {
+  font-family: "fred";
+}
+
+.home-sec-p {
+  font-family: "pin";
+}
+
+.home-sec-but a {
+  font-family: "kaush";
+}
+
+.shape img {
+  transform: translate(65px, 0px);
+}
+
+.shape:hover img {
+  transform: scale(1.1) translate(65px, 0px);
+}
+
+@media (max-width: 768px) {
+  .shape img {
+    transform: translate(173px, 85px);
+    width: 250px;
+    height: 350px;
+  }
+  .shape:hover img {
+    transform: translate(173px, 85px);
+  }
+}
+
+@media (max-width: 576px) {
+  .shape img {
+    height: unset;
+  }
+  .shape img {
+    transform: none;
+    width: 100%;
+  }
+  .shape:hover img {
+    transform: none;
+    width: 100%;
+  }
+}
