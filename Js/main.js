@@ -13,6 +13,8 @@ function homeSecPargF() {
     (window.innerWidth < 4001)
   ) {
     homeSecParg.style.height = window.innerHeight - 151 + "px";
+  } else if(window.innerWidth <= 576){
+    homeSecParg.style.height = "fit-content"
   }
 }
 

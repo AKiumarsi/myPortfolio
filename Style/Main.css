@@ -32,7 +32,7 @@ main {
   font-size: 40px;
 }
 
-.homeH3 span {
+.homeH3 span:nth-child(2) {
   color: var(--color-web-base);
 }
 
@@ -202,7 +202,7 @@ main {
   transition: all 250ms 500ms;
   width: fit-content;
   font-size: 14px;
-  font-family: naz;
+  font-family: "naz" , "pin";
   font-weight: bold;
 }
 .angle-down-scroll:hover .scroll-down-tip {
@@ -263,7 +263,7 @@ main {
   .home-sec-cont > div.row{
     display: grid;
     justify-items: start;
-    grid-template-rows: 194px 154px;
+    grid-template-rows: 194px 135px;
     grid-template-columns: 500px;
 
   }
@@ -342,11 +342,6 @@ main {
 /* h1-----------------------------------------max-width:576px----------------------------------------- */
 @media (max-width: 576px) {
   
-  .parg-main {
-    box-shadow: unset;
-    background-color: unset;
-    border-radius: unset;
-  }
   main {
     padding: 0px 0px;
   }
