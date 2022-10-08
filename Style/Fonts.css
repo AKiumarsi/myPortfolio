@@ -60,4 +60,24 @@
   url("../Fonts/Poppins-Medium.woff") format("woff"),
   url("../Fonts/Poppins-Medium.woff2") format("woff2");
 }
+@font-face {
+  font-family: "osw";
+  src: url("../Fonts/Oswald-Medium.ttf") format("ttf"),
+  url("../Fonts/Oswald-Medium.woff") format("woff"),
+  url("../Fonts/Oswald-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "fred";
+  src: url("../Fonts/FredokaOne-Regular.ttf") format("ttf"),
+  url("../Fonts/FredokaOne-Regular.woff") format("woff"),
+  url("../Fonts/FredokaOne-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "kaush";
+  src: url("../Fonts/KaushanScript-Regular.ttf") format("ttf"),
+  url("../Fonts/KaushanScript-Regular.woff") format("woff"),
+  url("../Fonts/KaushanScript-Regular.woff2") format("woff2");
+}
+
 
