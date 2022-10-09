@@ -11,7 +11,8 @@ main {
 }
 
 /* h1-----------------------------------------section1-Home----------------------------------------- */
-.home-header {
+.home-header,
+.about-header {
   font-family: "promoter";
   font-size: 40px;
 }
