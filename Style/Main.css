@@ -217,19 +217,49 @@ main {
 /* h1-----------------------------------------section2-About----------------------------------------- */
 .aboutH3{
   font-family: "Beirut";
-  font-size: 30px;
-  margin: 5px 10px 10px;
+  font-size: 25px;
+  margin: 10px 20px 10px;
 }
 
 .aboutH3 > span{
   background-color: var(--color-web-base);
   color: white;
   padding: 1px 5px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-family: "casa";
-  font-size: 22px;
+  font-size: 18px;
 }
 
+.about-sec-P{
+  margin: 0px 30px 20px;
+  font-family: 'bnaz';
+}
+
+
+.about-sec-ta{
+  margin: 0px 30px 20px;
+  font-family: "bnaz" , "pin";
+}
+
+
+.about-sec-ta tbody tr td:first-child{
+  padding: 5px 0px 5px 20px;
+}
+
+.about-sec-ta tbody tr td:last-child{
+  padding: 5px 20px 5px 5px;
+}
+
+.about-sec-ta tbody tr:nth-child(2) td:nth-child(2),
+.about-sec-ta tbody tr:nth-child(3) td:nth-child(2),
+.about-sec-ta tbody tr:nth-child(4) td:nth-child(2){
+  font-family: "pin";
+  font-weight: 100;
+}
+
+.about-sec-ta tr td span:first-child i{
+  font-size: 18px;
+}
 
 
 
