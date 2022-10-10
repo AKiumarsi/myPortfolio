@@ -43,6 +43,13 @@
   url("../Fonts/Nazanin.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "bnaz";
+  src: url("../Fonts/BNaznnBd_0.ttf") format("ttf"),
+  url("../Fonts/BNazaninBold.woff") format("woff"),
+  url("../Fonts/BNaznnBd_0.woff2") format("woff2");
+}
+
 
 
 
