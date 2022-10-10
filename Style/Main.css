@@ -209,6 +209,38 @@ main {
 .angle-down-scroll:hover .scroll-down-tip {
   opacity: 1;
 }
+
+
+
+
+
+/* h1-----------------------------------------section2-About----------------------------------------- */
+.aboutH3{
+  font-family: "Beirut";
+  font-size: 30px;
+  margin: 5px 10px 10px;
+}
+
+.aboutH3 > span{
+  background-color: var(--color-web-base);
+  color: white;
+  padding: 1px 5px;
+  border-radius: 12px;
+  font-family: "casa";
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* h1-----------------------------------------max-width:992px----------------------------------------- */
 /* h1-----------------------------------------max-width:992px----------------------------------------- */
 /* h1-----------------------------------------max-width:992px----------------------------------------- */
