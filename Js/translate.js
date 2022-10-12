@@ -23,6 +23,23 @@ var dataTranslate = {
       Honestly, I haven't had time to find a slogan for myself yet",
     homeResTR: "Resume",
     scrollDTTR: "Scroll down",
+
+    // --------------------------------section2-about-----------------------------------
+    aboutHeaderTR: "About Me",
+    aboutH3TR: "Front-end developer",
+    aboutH3JuTR: "Junior",
+    aboutsecpTR: "Considering my great passion for the field of programming, I intend to continue the front-end path so that I can achieve sufficient expertise;",
+    aboutsecta1TR :"For more information",
+    aboutsecta2TR: "Learning period:",
+    aboutsecta3_1TR: "for",
+    aboutsecta3_2TR: "months from",
+    aboutsecta3_3TR: " 1400/9/10",
+    aboutsecta3_4TR: "The developer of the Rushdana",
+    aboutsecta4TR: "Skills:",
+    aboutsecta5TR: "Projects:",
+    aboutsecta6TR: "Certificates:",
+    aboutsecta7TR: "internship",
+    aboutsecta8TR: "Remote work intern of Kiaob company",
   },
   persian: {
 
@@ -48,6 +65,26 @@ var dataTranslate = {
         راستش هنوز وقت نکردم برای خودم شعاری پیدا کنم",
     homeResTR: "دانلود رزومه",
     scrollDTTR: "به پایین بکشید",
+
+    // --------------------------------section2-about-----------------------------------
+    aboutHeaderTR: "درباره من",
+    aboutH3TR: "توسعه دهنده فرانت-اند",
+    aboutH3JuTR: "جونیور",
+    aboutsecpTR: " با توجه به علاقه و اشتیاق فراوان اینجانب به عرصه کامپیوتر و برنامه نویسی وانتخاب\
+    شاخه\
+    فرانت- اند، قصد ادامه این مسیر را داشته تا بتوانم به تخصص کافی دست پیدا کنم؛ و تاجایی\
+    که می توانم به هم نوعانم کمک کنم.",
+    aboutsecta1TR:"جهت آشنایی بیشتر",
+    aboutsecta2TR: "مدت یادگیری:",
+    aboutsecta3_1TR: "به مدت",
+    aboutsecta3_2TR: "ماه از تاریخ",
+    aboutsecta3_3TR: " 1400/9/10",
+    aboutsecta3_4TR: " رشدآموز پلتفرم توانمندسازی رشدانا",
+    aboutsecta4TR: "مهارت ها:",
+    aboutsecta5TR: "پروژه ها:",
+    aboutsecta6TR: "مدارک:",
+    aboutsecta7TR: "کارآموزی",
+    aboutsecta8TR: "کارآموز دورکار شرکت کیاوب",
   },
 };
 
@@ -75,6 +112,22 @@ function translateF() {
   const homePTR = document.querySelector(".homePTR");
   const homeResTR = document.querySelector(".homeResTR");
   const scrollDTTR = document.querySelector(".scrollDTTR");
+  const aboutHeaderTR = document.querySelector(".aboutHeaderTR");
+  const aboutH3TR = document.querySelector(".aboutH3TR");
+  const aboutH3JuTR = document.querySelector(".aboutH3JuTR");
+  const aboutsecpTR = document.querySelector(".aboutsecpTR");
+  const aboutsecta1TR = document.querySelector(".aboutsecta1TR");
+  const aboutsecta2TR = document.querySelector(".aboutsecta2TR");
+  const aboutsecta3_1TR = document.querySelector(".aboutsecta3_1TR");
+  const aboutsecta3_2TR = document.querySelector(".aboutsecta3_2TR");
+  const aboutsecta3_3TR = document.querySelector(".aboutsecta3_3TR");
+  const aboutsecta3_4TR = document.querySelector(".aboutsecta3_4TR");
+  const aboutsecta4TR = document.querySelector(".aboutsecta4TR");
+  const aboutsecta5TR = document.querySelector(".aboutsecta5TR");
+  const aboutsecta6TR = document.querySelector(".aboutsecta6TR");
+  const aboutsecta7TR = document.querySelector(".aboutsecta7TR");
+  const aboutsecta8TR = document.querySelector(".aboutsecta8TR");
+  
 
   if (translateVlaue === "persian") {
     translate.classList.remove("active-TR-setting");
@@ -99,6 +152,27 @@ function translateF() {
     homePTR.textContent = dataTranslate[translateVlaue].homePTR;
     homeResTR.textContent = dataTranslate[translateVlaue].homeResTR;
     scrollDTTR.textContent = dataTranslate[translateVlaue].scrollDTTR;
+
+    // --------------------------------section2-about-----------------------------------
+    aboutHeaderTR.textContent = dataTranslate[translateVlaue].aboutHeaderTR;
+    aboutH3TR.textContent = dataTranslate[translateVlaue].aboutH3TR;
+    aboutH3JuTR.textContent = dataTranslate[translateVlaue].aboutH3JuTR;
+    aboutsecpTR.textContent = dataTranslate[translateVlaue].aboutsecpTR;
+    aboutsecta1TR.textContent = dataTranslate[translateVlaue].aboutsecta1TR;
+
+    
+    aboutsecta2TR.textContent = dataTranslate[translateVlaue].aboutsecta2TR;
+    aboutsecta3_1TR.textContent = dataTranslate[translateVlaue].aboutsecta3_1TR;
+    aboutsecta3_2TR.textContent = dataTranslate[translateVlaue].aboutsecta3_2TR;
+    aboutsecta3_3TR.textContent = dataTranslate[translateVlaue].aboutsecta3_3TR;
+    aboutsecta3_4TR.textContent = dataTranslate[translateVlaue].aboutsecta3_4TR;
+    aboutsecta4TR.textContent = dataTranslate[translateVlaue].aboutsecta4TR;
+    aboutsecta5TR.textContent = dataTranslate[translateVlaue].aboutsecta5TR;
+    aboutsecta6TR.textContent = dataTranslate[translateVlaue].aboutsecta6TR;
+    aboutsecta7TR.textContent = dataTranslate[translateVlaue].aboutsecta7TR;
+    aboutsecta8TR.textContent = dataTranslate[translateVlaue].aboutsecta8TR;
+
+
 
     translate.setAttribute("language", "english");
   } else if (translateVlaue === "english") {
@@ -125,6 +199,24 @@ function translateF() {
     homePTR.textContent = dataTranslate[translateVlaue].homePTR;
     homeResTR.textContent = dataTranslate[translateVlaue].homeResTR;
     scrollDTTR.textContent = dataTranslate[translateVlaue].scrollDTTR;
+
+    // --------------------------------section2-about-----------------------------------
+    aboutHeaderTR.textContent = dataTranslate[translateVlaue].aboutHeaderTR;
+    aboutH3TR.textContent = dataTranslate[translateVlaue].aboutH3TR;
+    aboutH3JuTR.textContent = dataTranslate[translateVlaue].aboutH3JuTR;
+    aboutsecpTR.textContent = dataTranslate[translateVlaue].aboutsecpTR;
+    aboutsecta1TR.textContent = dataTranslate[translateVlaue].aboutsecta1TR;
+
+    aboutsecta2TR.textContent = dataTranslate[translateVlaue].aboutsecta2TR;
+    aboutsecta3_1TR.textContent = dataTranslate[translateVlaue].aboutsecta3_1TR;
+    aboutsecta3_2TR.textContent = dataTranslate[translateVlaue].aboutsecta3_2TR;
+    aboutsecta3_3TR.textContent = dataTranslate[translateVlaue].aboutsecta3_3TR;
+    aboutsecta3_4TR.textContent = dataTranslate[translateVlaue].aboutsecta3_4TR;
+    aboutsecta4TR.textContent = dataTranslate[translateVlaue].aboutsecta4TR;
+    aboutsecta5TR.textContent = dataTranslate[translateVlaue].aboutsecta5TR;
+    aboutsecta6TR.textContent = dataTranslate[translateVlaue].aboutsecta6TR;
+    aboutsecta7TR.textContent = dataTranslate[translateVlaue].aboutsecta7TR;
+    aboutsecta8TR.textContent = dataTranslate[translateVlaue].aboutsecta8TR;
 
     translate.setAttribute("language", "persian");
   }

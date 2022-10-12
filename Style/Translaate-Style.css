@@ -38,6 +38,24 @@
   transform: scale(1.1) translate(65px, 0px);
 }
 
+
+
+
+
+
+
+.sec2-about{
+  direction: ltr;
+}
+.about-sec-ta tr{
+  font-family: "pin";
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
   .shape img {
     transform: translate(173px, 85px);

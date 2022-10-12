@@ -23,6 +23,7 @@ body {
   color: white;
   border-radius: 50px;
 }
+
 .parg-main {
   background-color: #212429;
   color: var(--color-dark-whith);
@@ -32,6 +33,7 @@ body {
 .navlink-text-style {
   color: white;
 }
+
 .menu-icon-item-1,
 .menu-icon-item-2,
 .menu-icon-item-3 {
@@ -41,6 +43,7 @@ body {
 .navbar-nav li.active {
   background-color: var(--color-dark);
 }
+
 .navbar-nav li.active:before {
   content: "";
   width: 6px;
@@ -55,10 +58,12 @@ body {
 .add-icon {
   color: white;
 }
+
 /* h1-----------------------------------------section1-Home----------------------------------------- */
 .homeH3 span:nth-child(2) {
   color: #3b2ad1;
 }
+
 .home-sec-links i {
   color: #ffffff;
 }
@@ -67,6 +72,16 @@ body {
   all: unset;
   background-color: unset;
 }
+
+
+/* h1-----------------------------------------section2-About----------------------------------------- */
+
+.about-sec-ta tr td span:first-child svg {
+  fill: rgb(193 193 193);
+}
+
+
+
 
 /* h1-----------------------------------------max-width:768px----------------------------------------- */
 /* h1-----------------------------------------max-width:768px----------------------------------------- */
@@ -103,6 +118,7 @@ body {
   .navlink-text-style {
     color: white;
   }
+
   .nav {
     backdrop-filter: blur(30px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -110,9 +126,11 @@ body {
     border: 3px solid rgb(255 255 255 / 43%);
     box-shadow: none;
   }
+
   .mobile-nav-height {
     box-shadow: 0px 0px 40px 30px #080808;
   }
+
   .navbar-nav li.active:before {
     content: unset;
     width: 0px;
@@ -141,6 +159,7 @@ body {
     background-color: var(--box-color);
     color: white;
   }
+
   a.nav-link span:first-child {
     background-color: var(--box-color);
   }
@@ -152,12 +171,15 @@ body {
   .navbar-nav li.active .navlink-text-style {
     color: #608aff;
   }
+
   .navbar-nav li.active {
     background-color: unset;
   }
+
   .taskbar-mobile {
     color: white;
   }
+
   .menu-icon-item1-mobile,
   .menu-icon-item2-mobile,
   .menu-icon-item3-mobile,
@@ -176,9 +198,21 @@ body {
   }
 
 
-  .shape img{
+  .shape img {
     transform: none !important;
     width: 100%;
+  }
+
+
+
+  /* h1-----------------------------------------section2-About----------------------------------------- */
+
+  .about-sec-ta tbody tr:nth-child(even) {
+    background-color: #18181894;
+  }
+
+  .about-sec-ta tr td span:first-child svg {
+    fill: url(#abosecta);
   }
 
 }
