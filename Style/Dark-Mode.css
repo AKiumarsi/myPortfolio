@@ -59,6 +59,11 @@ body {
   color: white;
 }
 
+.dark-mode-icon-setting,
+.translate-icon-setting {
+  fill: white;
+}
+
 /* h1-----------------------------------------section1-Home----------------------------------------- */
 .homeH3 span:nth-child(2) {
   color: #3b2ad1;
@@ -138,13 +143,24 @@ body {
     background-color: unset;
   }
 
+  .serch-taskbar-icon,
+  .angle-up {
+    fill: white;
+  }
+
+  .dark-mode-icon-setting,
+  .translate-icon-setting {
+    width: 30px;
+    fill: white;
+  }
+
   .search-box-div,
   .search-box {
     background-color: var(--box-color);
   }
 
   .search-box-icon {
-    color: white;
+    fill: white;
   }
 
   .search-box:focus {

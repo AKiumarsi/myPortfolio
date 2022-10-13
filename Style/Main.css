@@ -70,7 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 25px;
-  height: 38px;
+  height: 29px;
   overflow: hidden;
 }
 
@@ -78,12 +78,12 @@ main {
   overflow: visible;
 }
 
-.home-sec-links i {
-  font-size: 25px;
-  color: var(--color-web-base);
+.home-sec-links svg{
+  width: 25px;
+  fill: var(--color-web-base);
 }
 
-.home-sec-links li:hover i {
+.home-sec-links li:hover svg {
   text-shadow: 0px 0px 3px rgb(142, 141, 255);
 }
 
@@ -351,13 +351,13 @@ td {
     display: flex;
   }
 
-  .home-sec-links li {
+  .home-sec-links svg {
     width: 20px;
     height: 30px;
   }
 
-  .home-sec-links li i {
-    font-size: 20px;
+  .home-sec-links li svg {
+   width: 20px;
   }
 
   .home-sec-links li .linktip {

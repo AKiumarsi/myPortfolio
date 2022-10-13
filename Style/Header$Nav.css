@@ -7,6 +7,7 @@ h2 = 15"-"(2) */
   --color-light: #848bc82e;
   --box-shadow: 0 2rem 3rem var(--color-light);
   --color-web-base: #372c93;
+  --color-icon-black: rgb(48, 48, 48);
 }
 
 
@@ -238,6 +239,11 @@ h2 = 15"-"(2) */
   display: none;
 }
 
+.serch-taskbar-icon,
+.angle-up{
+fill: var(--color-icon-black);
+}
+
 .search-box-div {
   display: none;
 }
@@ -271,8 +277,9 @@ h2 = 15"-"(2) */
 
 .dark-mode-icon-setting,
 .translate-icon-setting {
-  font-size: 20px;
+  width: 20px;
   padding: 5px;
+  fill:var(--color-icon-black) ;
 }
 
 .setting-item{
@@ -369,6 +376,10 @@ h2 = 15"-"(2) */
   display: none;
 }
 
+/* h1-----------------------------nav-mobile-576px----------------------------- */
+/* h1-----------------------------nav-mobile-576px----------------------------- */
+/* h1-----------------------------nav-mobile-576px----------------------------- */
+/* h1-----------------------------nav-mobile-576px----------------------------- */
 /* h1-----------------------------nav-mobile-576px----------------------------- */
 
 @media (max-width: 576px) {
@@ -576,8 +587,8 @@ h2 = 15"-"(2) */
   }
 
   .search-box-icon {
-    color: #858585;
-    font-size: 20px;
+    fill: #858585;
+    width: 20px;
     margin-left: 8px;
   }
 
@@ -633,7 +644,8 @@ h2 = 15"-"(2) */
 
   .dark-mode-icon-setting,
   .translate-icon-setting {
-    font-size: 30px;
+    width: 30px;
+    fill:var(--color-icon-black) ;
   }
   .setting-item-text {
     display: block;
@@ -663,6 +675,8 @@ h2 = 15"-"(2) */
     transition: all 100ms;
     width: inherit;
     justify-content: space-around;
+    align-items: flex-end;
+    padding: 8px 0px;
   }
 
   .taskbar-borderup {
@@ -673,10 +687,12 @@ h2 = 15"-"(2) */
   .dark-mode-task,
   .uil-english-to-chinese {
     font-size: 30px;
+    width: 30px;
+    height: 35px;
   }
 
-  .uil-angle-double-up {
-    font-size: 36px;
+  .angle-up {
+    width: 36px;
     cursor: pointer;
   }
   .arrow-up {
@@ -697,7 +713,7 @@ h2 = 15"-"(2) */
 .menu-icon-mobile {
   width: 30px;
   height: 30px;
-  margin: 0px;
+  margin: auto 0px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
