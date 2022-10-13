@@ -11,7 +11,6 @@ var dataTranslate = {
     projectsTR: "Projects",
     servicesTR: "Services",
     contactTR: "Contact Us",
-    addTR: "New",
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR: "Home",
@@ -53,7 +52,6 @@ var dataTranslate = {
     projectsTR: "پروژه ها",
     servicesTR: "خدمات",
     contactTR: "راه ارتباطی",
-    addTR: "جدید",
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR: "خانه",
@@ -89,6 +87,7 @@ var dataTranslate = {
 };
 
 const translate = document.getElementById("translate");
+const translateSvg = translate.querySelector(" svg");
 
 translate.addEventListener("click", translateF);
 
@@ -103,7 +102,6 @@ function translateF() {
   const projectsTR = document.querySelector(".projectsTR");
   const servicesTR = document.querySelector(".servicesTR");
   const contactTR = document.querySelector(".contactTR");
-  const addTR = document.querySelector(".addTR");
   const homeTR = document.querySelector(".homeTR");
   const homeHeaderTR = document.querySelector(".homeHeaderTR");
   const homeH3TR1 = document.querySelector(".homeH3TR span:nth-child(1)");
@@ -131,6 +129,7 @@ function translateF() {
 
   if (translateVlaue === "persian") {
     translate.classList.remove("active-TR-setting");
+    translateSvg.classList.remove("active-TR-setting-svg");
     tranST.setAttribute("href", "");
     // --------------------------------Header-Nav-----------------------------------
     tranTR.textContent = dataTranslate[translateVlaue].tranTR;
@@ -142,7 +141,6 @@ function translateF() {
     projectsTR.textContent = dataTranslate[translateVlaue].projectsTR;
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
-    addTR.textContent = dataTranslate[translateVlaue].addTR;
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
@@ -177,6 +175,7 @@ function translateF() {
     translate.setAttribute("language", "english");
   } else if (translateVlaue === "english") {
     translate.classList.add("active-TR-setting");
+    translateSvg.classList.add("active-TR-setting-svg");
     tranST.setAttribute("href", "Style/Translaate-Style.css");
 
     // --------------------------------Header-Nav-----------------------------------
@@ -189,7 +188,6 @@ function translateF() {
     projectsTR.textContent = dataTranslate[translateVlaue].projectsTR;
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
-    addTR.textContent = dataTranslate[translateVlaue].addTR;
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;

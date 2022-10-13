@@ -297,8 +297,11 @@ fill: var(--color-icon-black);
 
 .active-TR-setting{
   background-color: #2c4793c9 !important;
-  color: white;
+  fill: white;
   border-radius: 50px;
+}
+.active-TR-setting-svg{
+  fill: white;
 }
 
 @media (min-width: 993px) {
