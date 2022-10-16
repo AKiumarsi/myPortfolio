@@ -8,6 +8,9 @@ h2 = 15"-"(2) */
   --box-shadow: 0 2rem 3rem var(--color-light);
   --color-web-base: #372c93;
   --color-icon-black: rgb(48, 48, 48);
+  --color-web-base2: #672c93;
+  --color-unactive: #646464;
+  --color-skill-box: #ebe5ff;
 }
 
 
@@ -299,6 +302,7 @@ fill: var(--color-icon-black);
   background-color: #2c4793c9 !important;
   fill: white;
   border-radius: 50px;
+  color: white;
 }
 .active-TR-setting-svg{
   fill: white;

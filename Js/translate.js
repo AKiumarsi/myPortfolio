@@ -87,7 +87,7 @@ var dataTranslate = {
 };
 
 const translate = document.getElementById("translate");
-const translateSvg = translate.querySelector(" svg");
+const translateSvg = translate.querySelector("svg");
 
 translate.addEventListener("click", translateF);
 

@@ -13,18 +13,31 @@ function homeSecPargF() {
     (window.innerWidth < 4001)
   ) {
     homeSecParg.style.height = window.innerHeight - 151 + "px";
-  } else if(window.innerWidth <= 576){
+  } else if (window.innerWidth <= 576) {
     homeSecParg.style.height = "fit-content"
   }
 }
 
 // این برای حذف راهنمای اسکرول با اسکرول کردنه
-window.addEventListener("scroll",angleDownScrollF);
-window.addEventListener("resize",angleDownScrollF);
+window.addEventListener("scroll", angleDownScrollF);
+window.addEventListener("resize", angleDownScrollF);
 angleDownScrollF();
-function angleDownScrollF(){
+function angleDownScrollF() {
   const angleDownScroll = document.getElementById("angleDownScroll");
   if (scrollY > 100 || window.innerHeight < 500) {
     angleDownScroll.style.display = "none";
   }
 }
+
+
+
+/* h1-----------------------------------------section3-Skill----------------------------------------- */
+const skillSecUL1 = document.getElementById("skillSecUL1");
+const skillSecUL1Item = skillSecUL1.querySelectorAll("li");
+
+skillSecUL1Item.forEach((SSU1I) => {
+  SSU1I.addEventListener("click", () => {
+    skillSecUL1.querySelector(".activeSSU1").classList.remove("activeSSU1");
+    SSU1I.classList.add("activeSSU1")
+  })
+})
