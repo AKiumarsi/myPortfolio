@@ -75,6 +75,13 @@
 }
 
 @font-face {
+  font-family: "oswbold";
+  src: url("../Fonts/Oswald-Bold.ttf") format("ttf"),
+  url("../Fonts/Oswald-Bold.woff") format("woff"),
+  url("../Fonts/Oswald-Bold.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "fred";
   src: url("../Fonts/FredokaOne-Regular.ttf") format("ttf"),
   url("../Fonts/FredokaOne-Regular.woff") format("woff"),
