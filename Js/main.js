@@ -31,7 +31,8 @@ function angleDownScrollF() {
 
 
 
-/* h1-----------------------------------------section3-Skill----------------------------------------- */
+
+
 const skillSecUL1 = document.getElementById("skillSecUL1");
 const skillSecUL1Item = skillSecUL1.querySelectorAll("li");
 
@@ -39,6 +40,19 @@ skillSecUL1Item.forEach((SSU1I) => {
   SSU1I.addEventListener("click", () => {
     skillSecUL1.querySelector(".activeSSU1").classList.remove("activeSSU1");
     SSU1I.classList.add("activeSSU1")
-    console.log(SSU1I.length);
+    
+    const skillSecMa = document.querySelectorAll("#skillSecMa");
+    skillSecMa.forEach((SSM) => {
+      const SSU1IV = SSU1I.getAttribute('value');
+      const SSMV = SSM.getAttribute("value");
+      if(SSMV == SSU1IV){
+        SSM.style.display="block";
+
+      }else if(SSMV != SSU1IV){
+        SSM.style.display="none";
+      }
+
+    })
+    
   })
 })
