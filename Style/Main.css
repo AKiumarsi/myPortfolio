@@ -401,6 +401,11 @@ main {
   height: 130px;
 }
 
+.JS-logo{
+  width: 90px;
+  height: 130px;
+}
+
 .skill-sec-ma1 .percent {
   width: 60px;
   height: 60px;
@@ -469,6 +474,16 @@ main {
   stroke-dashoffset: 21.2;
 }
 
+.skill-sec-ma1 .percent svg circle.js-persent {
+  stroke-dashoffset: 53;
+}
+
+.skill-sec-ma1 .percent svg circle.bs-persent {
+  stroke-dashoffset: 37.1;
+}
+.skill-sec-ma1 .percent svg circle.git-persent {
+  stroke-dashoffset: 95.4;
+}
 
 .skill-sec-ma1 .skill-sec-ma1-pnumber {
   z-index: 1;
@@ -498,8 +513,9 @@ main {
   list-style: none;
 }
 
-.skill-sec-ma1 .skill-text ul li:first-child span{
-  font-family: "pin";
+.skill-sec-ma1 .skill-text ul li:first-child{
+  font-family: "oswbold";
+  text-align: center;
 }
 
 .skill-sec-ma1 .skill-text ul table tr td:last-child{

@@ -39,5 +39,6 @@ skillSecUL1Item.forEach((SSU1I) => {
   SSU1I.addEventListener("click", () => {
     skillSecUL1.querySelector(".activeSSU1").classList.remove("activeSSU1");
     SSU1I.classList.add("activeSSU1")
+    console.log(SSU1I.length);
   })
 })
