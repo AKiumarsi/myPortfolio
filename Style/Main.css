@@ -492,18 +492,23 @@ main {
 .skill-sec-ma .percent svg circle.power-persent {
   stroke-dashoffset: 10.6;
 }
+
 .skill-sec-ma .percent svg circle.word-persent {
   stroke-dashoffset: 44.52;
 }
+
 .skill-sec-ma .percent svg circle.excel-persent {
   stroke-dashoffset: 63.6;
 }
+
 .skill-sec-ma .percent svg circle.photoshop-persent {
   stroke-dashoffset: 84.8;
 }
+
 .skill-sec-ma .percent svg circle.figma-persent {
   stroke-dashoffset: 95.4;
 }
+
 .skill-sec-ma .percent svg circle.onenote-persent {
   stroke-dashoffset: 53;
 }
@@ -562,7 +567,7 @@ main {
   margin-bottom: 10px;
 }
 
-.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span{
+.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span {
   padding: 5px;
   background: #ffffff;
   border-radius: 8px;
@@ -571,64 +576,66 @@ main {
 
 
 
-.moreskill{
-  font-family: "bnaz" , "pin";
+.moreskill {
+  font-family: "bnaz", "pin";
 }
 
-.moreskill .row{
+.moreskill .row {
   align-items: center;
 }
 
-.moreskill .moreskill-text ul{
+.moreskill .moreskill-text ul {
   padding: 0px;
 }
 
-.moreskill .moreskill-text ul li{
-  list-style : none;
+.moreskill .moreskill-text ul li {
+  list-style: none;
   padding: 0px 10px 25px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.moreskill .moreskill-text ul li > div:first-child{
+
+.moreskill .moreskill-text ul li>div:first-child {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin-bottom:3px ;
+  margin-bottom: 3px;
 }
 
-.moreskill .moreskill-text ul li > div:last-child{
+.moreskill .moreskill-text ul li>div:last-child {
   width: 100%;
   height: 5px;
   background-color: #b48bd3;
 }
-.moreskill .moreskill-text ul li > div:last-child > div{
+
+.moreskill .moreskill-text ul li>div:last-child>div {
   height: 5px;
   background-color: var(--color-web-base2);
 }
 
-.moreskill .moreskill-text ul li:nth-child(1) > div:last-child > div{
+.moreskill .moreskill-text ul li:nth-child(1)>div:last-child>div {
   width: 80%;
 }
 
-.moreskill .moreskill-text ul li:nth-child(2) > div:last-child > div{
+.moreskill .moreskill-text ul li:nth-child(2)>div:last-child>div {
   width: 68%;
 }
 
-.moreskill .moreskill-text ul li:nth-child(3) > div:last-child > div{
+.moreskill .moreskill-text ul li:nth-child(3)>div:last-child>div {
   width: 90%;
 }
 
-.moreskill .moreskill-text ul li:nth-child(4) > div:last-child > div{
+.moreskill .moreskill-text ul li:nth-child(4)>div:last-child>div {
   width: 46%;
 }
 
-.moreskill .moreskill-text ul li:nth-child(5) > div:last-child > div{
+.moreskill .moreskill-text ul li:nth-child(5)>div:last-child>div {
   width: 100%;
 }
 
 
-.moreskill-img img{
+.moreskill-img img {
   width: 100%;
 }
 
@@ -882,10 +889,39 @@ main {
 
 
 
-  .skill-sec-main .skill-sec-ul1{
-    flex-direction: column;
+  .skill-sec-main .skill-sec-ul1 {
     margin: 10px 5px 30px 5px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
+  .skill-sec-main .skill-sec-ul1>li {
+    color: #ffffff !important;
+    background: #a6a6a7;
+    border: 0px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0px 3px 3px 3px;
+  }
+
+  .skill-sec-main .skill-sec-ul1>li span svg {
+    fill: white;
+  }
+
+  .skill-sec-main .skill-sec-ul1 li:hover svg {
+    fill: white;
+  }
+
+  .skill-sec-main .skill-sec-ul1 .activeSSU1 {
+    color: #ffffff !important;
+    background: var(--color-web-base2);
+    border: 0px;
+    border-radius: 10px;
+    width: fit-content;
+  }
+
+  .activeSSU1 svg {
+    fill: #ffffff !important;
+  }
 
 }

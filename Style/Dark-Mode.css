@@ -88,6 +88,7 @@ body {
 
 
 /* h1-----------------------------------------section3-Skill----------------------------------------- */
+
 .skill-sec-main .skill-sec-ul1 .activeSSU1 {
   color: #9200ff !important;
   border-bottom: 2.5px solid #9200ff;
@@ -109,12 +110,12 @@ body {
   box-shadow: inset 4px 4px 6px -1px rgb(0 0 0 / 20%), inset -4px -4px 6px -1px rgb(20 20 20 / 70%), -0.5px -0.5px 0px rgb(0 0 0 / 15%), 0px 12px 10px -10px rgb(0 0 0 / 5%);
 }
 
-.skill-sec-ma .skill-sec-ma1-pnumber{
+.skill-sec-ma .skill-sec-ma1-pnumber {
   color: #9200ff;
 }
 
-.skill-sec-ma .skill-text{
-  background-color: #322944 ;
+.skill-sec-ma .skill-text {
+  background-color: #322944;
 }
 
 .skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span {
@@ -123,7 +124,7 @@ body {
 }
 
 
-.moreskill .moreskill-text ul li > div:last-child {
+.moreskill .moreskill-text ul li>div:last-child {
   background-color: #424142;
 }
 
@@ -268,6 +269,16 @@ body {
 
   .about-sec-ta tr td span:first-child svg {
     fill: url(#abosecta);
+  }
+
+
+
+  .skill-sec-main .skill-sec-ul1 .activeSSU1 {
+    color: white !important;
+    border-bottom: 0;
+  }
+  .skill-sec-main .skill-sec-ul1>li {
+    background: #484848;
   }
 
 }
