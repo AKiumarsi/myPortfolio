@@ -28,7 +28,7 @@ var dataTranslate = {
     aboutH3TR: "Front-end developer",
     aboutH3JuTR: "Junior",
     aboutsecpTR: "Considering my great passion for the field of programming, I intend to continue the front-end path so that I can achieve sufficient expertise;",
-    aboutsecta1TR :"For more information",
+    aboutsecta1TR: "For more information",
     aboutsecta2TR: "Learning period:",
     aboutsecta3_1TR: "for",
     aboutsecta3_2TR: "months from",
@@ -39,6 +39,9 @@ var dataTranslate = {
     aboutsecta6TR: "Certificates:",
     aboutsecta7TR: "internship",
     aboutsecta8TR: "Remote work intern of Kiaob company",
+
+    // --------------------------------section3-Skill-----------------------------------
+    skillHeaderTR: "Skills",
   },
   persian: {
 
@@ -72,7 +75,7 @@ var dataTranslate = {
     شاخه\
     فرانت- اند، قصد ادامه این مسیر را داشته تا بتوانم به تخصص کافی دست پیدا کنم؛ و تاجایی\
     که می توانم به هم نوعانم کمک کنم.",
-    aboutsecta1TR:"جهت آشنایی بیشتر",
+    aboutsecta1TR: "جهت آشنایی بیشتر",
     aboutsecta2TR: "مدت یادگیری:",
     aboutsecta3_1TR: "به مدت",
     aboutsecta3_2TR: "ماه از تاریخ",
@@ -83,6 +86,9 @@ var dataTranslate = {
     aboutsecta6TR: "مدارک:",
     aboutsecta7TR: "کارآموزی",
     aboutsecta8TR: "کارآموز دورکار شرکت کیاوب",
+
+    // --------------------------------section3-Skill-----------------------------------
+    skillHeaderTR: "مهارت ها",
   },
 };
 
@@ -125,7 +131,8 @@ function translateF() {
   const aboutsecta6TR = document.querySelector(".aboutsecta6TR");
   const aboutsecta7TR = document.querySelector(".aboutsecta7TR");
   const aboutsecta8TR = document.querySelector(".aboutsecta8TR");
-  
+  const skillHeaderTR = document.querySelector(".skillHeaderTR");
+
 
   if (translateVlaue === "persian") {
     translate.classList.remove("active-TR-setting");
@@ -158,7 +165,7 @@ function translateF() {
     aboutsecpTR.textContent = dataTranslate[translateVlaue].aboutsecpTR;
     aboutsecta1TR.textContent = dataTranslate[translateVlaue].aboutsecta1TR;
 
-    
+
     aboutsecta2TR.textContent = dataTranslate[translateVlaue].aboutsecta2TR;
     aboutsecta3_1TR.textContent = dataTranslate[translateVlaue].aboutsecta3_1TR;
     aboutsecta3_2TR.textContent = dataTranslate[translateVlaue].aboutsecta3_2TR;
@@ -169,6 +176,9 @@ function translateF() {
     aboutsecta6TR.textContent = dataTranslate[translateVlaue].aboutsecta6TR;
     aboutsecta7TR.textContent = dataTranslate[translateVlaue].aboutsecta7TR;
     aboutsecta8TR.textContent = dataTranslate[translateVlaue].aboutsecta8TR;
+
+    // --------------------------------section3-Skill-----------------------------------
+    skillHeaderTR.textContent = dataTranslate[translateVlaue].skillHeaderTR;
 
 
 
@@ -215,6 +225,10 @@ function translateF() {
     aboutsecta6TR.textContent = dataTranslate[translateVlaue].aboutsecta6TR;
     aboutsecta7TR.textContent = dataTranslate[translateVlaue].aboutsecta7TR;
     aboutsecta8TR.textContent = dataTranslate[translateVlaue].aboutsecta8TR;
+
+
+    // --------------------------------section3-Skill-----------------------------------
+    skillHeaderTR.textContent = dataTranslate[translateVlaue].skillHeaderTR;
 
     translate.setAttribute("language", "persian");
   }

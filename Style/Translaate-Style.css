@@ -54,7 +54,9 @@
 
 
 
-
+.sect3-skill{
+  direction: ltr;
+}
 
 @media (max-width: 768px) {
   .shape img {
