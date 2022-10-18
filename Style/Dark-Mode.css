@@ -87,6 +87,45 @@ body {
 
 
 
+/* h1-----------------------------------------section3-Skill----------------------------------------- */
+.skill-sec-main .skill-sec-ul1 .activeSSU1 {
+  color: #9200ff !important;
+  border-bottom: 2.5px solid #9200ff;
+}
+
+.skill-sec-ma .skill-sec-ma1-box {
+  border: 3px solid #322944;
+}
+
+.skill-sec-ma .percent {
+  background-color: #322944;
+}
+
+.skill-sec-ma .percent .outer {
+  box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%), -6px -6px 10px -1px rgb(30 29 29 / 70%);
+}
+
+.skill-sec-ma .percent .inner {
+  box-shadow: inset 4px 4px 6px -1px rgb(0 0 0 / 20%), inset -4px -4px 6px -1px rgb(20 20 20 / 70%), -0.5px -0.5px 0px rgb(0 0 0 / 15%), 0px 12px 10px -10px rgb(0 0 0 / 5%);
+}
+
+.skill-sec-ma .skill-sec-ma1-pnumber{
+  color: #9200ff;
+}
+
+.skill-sec-ma .skill-text{
+  background-color: #322944 ;
+}
+
+.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span {
+  background: #5b00a1;
+  box-shadow: 3px 3px 9px 0px #2e074ec9;
+}
+
+
+.moreskill .moreskill-text ul li > div:last-child {
+  background-color: #424142;
+}
 
 /* h1-----------------------------------------max-width:768px----------------------------------------- */
 /* h1-----------------------------------------max-width:768px----------------------------------------- */
