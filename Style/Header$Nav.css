@@ -891,7 +891,5 @@ fill: var(--color-icon-black);
   .translator {
     display: none;
   }
-  .taskbar-mobile {
-    margin-bottom: 5px;
-  }
+  
 }
