@@ -8,8 +8,7 @@ var dataTranslate = {
     aboutTR: "About",
     skillTR: "Skill",
     schoolTR: "Education",
-    projectsTR: "Projects",
-    servicesTR: "Services",
+    servicesTR: "language",
     contactTR: "Contact Us",
 
     // --------------------------------section1-home-----------------------------------
@@ -52,8 +51,7 @@ var dataTranslate = {
     aboutTR: "درباره من",
     skillTR: "مهارت ها",
     schoolTR: "تحصیلات",
-    projectsTR: "پروژه ها",
-    servicesTR: "خدمات",
+    servicesTR: "زبان",
     contactTR: "راه ارتباطی",
 
     // --------------------------------section1-home-----------------------------------
@@ -105,7 +103,6 @@ function translateF() {
   const aboutTR = document.querySelector(".aboutTR");
   const skillTR = document.querySelector(".skillTR");
   const schoolTR = document.querySelector(".schoolTR");
-  const projectsTR = document.querySelector(".projectsTR");
   const servicesTR = document.querySelector(".servicesTR");
   const contactTR = document.querySelector(".contactTR");
   const homeTR = document.querySelector(".homeTR");
@@ -145,7 +142,6 @@ function translateF() {
     aboutTR.textContent = dataTranslate[translateVlaue].aboutTR;
     skillTR.textContent = dataTranslate[translateVlaue].skillTR;
     schoolTR.textContent = dataTranslate[translateVlaue].schoolTR;
-    projectsTR.textContent = dataTranslate[translateVlaue].projectsTR;
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
 
@@ -195,7 +191,6 @@ function translateF() {
     aboutTR.textContent = dataTranslate[translateVlaue].aboutTR;
     skillTR.textContent = dataTranslate[translateVlaue].skillTR;
     schoolTR.textContent = dataTranslate[translateVlaue].schoolTR;
-    projectsTR.textContent = dataTranslate[translateVlaue].projectsTR;
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
 

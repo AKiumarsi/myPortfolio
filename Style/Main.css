@@ -13,7 +13,8 @@ main {
 /* h1-----------------------------------------section1-Home----------------------------------------- */
 .home-header,
 .about-header,
-.skill-header {
+.skill-header,
+.language-header {
   font-family: "promoter", "osw";
   font-size: 40px;
 }
@@ -637,6 +638,160 @@ main {
 
 .moreskill-img img {
   width: 100%;
+}
+
+
+/* h1-----------------------------------------section4-language----------------------------------------- */
+.sec4-language-main .seclan-3d {
+  display: flex;
+  justify-content: center;
+}
+
+.sec4-language-main .seclan-3d img {
+  width: 85%;
+}
+
+
+
+
+
+.sec4-language-main details {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+  overflow: hidden;
+  margin: 10px 10px 20px 10px;
+  width: inherit;
+}
+
+.sec4-language-main summary {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: var(--color-web-base2);
+  font-family: "homa";
+  font-size: 19px;
+}
+
+.sec4-language-main summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color-web-base2);
+  position: absolute;
+  top: 1.1em;
+  left: 0.5rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+.sec4-language-main details[open]>summary:before {
+  transform: rotate(90deg);
+}
+
+
+.sec4-language-main .language-sec-detailes div.lan-sec-detailes-sumtext {
+  padding: 10px 5px 10px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec4-language-main .language-sec-detailes summary div:last-child {
+  width: 100%;
+  height: 5px;
+  background: #b48bd3;
+}
+
+.sec4-language-main .language-sec-detailes div:last-child>div.percent {
+  width: 45%;
+  height: 5px;
+  background-color: var(--color-web-base2);
+}
+
+.sec4-language-main .language-sec-detailes[open] summary div:last-child {
+  width: 0;
+  height: 0;
+}
+
+.sec4-language-main .language-sec-detailes[open] div:last-child>div.percent {
+  height: 0;
+  width: 0;
+}
+
+.sec4-language-main .language-sec-detailes .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "bnaz", "pin";
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .read-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer {
+  width: 100%;
+  height: 3px;
+  background-color: #b48bd3;
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .percent-inner {
+
+  height: 3px;
+  background-color: var(--color-web-base2);
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .read-inner {
+  width: 50%;
+}
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .writing-inner {
+  width: 40%;
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .listen-inner {
+  width: 20%;
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .conv-inner {
+  width: 35%;
+}
+
+
+.sec4-language-main .language-sec-detailes div:last-child>div.percent-arabic {
+  width: 70%;
+  height: 5px;
+  background-color: var(--color-web-base2);
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .read-arabic-inner {
+  width: 95%;
+}
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .writing-arabic-inner {
+  width: 70%;
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .listen-arabic-inner {
+  width: 50%;
+}
+
+.sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .conv-arabic-inner {
+  width: 60%;
 }
 
 
