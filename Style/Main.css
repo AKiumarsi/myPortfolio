@@ -14,7 +14,9 @@ main {
 .home-header,
 .about-header,
 .skill-header,
-.language-header {
+.language-header,
+.sec5-shcool-header,
+.sec6-contact-header {
   font-family: "promoter", "osw";
   font-size: 40px;
 }
@@ -760,6 +762,7 @@ main {
 .sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .read-inner {
   width: 50%;
 }
+
 .sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .writing-inner {
   width: 40%;
 }
@@ -782,6 +785,7 @@ main {
 .sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .read-arabic-inner {
   width: 95%;
 }
+
 .sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .writing-arabic-inner {
   width: 70%;
 }
@@ -793,6 +797,141 @@ main {
 .sec4-language-main .language-sec-detailes .content .cont-sec .percent-outer .conv-arabic-inner {
   width: 60%;
 }
+
+
+
+
+
+
+/* h1-----------------------------------------section5-School----------------------------------------- */
+.sec5-school-main .sec5-school-text {
+  font-family: "bnaz", "pin";
+  font-size: 20px;
+}
+
+.sec5-school-main .row {
+  align-items: center;
+  justify-content: center;
+}
+
+.sec5-school-main .sec5-school-text ul {
+  margin: 10px 10px 20px 10px;
+  padding: 0px;
+}
+
+.sec5-school-main .sec5-school-text ul li {
+  list-style: none;
+}
+
+.sec5-school-main .sec5-school-text ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+.sec5-school-main .sec5-school-img img {
+  width: 100%;
+}
+
+.sec5-school-alert {
+  display: flex;
+  justify-content: center;
+}
+
+.sec5-school-alert p {
+  padding: 10px;
+  background: #6158b3;
+  width: fit-content;
+  border-radius: 10px;
+  color: white;
+  font-family: 'bnaz', 'pin';
+  max-width: 90%;
+}
+
+
+/* h1-----------------------------------------section5-School----------------------------------------- */
+
+.sec6-contact-main .row {
+  align-items: center;
+}
+
+.sec6-contact-main .sec6-contact-text ul {
+  margin: 10px 10px 20px 10px;
+  padding: 0px;
+}
+
+.sec6-contact-main .sec6-contact-text ul li {
+  list-style: none;
+  margin: 10px;
+  width: fit-content;
+  transition: color 250ms;
+}
+
+.sec6-contact-main .sec6-contact-text ul li span svg {
+  width: 25px;
+  height: 25px;
+  fill: rgb(72 71 71);
+  transition: fill 250ms;
+}
+
+.sec6-contact-main .sec6-contact-text ul li span:last-of-type {
+  font-size: 18px;
+  font-family: "bnaz", "pin";
+  vertical-align: sub;
+}
+
+.sec6-contact-main .sec6-contact-text ul li div.hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  height: 3px;
+}
+
+.sec6-contact-main .sec6-contact-text ul li div.hover div.hover-inner {
+  width: 0%;
+  height: 3px;
+  transition: all 250ms;
+  background: var(--color-web-base2);
+}
+
+.sec6-contact-main .sec6-contact-text ul li:hover div.hover div.hover-inner {
+  width: 100%;
+}
+
+.sec6-contact-main .sec6-contact-text ul li:hover {
+  color: var(--color-web-base2);
+}
+
+.sec6-contact-main .sec6-contact-text ul li:hover span svg {
+  fill: var(--color-web-base2);
+}
+
+.sec6-contact-main .sec6-contact-form {
+  padding: 20px;
+}
+
+.sec6-contact-main .sec6-contact-form form div input {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 2px solid #857f7f;
+  font-family: 'bnaz', 'pin';
+}
+
+.sec6-contact-main .sec6-contact-form form div textarea,
+.sec6-contact-main .sec6-contact-form form div button {
+  border-radius: 6px;
+  border: 2px solid #857f7f;
+  font-family: 'bnaz', 'pin';
+}
+
+
+
+/* h1-----------------------------------------Footer----------------------------------------- */
+footer.footer-page div{
+  background-color: red;
+}
+
 
 
 
