@@ -100,7 +100,7 @@ menuIcon.addEventListener("click", () => {
 // h2---------------dark-backgraound-whenNav-expanded--------------h2
 menuDarkBack.addEventListener("click", () => {
   const settingItemText = document.querySelectorAll(".setting-item-text");
-
+  const navlinkTextStyle = document.querySelectorAll(".navlink-text-style");
   nav.classList.remove("nav-width-tablet");
   for (let x = 0; x < navlinkTextStyle.length; x++) {
     navlinkTextStyle[x].classList.add("displayNone-tablet");
