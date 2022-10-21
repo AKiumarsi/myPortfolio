@@ -40,6 +40,17 @@ body {
   background-color: white;
 }
 
+.search-header input {
+  background: var(--color-dark-background);
+}
+.search-header input:focus {
+  background: var(--color-dark-background);
+}
+
+.search-header span svg {
+  fill: #a3a3a3;
+}
+
 .navbar-nav li.active {
   background-color: var(--color-dark);
 }

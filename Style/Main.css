@@ -877,6 +877,7 @@ main {
   font-size: 18px;
   font-family: "bnaz", "pin";
   vertical-align: sub;
+  word-break: break-all;
 }
 
 .sec6-contact-main .sec6-contact-text ul li div.hover {
@@ -925,20 +926,20 @@ main {
   font-family: 'bnaz', 'pin';
 }
 
-.sec6-contact-main .sec6-contact-form textarea{
+.sec6-contact-main .sec6-contact-form textarea {
   width: 17em;
 }
 
 
 /* h1-----------------------------------------Footer----------------------------------------- */
 
-.footer-page div.color{
+.footer-page div.color {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer-page div.width{
+.footer-page div.width {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -946,22 +947,22 @@ main {
   flex-wrap: wrap;
 }
 
-footer.footer-page > div.color{
+footer.footer-page>div.color {
   background-color: white;
 }
 
-.footer-page div.width{
+.footer-page div.width {
   width: 50%;
 }
 
-.footer-page > div h4{
-  font-family: "Beirut" , "oswbold";
+.footer-page>div h4 {
+  font-family: "Beirut", "oswbold";
   margin-top: 10px;
 }
 
-.footer-page p{
+.footer-page p {
   text-align: center;
-  font-family: "bnaz" , "pin";
+  font-family: "bnaz", "pin";
 }
 
 
@@ -969,14 +970,14 @@ footer.footer-page > div.color{
 
 
 
-@media (min-width: 1400px){
-  .sec6-contact-main .sec6-contact-form textarea{
+@media (min-width: 1400px) {
+  .sec6-contact-main .sec6-contact-form textarea {
     width: 24em;
   }
 }
 
-@media (max-width: 1200px){
-  .sec6-contact-main .sec6-contact-form textarea{
+@media (max-width: 1200px) {
+  .sec6-contact-main .sec6-contact-form textarea {
     width: 18em;
   }
 }
@@ -1031,7 +1032,7 @@ footer.footer-page > div.color{
   }
 
 
-  .sec6-contact-main .sec6-contact-form textarea{
+  .sec6-contact-main .sec6-contact-form textarea {
     width: 10em;
   }
 }
@@ -1269,10 +1270,12 @@ footer.footer-page > div.color{
   }
 
 
+  .sec6-contact-main .sec6-contact-form form div textarea {
+    width: 100%;
+  }
 
 
-
-  .footer-page .color{
+  .footer-page .color {
     padding-bottom: 60px;
   }
 }
