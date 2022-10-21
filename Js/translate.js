@@ -41,6 +41,54 @@ var dataTranslate = {
 
     // --------------------------------section3-Skill-----------------------------------
     skillHeaderTR: "Skills",
+    skill1TR: "Programming",
+    skill2TR: "Software",
+    skill3TR: "more",
+    S4TR: "Learn:",
+    skill5TR: "Advanced",
+    S6TR: "Medium",
+    S7TR: "Beginner",
+    skill8TR: "team work",
+    skill9TR: "responsibility",
+    skill10TR: "the learner",
+    skill11TR: "Time Management",
+    skill12TR: "interest",
+
+
+    // --------------------------------section4-Language-----------------------------------
+    languageHTR: "Language",
+    lan1TR: "Enlgish",
+    L2TR: "Reading",
+    L3TR: "Writing",
+    L4TR: "Listening",
+    L5TR: "Conversation",
+    lan6TR: "Arabic",
+
+    // --------------------------------section5-School-----------------------------------
+    schoolHTR: "Education",
+    school1TR: "Talashgaran High School",
+    school2TR: "GPA: 17",
+    school3TR: "12th grade",
+    school4TR: "I have been able to work full-time (7-8 hours) despite being busy with my studies.",
+
+    // --------------------------------section6-Contack-----------------------------------
+    contHTR: "Contact Us",
+    cont1TR: "Github",
+    cont2TR: "Linked in",
+    cont3TR: "Whatsapp",
+    cont4TR: "Fname",
+    cont5TR: "Lname",
+    cont6TR: "Phone Number",
+    cont7TR: "Email",
+    cont8TR: "your message",
+    cont9TR: "Send",
+
+
+    // --------------------------------Footer-----------------------------------
+    footerHTR: "End",
+    footer1TR: "Designed and developed by Abolfazl Kiyomurthi",
+    footer2TR: "I hope you liked it;",
+    footer3TR: "This is the first start for this site and it is going to explode with updates in the future.",
   },
   persian: {
 
@@ -87,11 +135,61 @@ var dataTranslate = {
 
     // --------------------------------section3-Skill-----------------------------------
     skillHeaderTR: "مهارت ها",
+    skill1TR: "برنامه نویسی",
+    skill2TR: "نرم افزار",
+    skill3TR: "مهارت نرم",
+    S4TR: "منابع:",
+    skill5TR: "پیشرفته",
+    S6TR: "متوسطه",
+    S7TR: "پیشرفته",
+    skill8TR: "کارتیمی",
+    skill9TR: "مسؤولیت پذیری",
+    skill10TR: "یادگیرنده مشتاق",
+    skill11TR: "مدیریت زمان",
+    skill12TR: "زمان",
+
+
+
+    // --------------------------------section4-Language-----------------------------------
+    languageHTR: "زبان",
+    lan1TR: "انگلیسی",
+    L2TR: "خواندن",
+    L3TR: "نوشتن",
+    L4TR: "شنیدن",
+    L5TR: "مکالمه",
+    lan6TR: "عربی",
+
+    // --------------------------------section5-School-----------------------------------
+    schoolHTR: "تحصیلات",
+    school1TR: "دبیرستان تلاشگران",
+    school2TR: "معدل: 17",
+    school3TR: "پایه دوازدهم",
+    school4TR: "اینجانب با وجود مشلغه تحصیل قادر بوده به صورت تمام وقت (7-8 ساعت) فعالیت کنم.",
+
+    // --------------------------------section6-Contack-----------------------------------
+    contHTR: "ارتباط با ما",
+    cont1TR: "گیت هاب",
+    cont2TR: "لینکدین",
+    cont3TR: "واتساپ",
+    cont4TR: "نام",
+    cont5TR: "نام خانوادگی",
+    cont6TR: "شماره همراه",
+    cont7TR: "ایمیل",
+    cont8TR: "پیام شما",
+    cont9TR: "ارسال",
+
+    // --------------------------------Footer-----------------------------------
+    footerHTR: "پایان سایت",
+    footer1TR: "طراحی و توسعه توسط ابوالفضل کیومرثی",
+    footer2TR: "امیدوارم خوشتون اومده باشه؛",
+    footer3TR: "این اولین شروع برای این سایت هستش و قراره در آینده با به روزرسانی هاش بتروکنه.",
+
   },
 };
 
 const translate = document.getElementById("translate");
 const translateSvg = translate.querySelector("svg");
+
 
 translate.addEventListener("click", translateF);
 
@@ -129,6 +227,44 @@ function translateF() {
   const aboutsecta7TR = document.querySelector(".aboutsecta7TR");
   const aboutsecta8TR = document.querySelector(".aboutsecta8TR");
   const skillHeaderTR = document.querySelector(".skillHeaderTR");
+  const skill1TR = document.querySelector(".skill1TR");
+  const skill2TR = document.querySelector(".skill2TR");
+  const skill3TR = document.querySelector(".skill3TR");
+  const skill4TR = document.querySelectorAll(".skill4TR");
+  const skill5TR = document.querySelector(".skill5TR");
+  const skill6TR = document.querySelectorAll(".skill6TR");
+  const skill7TR = document.querySelectorAll(".skill7TR");
+  const skill8TR = document.querySelector(".skill8TR");
+  const skill9TR = document.querySelector(".skill9TR");
+  const skill10TR = document.querySelector(".skill10TR");
+  const skill11TR = document.querySelector(".skill11TR");
+  const skill12TR = document.querySelector(".skill12TR");
+  const languageHTR = document.querySelector(".languageHTR");
+  const lan1TR = document.querySelector(".lan1TR");
+  const lan2TR = document.querySelectorAll(".lan2TR");
+  const lan3TR = document.querySelectorAll(".lan3TR");
+  const lan4TR = document.querySelectorAll(".lan4TR");
+  const lan5TR = document.querySelectorAll(".lan5TR");
+  const lan6TR = document.querySelector(".lan6TR");
+  const schoolHTR = document.querySelector(".schoolHTR");
+  const school1TR = document.querySelector(".school1TR");
+  const school2TR = document.querySelector(".school2TR");
+  const school3TR = document.querySelector(".school3TR");
+  const school4TR = document.querySelector(".school4TR");
+  const contHTR = document.querySelector(".contHTR");
+  const cont1TR = document.querySelector(".cont1TR");
+  const cont2TR = document.querySelector(".cont2TR");
+  const cont3TR = document.querySelector(".cont3TR");
+  const cont4TR = document.querySelector(".cont4TR");
+  const cont5TR = document.querySelector(".cont5TR");
+  const cont6TR = document.querySelector(".cont6TR");
+  const cont7TR = document.querySelector(".cont7TR");
+  const cont8TR = document.querySelector(".cont8TR");
+  const cont9TR = document.querySelector(".cont9TR");
+  const footerHTR = document.querySelector(".footerHTR");
+  const footer1TR = document.querySelector(".footer1TR");
+  const footer2TR = document.querySelector(".footer2TR");
+  const footer3TR = document.querySelector(".footer3TR");
 
 
   if (translateVlaue === "persian") {
@@ -175,7 +311,71 @@ function translateF() {
 
     // --------------------------------section3-Skill-----------------------------------
     skillHeaderTR.textContent = dataTranslate[translateVlaue].skillHeaderTR;
+    skill1TR.textContent = dataTranslate[translateVlaue].skill1TR;
+    skill2TR.textContent = dataTranslate[translateVlaue].skill2TR;
+    skill3TR.textContent = dataTranslate[translateVlaue].skill3TR;
+    skill4TR.forEach(S4TR => {
+      S4TR.textContent = dataTranslate[translateVlaue].S4TR;
+    })
+    skill5TR.textContent = dataTranslate[translateVlaue].skill5TR;
+    skill6TR.forEach(S6TR => {
+      S6TR.textContent = dataTranslate[translateVlaue].S6TR;
+    })
+    skill7TR.forEach(S7TR => {
+      S7TR.textContent = dataTranslate[translateVlaue].S7TR;
+    })
+    skill8TR.textContent = dataTranslate[translateVlaue].skill8TR;
+    skill9TR.textContent = dataTranslate[translateVlaue].skill9TR;
+    skill10TR.textContent = dataTranslate[translateVlaue].skill10TR;
+    skill11TR.textContent = dataTranslate[translateVlaue].skill11TR;
+    skill12TR.textContent = dataTranslate[translateVlaue].skill12TR;
 
+
+    // --------------------------------section4-Language-----------------------------------
+    languageHTR.textContent = dataTranslate[translateVlaue].languageHTR;
+    lan1TR.textContent = dataTranslate[translateVlaue].lan1TR;
+    lan2TR.forEach(L2TR => {
+      L2TR.textContent = dataTranslate[translateVlaue].L2TR;
+    })
+    lan3TR.forEach(L3TR => {
+      L3TR.textContent = dataTranslate[translateVlaue].L3TR;
+    })
+    lan4TR.forEach(L4TR => {
+      L4TR.textContent = dataTranslate[translateVlaue].L4TR;
+    })
+    lan5TR.forEach(L5TR => {
+      L5TR.textContent = dataTranslate[translateVlaue].L5TR;
+    })
+
+    lan6TR.textContent = dataTranslate[translateVlaue].lan6TR;
+
+
+    // --------------------------------section5-School-----------------------------------
+    schoolHTR.textContent = dataTranslate[translateVlaue].schoolHTR;
+    school1TR.textContent = dataTranslate[translateVlaue].school1TR;
+    school2TR.textContent = dataTranslate[translateVlaue].school2TR;
+    school3TR.textContent = dataTranslate[translateVlaue].school3TR;
+    school4TR.textContent = dataTranslate[translateVlaue].school4TR;
+
+    // --------------------------------section6-ContactUs-----------------------------------
+    contHTR.textContent = dataTranslate[translateVlaue].contHTR;
+    cont1TR.textContent = dataTranslate[translateVlaue].cont1TR;
+    cont2TR.textContent = dataTranslate[translateVlaue].cont2TR;
+    cont3TR.textContent = dataTranslate[translateVlaue].cont3TR;
+
+    cont4TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont4TR);
+    cont5TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont5TR);
+    cont6TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont6TR);
+    cont7TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont7TR);
+    cont8TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont8TR);
+    cont9TR.textContent = dataTranslate[translateVlaue].cont9TR;
+
+
+    // --------------------------------Footer-----------------------------------
+    footerHTR.textContent = dataTranslate[translateVlaue].footerHTR;
+    footer1TR.textContent = dataTranslate[translateVlaue].footer1TR;
+    footer2TR.textContent = dataTranslate[translateVlaue].footer2TR;
+    footer3TR.textContent = dataTranslate[translateVlaue].footer3TR;
 
 
     translate.setAttribute("language", "english");
@@ -224,6 +424,71 @@ function translateF() {
 
     // --------------------------------section3-Skill-----------------------------------
     skillHeaderTR.textContent = dataTranslate[translateVlaue].skillHeaderTR;
+    skill1TR.textContent = dataTranslate[translateVlaue].skill1TR;
+    skill2TR.textContent = dataTranslate[translateVlaue].skill2TR;
+    skill3TR.textContent = dataTranslate[translateVlaue].skill3TR;
+    skill4TR.forEach(S4TR => {
+      S4TR.textContent = dataTranslate[translateVlaue].S4TR;
+    })
+    skill5TR.textContent = dataTranslate[translateVlaue].skill5TR;
+    skill6TR.forEach(S6TR => {
+      S6TR.textContent = dataTranslate[translateVlaue].S6TR;
+    })
+    skill7TR.forEach(S7TR => {
+      S7TR.textContent = dataTranslate[translateVlaue].S7TR;
+    })
+    skill8TR.textContent = dataTranslate[translateVlaue].skill8TR;
+    skill9TR.textContent = dataTranslate[translateVlaue].skill9TR;
+    skill10TR.textContent = dataTranslate[translateVlaue].skill10TR;
+    skill11TR.textContent = dataTranslate[translateVlaue].skill11TR;
+    skill12TR.textContent = dataTranslate[translateVlaue].skill12TR;
+
+
+    // --------------------------------section4-Language-----------------------------------
+    languageHTR.textContent = dataTranslate[translateVlaue].languageHTR;
+    lan1TR.textContent = dataTranslate[translateVlaue].lan1TR;
+    lan2TR.forEach(L2TR => {
+      L2TR.textContent = dataTranslate[translateVlaue].L2TR;
+    })
+    lan3TR.forEach(L3TR => {
+      L3TR.textContent = dataTranslate[translateVlaue].L3TR;
+    })
+    lan4TR.forEach(L4TR => {
+      L4TR.textContent = dataTranslate[translateVlaue].L4TR;
+    })
+    lan5TR.forEach(L5TR => {
+      L5TR.textContent = dataTranslate[translateVlaue].L5TR;
+    })
+
+    lan6TR.textContent = dataTranslate[translateVlaue].lan6TR;
+
+
+    // --------------------------------section5-School-----------------------------------
+    schoolHTR.textContent = dataTranslate[translateVlaue].schoolHTR;
+    school1TR.textContent = dataTranslate[translateVlaue].school1TR;
+    school2TR.textContent = dataTranslate[translateVlaue].school2TR;
+    school3TR.textContent = dataTranslate[translateVlaue].school3TR;
+    school4TR.textContent = dataTranslate[translateVlaue].school4TR;
+
+    // --------------------------------section6-ContactUs-----------------------------------
+    contHTR.textContent = dataTranslate[translateVlaue].contHTR;
+    cont1TR.textContent = dataTranslate[translateVlaue].cont1TR;
+    cont2TR.textContent = dataTranslate[translateVlaue].cont2TR;
+    cont3TR.textContent = dataTranslate[translateVlaue].cont3TR;
+
+    cont4TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont4TR);
+    cont5TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont5TR);
+    cont6TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont6TR);
+    cont7TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont7TR);
+    cont8TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont8TR);
+    cont9TR.textContent = dataTranslate[translateVlaue].cont9TR;
+
+    // --------------------------------Footer-----------------------------------
+    footerHTR.textContent = dataTranslate[translateVlaue].footerHTR;
+    footer1TR.textContent = dataTranslate[translateVlaue].footer1TR;
+    footer2TR.textContent = dataTranslate[translateVlaue].footer2TR;
+    footer3TR.textContent = dataTranslate[translateVlaue].footer3TR;
+
 
     translate.setAttribute("language", "persian");
   }

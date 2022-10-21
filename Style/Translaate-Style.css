@@ -54,9 +54,38 @@
 
 
 
-.sect3-skill{
+.sect3-skill,
+footer{
   direction: ltr;
 }
+
+
+main article > section{
+  direction: ltr;
+}
+
+
+.skill-sec-ma .skill-text ul li tr:first-child td:first-child {
+  padding-left: 0px;
+  padding-right: 6px;
+}
+
+.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span{
+  font-size: 13px;
+}
+
+.moreskill .moreskill-text ul li>div:first-child{
+  font-family: "pin";
+}
+
+.sec4-language-main summary,
+.sec4-language-main .language-sec-detailes .content .cont-sec .read-text,
+.sec5-school-main .sec5-school-text,
+.sec5-school-alert p,
+.sec6-contact-main .sec6-contact-text ul li span:last-of-type{
+  font-family: "pin";
+}
+
 
 @media (max-width: 768px) {
   .shape img {
