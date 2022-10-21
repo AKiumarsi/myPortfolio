@@ -928,8 +928,37 @@ main {
 
 
 /* h1-----------------------------------------Footer----------------------------------------- */
-footer.footer-page div{
-  background-color: red;
+
+.footer-page div.color{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-page div.width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+footer.footer-page > div.color{
+  background-color: white;
+}
+
+.footer-page div.width{
+  width: 50%;
+}
+
+.footer-page > div h4{
+  font-family: "Beirut" , "oswbold";
+  margin-top: 10px;
+}
+
+.footer-page p{
+  text-align: center;
+  font-family: "bnaz" , "pin";
 }
 
 
@@ -1218,4 +1247,11 @@ footer.footer-page div{
     fill: #ffffff !important;
   }
 
+
+
+
+
+  .footer-page .color{
+    padding-bottom: 60px;
+  }
 }
