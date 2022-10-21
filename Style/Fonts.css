@@ -94,4 +94,9 @@
   url("../Fonts/KaushanScript-Regular.woff2") format("woff2");
 }
 
-
+@font-face {
+  font-family: "alfa";
+  src: url("../Fonts/AlfaSlabOne-Regular.ttf") format("ttf"),
+  url("../Fonts/AlfaSlabOne-Regular.woff") format("woff"),
+  url("../Fonts/AlfaSlabOne-Regular.woff2") format("woff2");
+}
