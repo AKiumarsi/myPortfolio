@@ -925,6 +925,9 @@ main {
   font-family: 'bnaz', 'pin';
 }
 
+.sec6-contact-main .sec6-contact-form textarea{
+  width: 17em;
+}
 
 
 /* h1-----------------------------------------Footer----------------------------------------- */
@@ -964,6 +967,19 @@ footer.footer-page > div.color{
 
 
 
+
+
+@media (min-width: 1400px){
+  .sec6-contact-main .sec6-contact-form textarea{
+    width: 24em;
+  }
+}
+
+@media (max-width: 1200px){
+  .sec6-contact-main .sec6-contact-form textarea{
+    width: 18em;
+  }
+}
 
 /* h1-----------------------------------------max-width:992px----------------------------------------- */
 /* h1-----------------------------------------max-width:992px----------------------------------------- */
@@ -1012,6 +1028,11 @@ footer.footer-page > div.color{
 
   .shape img {
     width: 205px;
+  }
+
+
+  .sec6-contact-main .sec6-contact-form textarea{
+    width: 10em;
   }
 }
 
