@@ -931,6 +931,11 @@ main {
 }
 
 
+.sec6-contact-main .sec6-contact-form form div textarea{
+  margin-bottom: 10px;
+}
+
+
 /* h1-----------------------------------------Footer----------------------------------------- */
 
 .footer-page div.color {
@@ -965,6 +970,9 @@ footer.footer-page>div.color {
   font-family: "bnaz", "pin";
 }
 
+.footer-page p span:last-child{
+  font-family: none;
+}
 
 
 

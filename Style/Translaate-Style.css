@@ -1,8 +1,12 @@
+
+.header-page .search-header div.sh{
+  direction: ltr;
+}
+
 .setting-item-text {
   font-family: "pop";
   font-size: 12px;
   padding: 0px;
-  padding-right: 7px;
 }
 
 .navlink-text-style {
@@ -109,5 +113,9 @@ main article > section{
   .shape:hover img {
     transform: none;
     width: 100%;
+  }
+  
+  .setting-item-text {
+    padding: 0;
   }
 }

@@ -40,6 +40,21 @@ h2 = 15"-"(2) */
   border: 2px solid #888787;
   padding: 5px;
   border-radius: 10px;
+  font-family: "bnaz", "pin";
+}
+
+.header-page .search-header div.shpop{
+  display: none;
+}
+
+.header-page .search-header div.sh input:focus + .shpop{
+  display: block;
+  position: absolute;
+  top: 80px;
+  background: var(--color-web-base);
+  padding: 3px 20px;
+  color: white;
+  border-radius: 10px;
 }
 
 .header-one {
@@ -64,20 +79,22 @@ h2 = 15"-"(2) */
   width: 100%;
 }
 
-.search-header input{
+.search-header input {
   border: 0;
   background: var(--background-color);
 }
 
-.search-header input:focus{
+.search-header input:focus {
   border: 0px solid rgba(0, 0, 0, 0);
   background: var(--background-color);
   outline: none;
 }
-.search-header span svg{
-  width: 35px;
+
+.search-header span svg {
+  width: 25px;
   fill: #4c4c4c;
 }
+
 
 
 
@@ -376,7 +393,85 @@ h2 = 15"-"(2) */
   padding-top: 70px;
 }
 
+
+
+
+
+
+
+.pop-update{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  border: 0;
+  height: 0%;
+  width: 0%;
+  background-color: var(--background-color);
+  padding: 0;
+  font-family: "bnaz" , "pin";
+  font-size: 20px;
+  transition: all 2s;
+}
+
+.pop-update[open]{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  padding: 0;
+  font-family: "bnaz" , "pin";
+  font-size: 20px;
+  transition: all 2s;
+}
+
+.pop-update .pop-update-content h4{
+background-color: white;
+padding: 10px;
+box-shadow: 0px 1px 16px #9c9c9c;
+}
+
+.pop-update .pop-update-content .pop-main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pop-update .pop-update-content .pop-main p{
+  padding: 20px;
+}
+
+.pop-update .pop-update-content button{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 5px 20px;
+  box-shadow: 0px 1px 4px #9c9c9c;
+  border-radius: 10px;
+}
+
+.pop-update .pop-update-content button:active{
+  background: #d9d9e1;
+}
+
+
+
+
 /* h1-----------------------------nav-tablet-992px----------------------------- */
+/* h1-----------------------------nav-tablet-992px----------------------------- */
+/* h1-----------------------------nav-tablet-992px----------------------------- */
+/* h1-----------------------------nav-tablet-992px----------------------------- */
+/* h1-----------------------------nav-tablet-992px----------------------------- */
+
+
+
 .dark-menu {
   transition: all 400ms;
   display: block;
@@ -446,7 +541,7 @@ h2 = 15"-"(2) */
     padding-right: 10px;
   }
 
-  .search-header{
+  .search-header {
     display: none;
   }
 
@@ -699,7 +794,7 @@ h2 = 15"-"(2) */
   }
 
   .setting-link span:first-child {
-    padding: 0px 5px;
+    padding: 0px 5px 0 1px;
   }
 
   .setting-1 {
@@ -717,7 +812,7 @@ h2 = 15"-"(2) */
   .dark-mode-icon-setting,
   .translate-icon-setting {
     width: 30px;
-    fill: var(--color-icon-black);
+    padding-left: 0;
   }
 
   .setting-item-text {
@@ -725,6 +820,7 @@ h2 = 15"-"(2) */
     font-family: "homa", "";
     font-size: 17px;
     transition: none;
+    padding: 0;
   }
 
 

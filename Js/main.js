@@ -56,3 +56,20 @@ skillSecUL1Item.forEach((SSU1I) => {
     
   })
 })
+
+
+
+
+
+//----------------------------------در صف انتظار برای آپدیت های بعدی---------------------------------
+const search = document.getElementById("search");
+const popUpdate = document.getElementById("popUpdate");
+const butCloPop = document.getElementById("butCloPop");
+
+search.addEventListener('click' , () => {
+  popUpdate.setAttribute('open', '')
+})
+
+butCloPop.addEventListener('click' , () => {
+  popUpdate.removeAttribute('open')
+})

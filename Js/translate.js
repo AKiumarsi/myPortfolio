@@ -10,6 +10,7 @@ var dataTranslate = {
     schoolTR: "Education",
     servicesTR: "language",
     contactTR: "Contact Us",
+    serchHPTR: "Search",
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR: "Home",
@@ -101,6 +102,7 @@ var dataTranslate = {
     schoolTR: "تحصیلات",
     servicesTR: "زبان",
     contactTR: "راه ارتباطی",
+    serchHPTR: "جستجو",
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR: "خانه",
@@ -265,6 +267,7 @@ function translateF() {
   const footer1TR = document.querySelector(".footer1TR");
   const footer2TR = document.querySelector(".footer2TR");
   const footer3TR = document.querySelector(".footer3TR");
+  const serchHPTR = document.querySelector(".serchHPTR");
 
 
   if (translateVlaue === "persian") {
@@ -280,6 +283,7 @@ function translateF() {
     schoolTR.textContent = dataTranslate[translateVlaue].schoolTR;
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
+    serchHPTR.setAttribute('placeholder', dataTranslate[translateVlaue].serchHPTR);
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
@@ -393,6 +397,7 @@ function translateF() {
     schoolTR.textContent = dataTranslate[translateVlaue].schoolTR;
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
+    serchHPTR.setAttribute('placeholder', dataTranslate[translateVlaue].serchHPTR);
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
