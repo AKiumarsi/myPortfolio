@@ -11,6 +11,9 @@ var dataTranslate = {
     servicesTR: "language",
     contactTR: "Contact Us",
     serchHPTR: "Search",
+    UTR:"To use this service, please be patient until the next update",
+    updateHTR: "Update",
+    update1TR: "Ok",
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR: "Home",
@@ -103,6 +106,9 @@ var dataTranslate = {
     servicesTR: "زبان",
     contactTR: "راه ارتباطی",
     serchHPTR: "جستجو",
+    UTR:"برای استفاده از این سرویس لطفا تا آپدیت بعدی شکیبا باشید",
+    updateHTR: "به روز رسانی",
+    update1TR: "باشه",
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR: "خانه",
@@ -268,6 +274,9 @@ function translateF() {
   const footer2TR = document.querySelector(".footer2TR");
   const footer3TR = document.querySelector(".footer3TR");
   const serchHPTR = document.querySelector(".serchHPTR");
+  const updateTR = document.querySelectorAll(".updateTR");
+  const updateHTR = document.querySelector(".updateHTR");
+  const update1TR = document.getElementById("butCloPop")
 
 
   if (translateVlaue === "persian") {
@@ -284,6 +293,11 @@ function translateF() {
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
     serchHPTR.setAttribute('placeholder', dataTranslate[translateVlaue].serchHPTR);
+    updateTR.forEach(UTR => {
+      UTR.textContent = dataTranslate[translateVlaue].UTR;
+    })
+    updateHTR.textContent = dataTranslate[translateVlaue].updateHTR;
+    update1TR.textContent = dataTranslate[translateVlaue].update1TR;
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
@@ -398,6 +412,11 @@ function translateF() {
     servicesTR.textContent = dataTranslate[translateVlaue].servicesTR;
     contactTR.textContent = dataTranslate[translateVlaue].contactTR;
     serchHPTR.setAttribute('placeholder', dataTranslate[translateVlaue].serchHPTR);
+    updateTR.forEach(UTR => {
+      UTR.textContent = dataTranslate[translateVlaue].UTR;
+    })
+    updateHTR.textContent = dataTranslate[translateVlaue].updateHTR;
+    update1TR.textContent = dataTranslate[translateVlaue].update1TR;
 
     // --------------------------------section1-home-----------------------------------
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;

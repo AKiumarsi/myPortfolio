@@ -1,6 +1,16 @@
 
-.header-page .search-header div.sh{
+.header-page .search-header div.sh,{
   direction: ltr;
+}
+
+.pop-update .pop-update-content .pop-main p,
+.pop-update{
+  direction: ltr;
+}
+
+.pop-update .pop-update-content button{
+  right: 20px;
+  left: auto;
 }
 
 .setting-item-text {
