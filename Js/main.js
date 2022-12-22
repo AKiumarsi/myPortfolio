@@ -1,4 +1,4 @@
-// این برای اولین سکشن یعنی هومه که ارتفاعش و مشخص می کنه
+// NOTE: This is for the first section, the hum, to determine its height
 const homeSecParg = document.getElementById("homeSecParg");
 homeSecPargF();
 window.addEventListener("resize", homeSecPargF);
@@ -18,7 +18,7 @@ function homeSecPargF() {
   }
 }
 
-// این برای حذف راهنمای اسکرول با اسکرول کردنه
+// NOTE: This is to remove the scroll guide by scrolling
 window.addEventListener("scroll", angleDownScrollF);
 window.addEventListener("resize", angleDownScrollF);
 angleDownScrollF();
@@ -61,7 +61,7 @@ skillSecUL1Item.forEach((SSU1I) => {
 
 
 
-//----------------------------------در صف انتظار برای آپدیت های بعدی---------------------------------
+//NOTE: for update page in search
 const search = document.getElementById("search");
 const popUpdate = document.getElementById("popUpdate");
 const butCloPop = document.getElementById("butCloPop");

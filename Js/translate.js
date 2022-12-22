@@ -1,7 +1,7 @@
 var dataTranslate = {
   english: {
 
-    // --------------------------------Header-Nav-----------------------------------
+    //SCOPE: Header&Nav
     tranTR: "Trnaslate",
     darkTR: "Dark mode",
     homeTR: "Home",
@@ -15,7 +15,7 @@ var dataTranslate = {
     updateHTR: "Update",
     update1TR: "Ok",
 
-    // --------------------------------section1-home-----------------------------------
+    // SCOPE: Section1-Home 
     homeHeaderTR: "Home",
     homeH3TR1: "Hello, I'm",
     homeH3TR2: "Abolfazl",
@@ -26,7 +26,7 @@ var dataTranslate = {
     homeResTR: "Resume",
     scrollDTTR: "Scroll down",
 
-    // --------------------------------section2-about-----------------------------------
+    // SCOPE: section2-About
     aboutHeaderTR: "About Me",
     aboutH3TR: "Front-end developer",
     aboutH3JuTR: "Junior",
@@ -43,7 +43,7 @@ var dataTranslate = {
     aboutsecta7TR: "internship",
     aboutsecta8TR: "Remote work intern of Kiaob company",
 
-    // --------------------------------section3-Skill-----------------------------------
+    // SCOPE: section3-Skill
     skillHeaderTR: "Skills",
     skill1TR: "Programming",
     skill2TR: "Software",
@@ -59,7 +59,7 @@ var dataTranslate = {
     skill12TR: "interest",
 
 
-    // --------------------------------section4-Language-----------------------------------
+    // SCOPE: section4-language 
     languageHTR: "Language",
     lan1TR: "Enlgish",
     L2TR: "Reading",
@@ -68,14 +68,14 @@ var dataTranslate = {
     L5TR: "Conversation",
     lan6TR: "Arabic",
 
-    // --------------------------------section5-School-----------------------------------
+    // SCOPE: section5-School
     schoolHTR: "Education",
     school1TR: "Talashgaran High School",
     school2TR: "GPA: 17",
     school3TR: "12th grade",
     school4TR: "I have been able to work full-time (7-8 hours) despite being busy with my studies.",
 
-    // --------------------------------section6-Contack-----------------------------------
+    // SCOPE: Section6-contact
     contHTR: "Contact Us",
     cont1TR: "Github",
     cont2TR: "Linked in",
@@ -88,7 +88,7 @@ var dataTranslate = {
     cont9TR: "Send",
 
 
-    // --------------------------------Footer-----------------------------------
+    // SCOPE: Footer
     footerHTR: "End",
     footer1TR: "Designed and developed by Abolfazl Kiyomurthi",
     footer2TR: "I hope you liked it;",
@@ -96,7 +96,7 @@ var dataTranslate = {
   },
   persian: {
 
-    // --------------------------------Header-Nav-----------------------------------
+    // SCOPE: Header&Nav
     tranTR: "ترجمه صفحه",
     darkTR: "حالت تاریک",
     homeTR: "خانه",
@@ -110,7 +110,7 @@ var dataTranslate = {
     updateHTR: "به روز رسانی",
     update1TR: "باشه",
 
-    // --------------------------------section1-home-----------------------------------
+    // SCOPE: Section1-Home 
     homeHeaderTR: "خانه",
     homeH3TR1: "سلام، من",
     homeH3TR2: "ابوالفضل",
@@ -121,7 +121,7 @@ var dataTranslate = {
     homeResTR: "دانلود رزومه",
     scrollDTTR: "به پایین بکشید",
 
-    // --------------------------------section2-about-----------------------------------
+    // SCOPE: section2-About
     aboutHeaderTR: "درباره من",
     aboutH3TR: "توسعه دهنده فرانت-اند",
     aboutH3JuTR: "جونیور",
@@ -141,7 +141,7 @@ var dataTranslate = {
     aboutsecta7TR: "کارآموزی",
     aboutsecta8TR: "کارآموز دورکار شرکت کیاوب",
 
-    // --------------------------------section3-Skill-----------------------------------
+    // SCOPE: section3-Skill
     skillHeaderTR: "مهارت ها",
     skill1TR: "برنامه نویسی",
     skill2TR: "نرم افزار",
@@ -158,7 +158,7 @@ var dataTranslate = {
 
 
 
-    // --------------------------------section4-Language-----------------------------------
+    // SCOPE: section4-language
     languageHTR: "زبان",
     lan1TR: "انگلیسی",
     L2TR: "خواندن",
@@ -167,14 +167,14 @@ var dataTranslate = {
     L5TR: "مکالمه",
     lan6TR: "عربی",
 
-    // --------------------------------section5-School-----------------------------------
+    // SCOPE: section5-School
     schoolHTR: "تحصیلات",
     school1TR: "دبیرستان تلاشگران",
     school2TR: "معدل: 17",
     school3TR: "پایه دوازدهم",
     school4TR: "اینجانب با وجود مشلغه تحصیل قادر بوده به صورت تمام وقت (7-8 ساعت) فعالیت کنم.",
 
-    // --------------------------------section6-Contack-----------------------------------
+    // SCOPE: Section6-contact
     contHTR: "ارتباط با ما",
     cont1TR: "گیت هاب",
     cont2TR: "لینکدین",
@@ -186,7 +186,7 @@ var dataTranslate = {
     cont8TR: "پیام شما",
     cont9TR: "ارسال",
 
-    // --------------------------------Footer-----------------------------------
+    // SCOPE: Footer
     footerHTR: "پایان سایت",
     footer1TR: "طراحی و توسعه توسط ابوالفضل کیومرثی",
     footer2TR: "امیدوارم خوشتون اومده باشه؛",
@@ -283,7 +283,7 @@ function translateF() {
     translate.classList.remove("active-TR-setting");
     translateSvg.classList.remove("active-TR-setting-svg");
     tranST.setAttribute("href", "");
-    // --------------------------------Header-Nav-----------------------------------
+    // SCOPE: Header&Nav
     tranTR.textContent = dataTranslate[translateVlaue].tranTR;
     darkTR.textContent = dataTranslate[translateVlaue].darkTR;
     homeTR.textContent = dataTranslate[translateVlaue].homeTR;
@@ -299,7 +299,7 @@ function translateF() {
     updateHTR.textContent = dataTranslate[translateVlaue].updateHTR;
     update1TR.textContent = dataTranslate[translateVlaue].update1TR;
 
-    // --------------------------------section1-home-----------------------------------
+    // SCOPE: Section1-Home 
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
     homeH3TR1.textContent = dataTranslate[translateVlaue].homeH3TR1;
     homeH3TR2.textContent = dataTranslate[translateVlaue].homeH3TR2;
@@ -308,7 +308,7 @@ function translateF() {
     homeResTR.textContent = dataTranslate[translateVlaue].homeResTR;
     scrollDTTR.textContent = dataTranslate[translateVlaue].scrollDTTR;
 
-    // --------------------------------section2-about-----------------------------------
+    // SCOPE: section2-About
     aboutHeaderTR.textContent = dataTranslate[translateVlaue].aboutHeaderTR;
     aboutH3TR.textContent = dataTranslate[translateVlaue].aboutH3TR;
     aboutH3JuTR.textContent = dataTranslate[translateVlaue].aboutH3JuTR;
@@ -327,7 +327,7 @@ function translateF() {
     aboutsecta7TR.textContent = dataTranslate[translateVlaue].aboutsecta7TR;
     aboutsecta8TR.textContent = dataTranslate[translateVlaue].aboutsecta8TR;
 
-    // --------------------------------section3-Skill-----------------------------------
+    // SCOPE: section3-Skill
     skillHeaderTR.textContent = dataTranslate[translateVlaue].skillHeaderTR;
     skill1TR.textContent = dataTranslate[translateVlaue].skill1TR;
     skill2TR.textContent = dataTranslate[translateVlaue].skill2TR;
@@ -349,7 +349,7 @@ function translateF() {
     skill12TR.textContent = dataTranslate[translateVlaue].skill12TR;
 
 
-    // --------------------------------section4-Language-----------------------------------
+    // SCOPE: section4-language
     languageHTR.textContent = dataTranslate[translateVlaue].languageHTR;
     lan1TR.textContent = dataTranslate[translateVlaue].lan1TR;
     lan2TR.forEach(L2TR => {
@@ -368,14 +368,14 @@ function translateF() {
     lan6TR.textContent = dataTranslate[translateVlaue].lan6TR;
 
 
-    // --------------------------------section5-School-----------------------------------
+    // SCOPE: section5-School
     schoolHTR.textContent = dataTranslate[translateVlaue].schoolHTR;
     school1TR.textContent = dataTranslate[translateVlaue].school1TR;
     school2TR.textContent = dataTranslate[translateVlaue].school2TR;
     school3TR.textContent = dataTranslate[translateVlaue].school3TR;
     school4TR.textContent = dataTranslate[translateVlaue].school4TR;
 
-    // --------------------------------section6-ContactUs-----------------------------------
+    // SCOPE: Section6-contact
     contHTR.textContent = dataTranslate[translateVlaue].contHTR;
     cont1TR.textContent = dataTranslate[translateVlaue].cont1TR;
     cont2TR.textContent = dataTranslate[translateVlaue].cont2TR;
@@ -389,7 +389,7 @@ function translateF() {
     cont9TR.textContent = dataTranslate[translateVlaue].cont9TR;
 
 
-    // --------------------------------Footer-----------------------------------
+    // SCOPE: Footer
     footerHTR.textContent = dataTranslate[translateVlaue].footerHTR;
     footer1TR.textContent = dataTranslate[translateVlaue].footer1TR;
     footer2TR.textContent = dataTranslate[translateVlaue].footer2TR;
@@ -402,7 +402,7 @@ function translateF() {
     translateSvg.classList.add("active-TR-setting-svg");
     tranST.setAttribute("href", "Style/Translaate-Style.css");
 
-    // --------------------------------Header-Nav-----------------------------------
+    // SCOPE: Header&Nav
     tranTR.textContent = dataTranslate[translateVlaue].tranTR;
     darkTR.textContent = dataTranslate[translateVlaue].darkTR;
     homeTR.textContent = dataTranslate[translateVlaue].homeTR;
@@ -418,7 +418,7 @@ function translateF() {
     updateHTR.textContent = dataTranslate[translateVlaue].updateHTR;
     update1TR.textContent = dataTranslate[translateVlaue].update1TR;
 
-    // --------------------------------section1-home-----------------------------------
+    // SCOPE: Section1-Home 
     homeHeaderTR.textContent = dataTranslate[translateVlaue].homeHeaderTR;
     homeH3TR1.textContent = dataTranslate[translateVlaue].homeH3TR1;
     homeH3TR2.textContent = dataTranslate[translateVlaue].homeH3TR2;
@@ -427,7 +427,7 @@ function translateF() {
     homeResTR.textContent = dataTranslate[translateVlaue].homeResTR;
     scrollDTTR.textContent = dataTranslate[translateVlaue].scrollDTTR;
 
-    // --------------------------------section2-about-----------------------------------
+    // SCOPE: section2-About
     aboutHeaderTR.textContent = dataTranslate[translateVlaue].aboutHeaderTR;
     aboutH3TR.textContent = dataTranslate[translateVlaue].aboutH3TR;
     aboutH3JuTR.textContent = dataTranslate[translateVlaue].aboutH3JuTR;
@@ -446,7 +446,7 @@ function translateF() {
     aboutsecta8TR.textContent = dataTranslate[translateVlaue].aboutsecta8TR;
 
 
-    // --------------------------------section3-Skill-----------------------------------
+    // SCOPE: section3-Skill
     skillHeaderTR.textContent = dataTranslate[translateVlaue].skillHeaderTR;
     skill1TR.textContent = dataTranslate[translateVlaue].skill1TR;
     skill2TR.textContent = dataTranslate[translateVlaue].skill2TR;
@@ -468,7 +468,7 @@ function translateF() {
     skill12TR.textContent = dataTranslate[translateVlaue].skill12TR;
 
 
-    // --------------------------------section4-Language-----------------------------------
+    // SCOPE: section4-language
     languageHTR.textContent = dataTranslate[translateVlaue].languageHTR;
     lan1TR.textContent = dataTranslate[translateVlaue].lan1TR;
     lan2TR.forEach(L2TR => {
@@ -487,14 +487,14 @@ function translateF() {
     lan6TR.textContent = dataTranslate[translateVlaue].lan6TR;
 
 
-    // --------------------------------section5-School-----------------------------------
+    // SCOPE: section5-School
     schoolHTR.textContent = dataTranslate[translateVlaue].schoolHTR;
     school1TR.textContent = dataTranslate[translateVlaue].school1TR;
     school2TR.textContent = dataTranslate[translateVlaue].school2TR;
     school3TR.textContent = dataTranslate[translateVlaue].school3TR;
     school4TR.textContent = dataTranslate[translateVlaue].school4TR;
 
-    // --------------------------------section6-ContactUs-----------------------------------
+    // SCOPE: Section6-contact
     contHTR.textContent = dataTranslate[translateVlaue].contHTR;
     cont1TR.textContent = dataTranslate[translateVlaue].cont1TR;
     cont2TR.textContent = dataTranslate[translateVlaue].cont2TR;
@@ -507,7 +507,7 @@ function translateF() {
     cont8TR.setAttribute('placeholder', dataTranslate[translateVlaue].cont8TR);
     cont9TR.textContent = dataTranslate[translateVlaue].cont9TR;
 
-    // --------------------------------Footer-----------------------------------
+    // SCOPE: Footer
     footerHTR.textContent = dataTranslate[translateVlaue].footerHTR;
     footer1TR.textContent = dataTranslate[translateVlaue].footer1TR;
     footer2TR.textContent = dataTranslate[translateVlaue].footer2TR;

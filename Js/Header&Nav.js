@@ -1,8 +1,4 @@
-/*help
-h1 = 20"-"(2)
-h2 = 15"-"(2)*/
-
-// h1-----------------------------onClickMenu-desktop & tablet-----------------------------
+// SCOPE: onClickMenu-desktop & tablet
 const menuIcon = document.getElementById("menuIcon");
 const body = document.getElementById("body");
 const header = document.getElementById("header");
@@ -21,9 +17,9 @@ menuIcon.addEventListener("click", () => {
   const settingItemText = document.querySelectorAll(".setting-item-text");
 
   if (visibility === "true") {
-    // این حالتی است که منو باز بوده و باکلیک بسته می شود در حالت دسکتاپ
+    // NOTE: This is the mode where the menu is open and closes with a click in desktop mode
     menuIcon.setAttribute("data-visible", false);
-    // h2---------------menuIcon---------------h2
+    // SCOPE: onClickMenu-desktop & tablet {(in: onClickMenu-desktop & tablet)}
     menuIconItem1.classList.add("menu-icon-item-1-click");
     menuIconItem2.classList.add("menu-icon-item-2-click");
     menuIconItem3.classList.add("menu-icon-item-3-click");
@@ -31,7 +27,7 @@ menuIcon.addEventListener("click", () => {
     menuIconItem2.classList.remove("menu-icon-item-2-click2");
     menuIconItem3.classList.remove("menu-icon-item-3-click2");
 
-    // h2---------------NavWidt-desktop---------------h2
+    // SCOPE: NavWidt-desktop {(in: onClickMenu-desktop & tablet)}
     nav.classList.add("nav-width100");
     marginNav.classList.add("margin100");
     for (let x = 0; x < navlinkTextStyle.length; x++) {
@@ -41,12 +37,12 @@ menuIcon.addEventListener("click", () => {
       SIT.classList.add("displayNone");
     });
 
-    // h2---------------change-header-padding-from-right---------------h2
+    // SCOPE: change-header-padding-from-right {(in: onClickMenu-desktop & tablet)}
     headerOne.classList.add("padding-right-small-headerOne");
   } else if (visibility === "false") {
-    // این حالتی است که منو بسته بوده و باکلیک باز می شود در حالت دسکتاپ
+    // NOTE: This is the mode where the menu is closed and can be opened by clicking in the desktop mode
     menuIcon.setAttribute("data-visible", true);
-    // h2---------------menuIcon---------------h2
+    // SCOPE: menuIcon {(in: onClickMenu-desktop & tablet)}
     menuIconItem1.classList.remove("menu-icon-item-1-click");
     menuIconItem2.classList.remove("menu-icon-item-2-click");
     menuIconItem3.classList.remove("menu-icon-item-3-click");
@@ -54,7 +50,7 @@ menuIcon.addEventListener("click", () => {
     menuIconItem2.classList.add("menu-icon-item-2-click2");
     menuIconItem3.classList.add("menu-icon-item-3-click2");
 
-    // h2---------------NavWidth-desktop---------------h2
+    // SCOPE: NavWidth-desktop {(in: onClickMenu-desktop & tablet)}
     nav.classList.remove("nav-width100");
     marginNav.classList.remove("margin100");
     for (let x = 0; x < navlinkTextStyle.length; x++) {
@@ -64,13 +60,13 @@ menuIcon.addEventListener("click", () => {
       SIT.classList.remove("displayNone");
     });
 
-    // h2---------------change-header-padding-from-right---------------h2
+    // SCOPE: change-header-padding-from-right {(in: onClickMenu-desktop & tablet)}
     headerOne.classList.remove("padding-right-small-headerOne");
   }
 
-  // h2---------------NavWidth-tablet---------------h2
+  // SCOPE: NavWidth-tablet {(in: onClickMenu-desktop & tablet)}
   if ((nav.offsetWidth == 230) & (marginNav.offsetWidth <= 992)) {
-    // این حالتی است که منو باز بوده و باکلیک بسته می شود در حالت تبلت
+    // NOTE: This is the mode where the menu is open and closed by clicking in the tablet mode
     nav.classList.remove("nav-width-tablet");
     for (let x = 0; x < navlinkTextStyle.length; x++) {
       navlinkTextStyle[x].classList.add("displayNone-tablet");
@@ -81,7 +77,7 @@ menuIcon.addEventListener("click", () => {
 
     menuDarkBack.classList.remove("menu-dark-back");
 
-    // این حالتی است که منو بسته بوده و باکلیک باز می شود در حالت تبلت
+    // NOTE: This is the mode where the menu is closed and can be opened by clicking on the tablet mode
   } else if (marginNav.offsetWidth < 992) {
     nav.classList.add("nav-width-tablet");
     for (let x = 0; x < navlinkTextStyle.length; x++) {
@@ -97,7 +93,7 @@ menuIcon.addEventListener("click", () => {
   }
 });
 
-// h2---------------dark-backgraound-whenNav-expanded--------------h2
+// SCOPE: dark-backgraound-whenNav-expanded
 menuDarkBack.addEventListener("click", () => {
   const settingItemText = document.querySelectorAll(".setting-item-text");
   const navlinkTextStyle = document.querySelectorAll(".navlink-text-style");
@@ -111,7 +107,7 @@ menuDarkBack.addEventListener("click", () => {
   menuDarkBack.classList.remove("menu-dark-back");
 });
 
-// h1-----------------------------navHeight-----------------------------
+// SCOPE: navHeight
 window.addEventListener("resize", navbarHeight);
 navbarHeight();
 function navbarHeight() {
@@ -124,7 +120,7 @@ function navbarHeight() {
   }
 }
 
-// h1-----------------------------menu-icon-mobile----------------------------
+// SCOPE: menu-icon-mobile
 const menuIconMobile = document.getElementById("menuIconMobile");
 
 menuIconMobile.addEventListener("click", () => {
@@ -141,8 +137,8 @@ menuIconMobile.addEventListener("click", () => {
   const searchUl = document.getElementById("searchUl");
 
   if (visibilityMobile === "false") {
-    // منو فالس و بسته می باشد با کلیک باز می شود موبایل
-    // h2---------------menuiconanimate--------------h2
+    // NOTE: The menu is false and closed, the mobile opens with a click
+    // SCOPE: menuiconanimate {(in: menu-icon-mobile)}
     menuIconItem1Mobile.classList.add("menu-icon-item1-mobile-animate");
     menuIconItem2Mobile.classList.add("menu-icon-item2-mobile-animate");
     menuIconItem3Mobile.classList.add("menu-icon-item3-mobile-animate");
@@ -152,7 +148,7 @@ menuIconMobile.addEventListener("click", () => {
     menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate2");
     menuIconItem4Mobile.classList.remove("menu-icon-item4-mobile-animate2");
 
-    // h2---------------navHeight-for-mobile--------------h2
+    // SCOPE: navHeight-for-mobile {(in: menu-icon-mobile)}
     nav.classList.add("mobile-nav-height");
 
     taskbarMobile.classList.add("taskbar-borderup");
@@ -171,9 +167,9 @@ menuIconMobile.addEventListener("click", () => {
 
     menuIconMobile.setAttribute("data-visible", true);
   } else if (visibilityMobile === "true") {
-    // منو باز بوده و با کلیک بسته می شود موبایل
+    // NOTE: The menu is open and closes with a click
 
-    // h2---------------menuiconanimate--------------h2
+    // SCOPE: menuiconanimate {(in: menu-icon-mobile)}
     menuIconItem1Mobile.classList.remove("menu-icon-item1-mobile-animate");
     menuIconItem2Mobile.classList.remove("menu-icon-item2-mobile-animate");
     menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate");
@@ -183,7 +179,7 @@ menuIconMobile.addEventListener("click", () => {
     menuIconItem3Mobile.classList.add("menu-icon-item3-mobile-animate2");
     menuIconItem4Mobile.classList.add("menu-icon-item4-mobile-animate2");
 
-    // h2---------------navHeight-for-mobile--------------h2
+    // SCOPE: navHeight-for-mobile {(in: menu-icon-mobile)}
     nav.classList.remove("mobile-nav-height");
 
     taskbarMobile.classList.remove("taskbar-borderup");
@@ -203,7 +199,7 @@ menuIconMobile.addEventListener("click", () => {
   }
 });
 
-// h1-----------------------------navHeight-for-mobile-----------------------------
+// SCOPE: navHeight-for-mobile
 window.addEventListener("resize", mobileNavHeightF);
 mobileNavHeightF();
 function mobileNavHeightF() {
@@ -212,7 +208,7 @@ function mobileNavHeightF() {
   root.style.setProperty("--mobile-nav-height", mobileNavHeight);
 }
 
-// h1-----------------------------arrow-up-click-----------------------------
+// SCOPE: arrow-up-click
 const arrowUpIcon = document.getElementById("arrowUpIcon");
 arrowUpIcon.addEventListener("click", () => {
   const arrowUpIcontrans = getComputedStyle(arrowUpIcon).getPropertyValue(
@@ -228,13 +224,13 @@ arrowUpIcon.addEventListener("click", () => {
   const navbarNav = document.getElementById("navbarNav");
 
   if (arrowUpIcontrans == "matrix(1, 0, 0, 1, 0, 0)") {
-    // کلید بازگشت در این حالت منو بسته و با کلیک به بالای صفحه هدایت می شه حالت بدون بازگشت
+    // NOTE: (up key) in this case, the menu is closed and it is directed to the top of the page by clicking. (TO UP)
     arrowUpIcon.setAttribute("href", "#");
   } else if (
     arrowUpIcontrans === "matrix(6.12323e-17, -1, 1, 6.12323e-17, 0, 0)" ||
     arrowUpIcontrans === "matrix(0, -1, 1, 0, 0, 0)"
   ) {
-    // کلید بازگشت در این حالت منو باز و باکلیک منو بسته می شه حالت بازگشت
+    //NOTE: (return key) in this mode, the menu is opened and the menu is closed by clicking (return mode)
     menuIconItem1Mobile.classList.remove("menu-icon-item1-mobile-animate");
     menuIconItem2Mobile.classList.remove("menu-icon-item2-mobile-animate");
     menuIconItem3Mobile.classList.remove("menu-icon-item3-mobile-animate");
@@ -255,8 +251,8 @@ arrowUpIcon.addEventListener("click", () => {
   }
 });
 
-// h1-----------------------------Active-linkItem-----------------------------
-// وقتی که کلیک می شه اکتیو به اون منقل می شود
+// SCOPE: Active-linkItem
+// NOTE: When it is clicked, the active will be transferred to it
 
 let section = document.querySelectorAll(".section-main");
 const navItem = document.querySelectorAll("#navItem");
@@ -264,12 +260,6 @@ function activeLink(li) {
   navItem.forEach((item) => item.classList.remove("active"));
   li.classList.add("active");
 }
-
-// navItem.forEach((item) =>
-//   item.addEventListener("click", function () {
-//     activeLink(this);
-//   })
-// );
 
 window.onscroll = () => {
   section.forEach((sec) => {
@@ -285,7 +275,7 @@ window.onscroll = () => {
   });
 };
 
-// بسته شدن منو در حالت تبلت و موبایل با کلیک روی آیتم ها
+// NOTE: Closing the menu in tablet and mobile mode by clicking on the items
 navItem.forEach((NI) => {
   NI.addEventListener("click", () => {
     const navlinkTextStyle = document.querySelectorAll(".navlink-text-style");
@@ -333,7 +323,7 @@ navItem.forEach((NI) => {
   });
 });
 
-// -------------------------ساعت در منو-------------------------------
+// SCOPE: Clock in the menu
 body.addEventListener("load", startTime());
 function startTime() {
   const today = new Date();

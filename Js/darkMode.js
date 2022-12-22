@@ -1,5 +1,3 @@
-// h1-----------------------------Dark-Mode-----------------------------
-// با کلیک قراره حالت تاریک روشن شه
 const darkModeSetting = document.getElementById("darkModeSetting");
 
 darkModeSetting.addEventListener("click", darkModeSettingF);
@@ -8,14 +6,14 @@ function darkModeSettingF() {
   const darkMOdeStyleLink = document.getElementById("darkMOdeStyleLink");
 
   if (darkModeVisiblity === "false") {
-    // حالت روشن بوده و با کلیک تاریک می شود
+  // NOTE: The mode is light and becomes dark with a click
     darkMOdeStyleLink.setAttribute("href" , "Style/Dark-Mode.css");
     
     darkModeSetting.classList.add("active-setting");
 
     darkModeSetting.setAttribute("mode", true);
   } else if (darkModeVisiblity === "true") {
-    // حالت تاریک بوده و با کلیک روشن می شود
+     // NOTE: The mode is dark and becomes light with a click
     darkMOdeStyleLink.setAttribute("href" , "");
     darkModeSetting.classList.remove("active-setting");
 
