@@ -9,7 +9,7 @@
   --color-dark: rgba(149, 155, 207, 0.308);
 }
 
-/* h1-----------------------------------------Header&nav----------------------------------------- */
+/* SCOPE: Header-And-Nav */
 .header-one,
 main,
 .nav,
@@ -43,6 +43,7 @@ body {
 .search-header input {
   background: var(--color-dark-background);
 }
+
 .search-header input:focus {
   background: var(--color-dark-background);
 }
@@ -75,7 +76,7 @@ body {
   fill: white;
 }
 
-.pop-update[open]{
+.pop-update[open] {
   background: var(--color-dark-background);
 }
 
@@ -85,16 +86,17 @@ body {
   box-shadow: 0px 1px 7px 0px #000000;
 }
 
-.pop-update .pop-update-content button{
+.pop-update .pop-update-content button {
   box-shadow: 0px 1px 4px #000000;
 }
 
-.pop-update .pop-update-content button:active{
+.pop-update .pop-update-content button:active {
   background-color: black;
 }
 
 
-/* h1-----------------------------------------section1-Home----------------------------------------- */
+
+/* SCOPE: Section1-Home */
 .homeH3 span:nth-child(2) {
   color: #3b2ad1;
 }
@@ -109,16 +111,16 @@ body {
 }
 
 
-/* h1-----------------------------------------section2-About----------------------------------------- */
 
+/* SCOPE: Section2-About */
 .about-sec-ta tr td span:first-child svg {
   fill: rgb(193 193 193);
 }
 
 
 
-/* h1-----------------------------------------section3-Skill----------------------------------------- */
 
+/* SCOPE: Section3-SKill */
 .skill-sec-main .skill-sec-ul1 .activeSSU1 {
   color: #9200ff !important;
   border-bottom: 2.5px solid #9200ff;
@@ -163,18 +165,19 @@ body {
 .sec4-language-main .language-sec-detailes summary div:last-child {
   background-color: #424142;
 }
-.sec4-language-main summary{
+
+.sec4-language-main summary {
   color: #a021ff;
 }
 
 
 
-.sec5-school-alert p{
+.sec5-school-alert p {
   background-color: #2d285c;
 }
 
 
-.sec6-contact-main .sec6-contact-text ul li span svg{
+.sec6-contact-main .sec6-contact-text ul li span svg {
   fill: white;
 }
 
@@ -198,21 +201,18 @@ body {
   background: #212429;
 }
 
-.sec6-contact-main .sec6-contact-form form div button{
+.sec6-contact-main .sec6-contact-form form div button {
   border: 2px solid #7a7a7a;
   background: #363636;
 }
 
 
-footer.footer-page > div.color {
+footer.footer-page>div.color {
   background-color: #212429;
 }
 
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
+
+/* BREAKPOINT: Max-Width:768px */
 @media (max-width: 768px) {
   .home-sec-detail div {
     backdrop-filter: blur(16px) saturate(180%);
@@ -226,15 +226,12 @@ footer.footer-page > div.color {
 
 }
 
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
+
+
+/* BREAKPOINT: Max-Width:576px */
 @media (max-width: 576px) {
-  /* h1-----------------------------------------Header&nav----------------------------------------- */
 
-
+  /* SCOPE: Header-And-Nav {(in: BREAKPOINT)} */
   .active-setting {
     background-color: #2c4793 !important;
     color: white;
@@ -341,8 +338,7 @@ footer.footer-page > div.color {
 
 
 
-  /* h1-----------------------------------------section2-About----------------------------------------- */
-
+  /* SCOPE: Section2-About {(in: BREAKPOINT)} */
   .about-sec-ta tbody tr:nth-child(even) {
     background-color: #18181894;
   }
@@ -357,6 +353,7 @@ footer.footer-page > div.color {
     color: white !important;
     border-bottom: 0;
   }
+
   .skill-sec-main .skill-sec-ul1>li {
     background: #484848;
   }
