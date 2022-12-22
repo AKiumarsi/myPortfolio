@@ -10,7 +10,7 @@ main {
   box-shadow: var(--box-shadow);
 }
 
-/* Scope: Start(Section1-Home) */
+/* SCOPE: Section1-Home */
 .home-header,
 .about-header,
 .skill-header,
@@ -230,7 +230,7 @@ main {
 
 
 
-/* h1-----------------------------------------section2-About----------------------------------------- */
+/* SCOPE: section2-About */
 .about-sec-main {
   display: flex;
   flex-direction: column;
@@ -320,7 +320,7 @@ main {
   border-radius: 5px;
 }
 
-/* h1-----------------------------------------section3-Skill----------------------------------------- */
+/* SCOPE: section3-Skill */
 .skill-sec-main .skill-sec-ul1 {
   margin: 10px 20px 20px 20px;
   padding: 0px;
@@ -643,7 +643,7 @@ main {
 }
 
 
-/* h1-----------------------------------------section4-language----------------------------------------- */
+/* SCOPE: section4-language */
 .sec4-language-main .seclan-3d {
   display: flex;
   justify-content: center;
@@ -803,7 +803,7 @@ main {
 
 
 
-/* h1-----------------------------------------section5-School----------------------------------------- */
+/* SCOPE: section5-School */
 .sec5-school-main .sec5-school-text {
   font-family: "bnaz", "pin";
   font-size: 20px;
@@ -848,8 +848,7 @@ main {
 }
 
 
-/* h1-----------------------------------------section5-School----------------------------------------- */
-
+/* SCOPE: Section6-contact */
 .sec6-contact-main .row {
   align-items: center;
 }
@@ -936,8 +935,7 @@ main {
 }
 
 
-/* h1-----------------------------------------Footer----------------------------------------- */
-
+/* SCOPE: Footer */
 .footer-page div.color {
   display: flex;
   align-items: center;
@@ -990,15 +988,10 @@ footer.footer-page>div.color {
   }
 }
 
-/* h1-----------------------------------------max-width:992px----------------------------------------- */
-/* h1-----------------------------------------max-width:992px----------------------------------------- */
-/* h1-----------------------------------------max-width:992px----------------------------------------- */
-/* h1-----------------------------------------max-width:992px----------------------------------------- */
-/* h1-----------------------------------------max-width:992px----------------------------------------- */
-
+/* BREAKPOINT */
 @media (max-width: 992px) {
 
-  /* h1-----------------------------------------section1-Home----------------------------------------- */
+  /* SCOPE: Section1-Home {(in: Breakpoint)} */
   .homeH3 {
     font-size: 35px;
   }
@@ -1045,14 +1038,10 @@ footer.footer-page>div.color {
   }
 }
 
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
-/* h1-----------------------------------------max-width:768px----------------------------------------- */
+/* BREAKPOINT */
 @media (max-width: 768px) {
 
-  /* h1-----------------------------------------section1-Home----------------------------------------- */
+  /* SCOPE: Section1-Home {(in: Breakpoint)} */
   .home-sec-cont>div.row {
     display: grid;
     justify-items: start;
@@ -1136,24 +1125,20 @@ footer.footer-page>div.color {
 
 
 
-  /* h1-----------------------------------------section2-About----------------------------------------- */
+  /* SCOPE: section2-About {(in: Breakpoint)} */
   .about-sec-ta {
     border-spacing: 5px 5px;
   }
 }
 
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
-/* h1-----------------------------------------max-width:576px----------------------------------------- */
+/* BREAKPOINT */
 @media (max-width: 576px) {
 
   main {
     padding: 0px 0px;
   }
 
-  /* h1-----------------------------------------section1-Home----------------------------------------- */
+  /* SCOPE: Section1-Home {(in: Breakpoint)} */
   .home-sec-cont>div.row {
     display: flex;
     flex-direction: column-reverse;
@@ -1193,7 +1178,7 @@ footer.footer-page>div.color {
   }
 
 
-  /* h1-----------------------------------------section2-About----------------------------------------- */
+  /* SCOPE: section2-About {(in: Breakpoint)} */
   .about-sec-ta {
     margin: 0px 0px 20px 0px;
   }

@@ -1,4 +1,4 @@
-/* -----------------------persian-fonts---------------------h1 */
+/* SCOPE: lan:fa */
 
 @font-face {
   font-family: "Beirut";
@@ -53,7 +53,8 @@
 
 
 
-/* -----------------------english-fonts---------------------h1 */
+/* SCOPE: lan:en */
+
 @font-face {
   font-family: "pop";
   src: url("../Fonts/MochiyPopOne-Regular.ttf") format("ttf"),

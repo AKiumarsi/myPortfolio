@@ -1,5 +1,4 @@
-
-.header-page .search-header div.sh,{
+.header-page .search-header div.sh{
   direction: ltr;
 }
 
@@ -101,6 +100,7 @@ main article > section{
 }
 
 
+/* BREAKPOINT */
 @media (max-width: 768px) {
   .shape img {
     transform: translate(173px, 85px);
@@ -112,6 +112,7 @@ main article > section{
   }
 }
 
+/* BREAKPOINT */
 @media (max-width: 576px) {
   .shape img {
     height: unset;
