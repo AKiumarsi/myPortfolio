@@ -10,7 +10,7 @@ main {
   box-shadow: var(--box-shadow);
 }
 
-/* h1-----------------------------------------section1-Home----------------------------------------- */
+/* Scope: Start(Section1-Home) */
 .home-header,
 .about-header,
 .skill-header,
