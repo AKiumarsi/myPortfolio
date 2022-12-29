@@ -308,12 +308,6 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-/* .about-sec-ta tr td:not(.about-sec-ta tr td:first-child){
-  background-color: var(--color-light);
-  padding: 5px;
-  border-radius: 8px;
-} */
-
 
 .about-sec-ta tbody tr:nth-child(5) td:nth-child(2) img {
   width: 25px;
@@ -930,7 +924,7 @@ main {
 }
 
 
-.sec6-contact-main .sec6-contact-form form div textarea{
+.sec6-contact-main .sec6-contact-form form div textarea {
   margin-bottom: 10px;
 }
 
@@ -968,25 +962,35 @@ footer.footer-page>div.color {
   font-family: "bnaz", "pin";
 }
 
-.footer-page p span:last-child{
+.footer-page p span:last-child {
   font-family: none;
 }
 
 
 
 
-
+/* BREAKPOINT */
 @media (min-width: 1400px) {
   .sec6-contact-main .sec6-contact-form textarea {
     width: 24em;
   }
 }
 
+/* BREAKPOINT */
 @media (max-width: 1200px) {
   .sec6-contact-main .sec6-contact-form textarea {
     width: 18em;
   }
 }
+
+/* NOTE: This code is to remove the line that reveals the shadow of the main items */
+/* BREAKPOINT */
+@media (min-width: 992px) {
+  nav.nav{
+    background-color: transparent;
+  }
+}
+
 
 /* BREAKPOINT */
 @media (max-width: 992px) {
