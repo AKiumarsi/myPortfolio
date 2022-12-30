@@ -60,7 +60,7 @@
   align-items: flex-end;
   height: fit-content;
   background-color: var(--background-color);
-  transition: all 250ms;
+  transition: padding 250ms;
   padding-right: 290px;
 }
 
@@ -374,7 +374,7 @@
 /* SCOPE: MAIN-MARGIN */
 .margin-nav {
   margin-right: 230px;
-  transition: all 250ms;
+  transition: padding 250ms;
 }
 
 .margin100 {
@@ -506,7 +506,7 @@ box-shadow: 0px 1px 16px #9c9c9c;
 
   .header-one {
     padding-right: 80px;
-    transition: all 250ms;
+    transition: padding 250ms;
   }
 }
 
