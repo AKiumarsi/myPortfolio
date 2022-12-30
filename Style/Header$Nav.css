@@ -142,19 +142,19 @@
 
 /* SCOPE: menu-icon-animate {(in: Header-one)} */
 .menu-icon-item-1-click {
-  animation: menu-click-one 500ms 1;
+  animation: menu-click-one 300ms 1;
 }
 
 .menu-icon-item-3-click {
-  animation: menu-click-one 500ms 1;
+  animation: menu-click-one 300ms 1;
 }
 
 .menu-icon-item-1-click2 {
-  animation: menu-click-two 500ms 1;
+  animation: menu-click-two 300ms 1;
 }
 
 .menu-icon-item-3-click2 {
-  animation: menu-click-two 500ms 1;
+  animation: menu-click-two 300ms 1;
 }
 
 @keyframes menu-click-one {
@@ -162,16 +162,8 @@
     width: "";
   }
 
-  20% {
-    width: 50%;
-  }
-
-  40% {
-    width: 50%;
-  }
-
-  60% {
-    width: 50%;
+  50% {
+    width: 30%;
   }
 
   100% {
@@ -184,22 +176,24 @@
     width: "";
   }
 
-  20% {
-    width: 50%;
-  }
-
-  40% {
-    width: 50%;
-  }
-
-  60% {
-    width: 50%;
+  50% {
+    width: 30%;
   }
 
   100% {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 /* SCOPE: Nav */
 

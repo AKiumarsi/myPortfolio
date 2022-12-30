@@ -27,7 +27,7 @@ menuIcon.addEventListener("click", () => {
     menuIconItem2.classList.remove("menu-icon-item-2-click2");
     menuIconItem3.classList.remove("menu-icon-item-3-click2");
 
-    // SCOPE: NavWidt-desktop {(in: onClickMenu-desktop & tablet)}
+    // SCOPE: NavWidth-desktop {(in: onClickMenu-desktop & tablet)}
     nav.classList.add("nav-width100");
     marginNav.classList.add("margin100");
     for (let x = 0; x < navlinkTextStyle.length; x++) {
