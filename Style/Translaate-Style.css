@@ -64,6 +64,11 @@
   font-family: "pin";
 }
 
+.about-sec-ta tbody td:first-child span:first-child{
+  padding: 0 5px 0 0px;
+}
+
+
 
 
 

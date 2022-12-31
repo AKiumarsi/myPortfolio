@@ -275,6 +275,10 @@ nav{
   cursor: context-menu;
 }
 
+.about-sec-ta tbody td:first-child span:first-child{
+  padding: 0 0 0 5px;
+}
+
 .about-sec-ta tr {
   transition: all 200ms;
 }
@@ -1020,16 +1024,20 @@ footer.footer-page>div.color {
   }
 
   .home-sec-links svg {
-    width: 20px;
+    width: 22px;
     height: 30px;
   }
 
   .home-sec-links li svg {
-    width: 20px;
+    width: 22px;
   }
 
   .home-sec-links li .linktip {
     font-size: 13px;
+  }
+
+  .home-sec-links li {
+    margin: 0px 0px 0px 3px;
   }
 
   .shape {

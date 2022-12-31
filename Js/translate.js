@@ -40,7 +40,7 @@ var dataTranslate = {
     aboutsecta4TR: "Skills:",
     aboutsecta5TR: "Projects:",
     aboutsecta6TR: "Certificates:",
-    aboutsecta7TR: "internship",
+    aboutsecta7TR: "internship:",
     aboutsecta8TR: "Remote work intern of Kiaob company",
 
     // SCOPE: section3-Skill
@@ -138,7 +138,7 @@ var dataTranslate = {
     aboutsecta4TR: "مهارت ها:",
     aboutsecta5TR: "پروژه ها:",
     aboutsecta6TR: "مدارک:",
-    aboutsecta7TR: "کارآموزی",
+    aboutsecta7TR: "کارآموزی:",
     aboutsecta8TR: "کارآموز دورکار شرکت کیاوب",
 
     // SCOPE: section3-Skill
