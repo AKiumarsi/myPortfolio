@@ -3,6 +3,27 @@ const menuIcon = document.getElementById("menuIcon");
 const body = document.getElementById("body");
 const header = document.getElementById("header");
 
+changeVisibility();
+window.addEventListener("resize", changeVisibility);
+function changeVisibility() {
+  let navlinkTextStyle = document.getElementById("navlinkTextStyle"),
+    navlinkTextStyleCss = window.getComputedStyle(navlinkTextStyle),
+    navlinkTextStyleDisplay = navlinkTextStyleCss.getPropertyValue("display");
+  if (window.innerWidth > 992) {
+    if (navlinkTextStyleDisplay === "block") {
+      menuIcon.setAttribute("data-visible", true);
+    } else if (navlinkTextStyleDisplay === "none") {
+      menuIcon.setAttribute("data-visible", false);
+    }
+  } else if (window.innerWidth <= 992) {
+    if (navlinkTextStyleDisplay === "block") {
+      menuIcon.setAttribute("data-visible", true);
+    } else if (navlinkTextStyleDisplay === "none") {
+      menuIcon.setAttribute("data-visible", false);
+    }
+  }
+}
+
 menuIcon.addEventListener("click", () => {
   const visibility = menuIcon.getAttribute("data-visible");
   const menuIconItem1 = document.getElementById("menuIconItem1");
@@ -10,6 +31,7 @@ menuIcon.addEventListener("click", () => {
   const menuIconItem3 = document.getElementById("menuIconItem3");
   const navlinkTextStyle = document.querySelectorAll(".navlink-text-style");
   const nav = document.getElementById("nav");
+  const width = document.getElementById("width");
   const marginNav = document.getElementById("marginNav");
   const bodyScroll = scrollY;
   const headerOne = document.getElementById("headerOne");
@@ -17,87 +39,72 @@ menuIcon.addEventListener("click", () => {
   const settingItemText = document.querySelectorAll(".setting-item-text");
 
   if (visibility === "true") {
-    // NOTE: This is the mode where the menu is open and closes with a click in desktop mode
     menuIcon.setAttribute("data-visible", false);
-    // SCOPE: onClickMenu-desktop & tablet {(in: onClickMenu-desktop & tablet)}
-    menuIconItem1.classList.add("menu-icon-item-1-click");
-    menuIconItem2.classList.add("menu-icon-item-2-click");
-    menuIconItem3.classList.add("menu-icon-item-3-click");
-    menuIconItem1.classList.remove("menu-icon-item-1-click2");
-    menuIconItem2.classList.remove("menu-icon-item-2-click2");
-    menuIconItem3.classList.remove("menu-icon-item-3-click2");
+    if (window.innerWidth > 992) {
+      closeDesktop();
+      function closeDesktop() {
+        width.classList.add("nav-width100");
+        for (let x = 0; x < navlinkTextStyle.length; x++) {
+          navlinkTextStyle[x].classList.add("displayNone");
+        }
+        settingItemText.forEach((SIT) => {
+          SIT.classList.add("displayNone");
+        });
+        headerOne.classList.add("padding-right-small-headerOne");
+      }
+    } else if (window.innerWidth <= 992) {
+      closeTablet();
+      function closeTablet() {
+        width.classList.remove("nav-width-tablet");
+        for (let x = 0; x < navlinkTextStyle.length; x++) {
+          navlinkTextStyle[x].classList.remove("displayBlock");
+        }
+        settingItemText.forEach((SIT) => {
+          SIT.classList.remove("displayBlock");
+        });
+        menuDarkBack.classList.remove("menu-dark-back");
 
-    // SCOPE: NavWidth-desktop {(in: onClickMenu-desktop & tablet)}
-    nav.classList.add("nav-width100");
-    marginNav.classList.add("margin100");
-    for (let x = 0; x < navlinkTextStyle.length; x++) {
-      navlinkTextStyle[x].classList.add("displayNone");
+        navFix.classList.remove("fix-zindex");
+      }
     }
-    settingItemText.forEach((SIT) => {
-      SIT.classList.add("displayNone");
-    });
-
-    // SCOPE: change-header-padding-from-right {(in: onClickMenu-desktop & tablet)}
-    headerOne.classList.add("padding-right-small-headerOne");
   } else if (visibility === "false") {
-    // NOTE: This is the mode where the menu is closed and can be opened by clicking in the desktop mode
     menuIcon.setAttribute("data-visible", true);
-    // SCOPE: menuIcon {(in: onClickMenu-desktop & tablet)}
-    menuIconItem1.classList.remove("menu-icon-item-1-click");
-    menuIconItem2.classList.remove("menu-icon-item-2-click");
-    menuIconItem3.classList.remove("menu-icon-item-3-click");
-    menuIconItem1.classList.add("menu-icon-item-1-click2");
-    menuIconItem2.classList.add("menu-icon-item-2-click2");
-    menuIconItem3.classList.add("menu-icon-item-3-click2");
+    if (window.innerWidth > 992) {
+      openDesktop();
+      function openDesktop() {
+        width.classList.remove("nav-width100");
+        for (let x = 0; x < navlinkTextStyle.length; x++) {
+          navlinkTextStyle[x].classList.remove("displayNone");
+        }
+        settingItemText.forEach((SIT) => {
+          SIT.classList.remove("displayNone");
+        });
+        headerOne.classList.remove("padding-right-small-headerOne");
+      }
+    } else if (window.innerWidth <= 992) {
+      openTablet();
+      function openTablet() {
+        width.classList.add("nav-width-tablet");
+        for (let x = 0; x < navlinkTextStyle.length; x++) {
+          navlinkTextStyle[x].classList.add("displayBlock");
+        }
+        settingItemText.forEach((SIT) => {
+          SIT.classList.add("displayBlock");
+        });
+        menuDarkBack.classList.add("menu-dark-back");
 
-    // SCOPE: NavWidth-desktop {(in: onClickMenu-desktop & tablet)}
-    nav.classList.remove("nav-width100");
-    marginNav.classList.remove("margin100");
-    for (let x = 0; x < navlinkTextStyle.length; x++) {
-      navlinkTextStyle[x].classList.remove("displayNone");
+        navFix.classList.add("fix-zindex");
+      }
     }
-    settingItemText.forEach((SIT) => {
-      SIT.classList.remove("displayNone");
-    });
-
-    // SCOPE: change-header-padding-from-right {(in: onClickMenu-desktop & tablet)}
-    headerOne.classList.remove("padding-right-small-headerOne");
-  }
-
-  // SCOPE: NavWidth-tablet {(in: onClickMenu-desktop & tablet)}
-  if ((nav.offsetWidth == 230) & (marginNav.offsetWidth <= 992)) {
-    // NOTE: This is the mode where the menu is open and closed by clicking in the tablet mode
-    nav.classList.remove("nav-width-tablet");
-    for (let x = 0; x < navlinkTextStyle.length; x++) {
-      navlinkTextStyle[x].classList.add("displayNone-tablet");
-    }
-    settingItemText.forEach((SIT) => {
-      SIT.classList.add("displayNone-tablet");
-    });
-
-    menuDarkBack.classList.remove("menu-dark-back");
-
-    // NOTE: This is the mode where the menu is closed and can be opened by clicking on the tablet mode
-  } else if (marginNav.offsetWidth < 992) {
-    nav.classList.add("nav-width-tablet");
-    for (let x = 0; x < navlinkTextStyle.length; x++) {
-      navlinkTextStyle[x].classList.remove("displayNone-tablet");
-      navlinkTextStyle[x].classList.remove("display-none");
-    }
-    settingItemText.forEach((SIT) => {
-      SIT.classList.remove("displayNone-tablet");
-      SIT.classList.remove("display-none");
-    });
-
-    menuDarkBack.classList.add("menu-dark-back");
   }
 });
+
 
 // SCOPE: dark-backgraound-whenNav-expanded
 menuDarkBack.addEventListener("click", () => {
   const settingItemText = document.querySelectorAll(".setting-item-text");
   const navlinkTextStyle = document.querySelectorAll(".navlink-text-style");
-  nav.classList.remove("nav-width-tablet");
+  width.classList.remove("nav-width-tablet");
   for (let x = 0; x < navlinkTextStyle.length; x++) {
     navlinkTextStyle[x].classList.add("displayNone-tablet");
   }
