@@ -3,7 +3,13 @@ main {
   width: 100%;
 }
 
-nav{
+@media (max-width: 650px) {
+  main {
+    padding: 0px 0px;
+  }
+}
+
+nav {
   background-color: #ff0000;
 }
 
@@ -25,6 +31,12 @@ nav{
   font-family: "promoter", "osw";
   font-size: 40px;
   padding-top: 20px;
+}
+
+
+/* UNDONE: In the past, the home section did not have a top margin and it was added because of the decibel scroll and active|||See // SCOPE: Active-linkItem in Header&Nav.js */
+.sec1-home{
+  margin-top: 1px;
 }
 
 .home-sec-cont {
@@ -276,7 +288,7 @@ nav{
   cursor: context-menu;
 }
 
-.about-sec-ta tbody td:first-child span:first-child{
+.about-sec-ta tbody td:first-child span:first-child {
   padding: 0 0 0 5px;
 }
 
@@ -334,6 +346,16 @@ nav{
   font-family: "Beirut", "fred";
   font-size: 20px;
 }
+
+
+.skill-li{
+  transition: all 200ms;
+}
+
+.skill-li:active{
+  transform: scale(.85);
+}
+
 
 .skill-sec-main .skill-sec-ul1>li {
   list-style: none;
@@ -996,7 +1018,7 @@ footer.footer-page>div.color {
 /* NOTE: This code is to remove the line that reveals the shadow of the main items */
 /* BREAKPOINT */
 @media (min-width: 992px) {
-  nav.nav{
+  nav.nav {
     background-color: transparent;
   }
 }

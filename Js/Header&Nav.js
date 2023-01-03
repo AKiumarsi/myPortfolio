@@ -3,6 +3,11 @@ const menuIcon = document.getElementById("menuIcon");
 const body = document.getElementById("body");
 const header = document.getElementById("header");
 
+/*
+UNDONE: The codes related to clicking the icon in desktop and tablet mode have been completely changed...
+UNDONE: ---Because the codes were not optimal and did not have standard conditions...
+UNDONE: ---The codes were optimized and reconstructed for better readability and understanding.
+*/
 changeVisibility();
 window.addEventListener("resize", changeVisibility);
 function changeVisibility() {
@@ -23,6 +28,15 @@ function changeVisibility() {
     }
   }
 }
+
+let scrollValue = window.scrollY;
+window.addEventListener("scroll", () => {
+  if (window.scrollY != 0) {
+    scrollValue = window.scrollY;
+  } else if (window.scrollY == 0) {
+    console.log(scrollValue);
+  }
+});
 
 menuIcon.addEventListener("click", () => {
   const visibility = menuIcon.getAttribute("data-visible");
@@ -65,6 +79,10 @@ menuIcon.addEventListener("click", () => {
         menuDarkBack.classList.remove("menu-dark-back");
 
         navFix.classList.remove("fix-zindex");
+
+        console.log(scrollValue + "من اسکرول می کنم");
+        body.classList.remove("lock-scrollbar");
+        window.scrollTo(0, scrollValue);
       }
     }
   } else if (visibility === "false") {
@@ -94,24 +112,32 @@ menuIcon.addEventListener("click", () => {
         menuDarkBack.classList.add("menu-dark-back");
 
         navFix.classList.add("fix-zindex");
+
+        body.classList.add("lock-scrollbar");
+        body.style.top = -scrollValue + "px";
+        console.log(scrollValue + "من فیکس می کنم");
       }
     }
   }
 });
 
-
 // SCOPE: dark-backgraound-whenNav-expanded
 menuDarkBack.addEventListener("click", () => {
   const settingItemText = document.querySelectorAll(".setting-item-text");
   const navlinkTextStyle = document.querySelectorAll(".navlink-text-style");
+  menuIcon.setAttribute("data-visible", false);
   width.classList.remove("nav-width-tablet");
   for (let x = 0; x < navlinkTextStyle.length; x++) {
-    navlinkTextStyle[x].classList.add("displayNone-tablet");
+    navlinkTextStyle[x].classList.remove("displayBlock");
   }
   settingItemText.forEach((SIT) => {
-    SIT.classList.add("displayNone-tablet");
+    SIT.classList.remove("displayBlock");
   });
   menuDarkBack.classList.remove("menu-dark-back");
+
+  navFix.classList.remove("fix-zindex");
+  body.classList.remove("lock-scrollbar");
+  window.scrollTo(0, scrollValue);
 });
 
 // SCOPE: navHeight
@@ -218,9 +244,8 @@ function mobileNavHeightF() {
 // SCOPE: arrow-up-click
 const arrowUpIcon = document.getElementById("arrowUpIcon");
 arrowUpIcon.addEventListener("click", () => {
-  const arrowUpIcontrans = getComputedStyle(arrowUpIcon).getPropertyValue(
-    "transform"
-  );
+  const arrowUpIcontrans =
+    getComputedStyle(arrowUpIcon).getPropertyValue("transform");
   const menuIconItem1Mobile = document.getElementById("menuIconItem1Mobile");
   const menuIconItem2Mobile = document.getElementById("menuIconItem2Mobile");
   const menuIconItem3Mobile = document.getElementById("menuIconItem3Mobile");
@@ -269,17 +294,19 @@ function activeLink(li) {
 }
 
 window.onscroll = () => {
-  section.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
+  if (window.scrollY != 0) {
+    section.forEach((sec) => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute("id");
 
-    if (top >= offset - 150 && top < offset + height) {
-      const target = document.querySelector(`[href='#${id}']`).parentElement;
-      activeLink(target);
-    }
-  });
+      if (top >= offset - 150 && top < offset + height) {
+        const target = document.querySelector(`[href='#${id}']`).parentElement;
+        activeLink(target);
+      }
+    });
+  }
 };
 
 // NOTE: Closing the menu in tablet and mobile mode by clicking on the items
@@ -316,16 +343,19 @@ navItem.forEach((NI) => {
 
       searchBoxDiv.classList.remove("display-none-search-div");
 
-      menuIconMobile.setAttribute("data-visible", false);
-      nav.classList.remove("nav-width-tablet");
-
+      menuIcon.setAttribute("data-visible", false);
+      width.classList.remove("nav-width-tablet");
       for (let x = 0; x < navlinkTextStyle.length; x++) {
-        navlinkTextStyle[x].classList.add("displayNone-tablet");
+        navlinkTextStyle[x].classList.remove("displayBlock");
       }
-
       settingItemText.forEach((SIT) => {
-        SIT.classList.add("displayNone-tablet");
+        SIT.classList.remove("displayBlock");
       });
+      menuDarkBack.classList.remove("menu-dark-back");
+
+      navFix.classList.remove("fix-zindex");
+      body.classList.remove("lock-scrollbar");
+      window.scrollTo(0, scrollValue);
     }
   });
 });

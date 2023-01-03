@@ -1,13 +1,47 @@
-.header-page .search-header div.sh{
+.header-page .search-header div.sh {
   direction: ltr;
 }
+
+
+.nav-main-grid {
+  direction: ltr;
+}
+
+.menu-icon {
+  margin: 20px 0 5px 17.5px;
+}
+
+
+
+.setting {
+  margin: 0 0px 0 10px;
+}
+
+
+
+.header-one {
+  padding: 0 0 0 290px;
+}
+
+.padding-right-small-headerOne {
+  padding: 0 0 0 80px;
+}
+
+@media (max-width: 992px) {
+  .header-one {
+    padding-left: 80px;
+
+  }
+}
+
+
 
 .pop-update .pop-update-content .pop-main p,
-.pop-update{
+.pop-update {
   direction: ltr;
 }
 
-.pop-update .pop-update-content button{
+.pop-update .pop-update-content button {
   right: 20px;
   left: auto;
 }
@@ -57,14 +91,15 @@
 
 
 
-.sec2-about{
+.sec2-about {
   direction: ltr;
 }
-.about-sec-ta tr{
+
+.about-sec-ta tr {
   font-family: "pin";
 }
 
-.about-sec-ta tbody td:first-child span:first-child{
+.about-sec-ta tbody td:first-child span:first-child {
   padding: 0 5px 0 0px;
 }
 
@@ -73,12 +108,12 @@
 
 
 .sect3-skill,
-footer{
+footer {
   direction: ltr;
 }
 
 
-main article > section{
+main article>section {
   direction: ltr;
 }
 
@@ -88,11 +123,11 @@ main article > section{
   padding-right: 6px;
 }
 
-.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span{
+.skill-sec-ma2 .skill-sec-ma1-sec .skill-text ul li span {
   font-size: 13px;
 }
 
-.moreskill .moreskill-text ul li>div:first-child{
+.moreskill .moreskill-text ul li>div:first-child {
   font-family: "pin";
 }
 
@@ -100,7 +135,7 @@ main article > section{
 .sec4-language-main .language-sec-detailes .content .cont-sec .read-text,
 .sec5-school-main .sec5-school-text,
 .sec5-school-alert p,
-.sec6-contact-main .sec6-contact-text ul li span:last-of-type{
+.sec6-contact-main .sec6-contact-text ul li span:last-of-type {
   font-family: "pin";
 }
 
@@ -112,6 +147,7 @@ main article > section{
     width: 250px;
     height: 350px;
   }
+
   .shape:hover img {
     transform: translate(173px, 85px);
   }
@@ -122,15 +158,17 @@ main article > section{
   .shape img {
     height: unset;
   }
+
   .shape img {
     transform: none;
     width: 100%;
   }
+
   .shape:hover img {
     transform: none;
     width: 100%;
   }
-  
+
   .setting-item-text {
     padding: 0;
   }

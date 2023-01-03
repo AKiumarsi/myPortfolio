@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: auto !important;
 }
 
 *,
@@ -14,6 +15,7 @@ body{
 
   overflow-y: scroll;
   background-color: var(--background-color);
+  
 
 }
 
