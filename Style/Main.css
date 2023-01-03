@@ -35,7 +35,7 @@ nav {
 
 
 /* UNDONE: In the past, the home section did not have a top margin and it was added because of the decibel scroll and active|||See // SCOPE: Active-linkItem in Header&Nav.js */
-.sec1-home{
+.sec1-home {
   margin-top: 1px;
 }
 
@@ -348,13 +348,6 @@ nav {
 }
 
 
-.skill-li{
-  transition: all 200ms;
-}
-
-.skill-li:active{
-  transform: scale(.85);
-}
 
 
 .skill-sec-main .skill-sec-ul1>li {
@@ -1266,6 +1259,13 @@ footer.footer-page>div.color {
 
 
 
+  .skill-li {
+    transition: all 200ms;
+  }
+
+  .skill-li:active {
+    transform: scale(.85);
+  }
 
   .skill-sec-main .skill-sec-ul1 {
     margin: 10px 5px 30px 5px;

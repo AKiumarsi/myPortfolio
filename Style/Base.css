@@ -12,11 +12,18 @@ html {
 }
 
 body{
-
   overflow-y: scroll;
   background-color: var(--background-color);
-  
 
+}
+
+/* NOTE: added because the user cannot scroll on the page when extend nav mode */
+.lock-scrollbar{
+  position: fixed;
+  overflow-y: scroll;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 a{

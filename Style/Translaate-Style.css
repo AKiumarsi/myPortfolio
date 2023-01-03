@@ -8,7 +8,7 @@
 }
 
 .menu-icon {
-  margin: 20px 0 5px 17.5px;
+  margin: 25px 0 5px 17.5px;
 }
 
 
@@ -20,16 +20,16 @@
 
 
 .header-one {
-  padding: 0 0 0 290px;
+  padding: 10px 10px 10px 65px;
 }
 
 .padding-right-small-headerOne {
-  padding: 0 0 0 80px;
+  padding: 10px 10px 10px 65px;
 }
 
 @media (max-width: 992px) {
   .header-one {
-    padding-left: 80px;
+    padding-left: 65px;
 
   }
 }

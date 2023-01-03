@@ -30,6 +30,7 @@
   padding: 0px 10px;
   margin: 0;
   font-family: "alfa";
+  font-size: 25px;
 }
 
 .header-page .search-header div.sh {
@@ -57,15 +58,14 @@
 .header-one {
   padding: 10px 10px 10px 10px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   height: fit-content;
   background-color: var(--background-color);
-  transition: padding 250ms;
   padding-right: 290px;
 }
 
 .padding-right-small-headerOne {
-  padding-right: 80px;
+  padding-right: 65px;
 }
 
 .search-header {
@@ -96,7 +96,7 @@
 
 
 .logo-website {
-  width: 60px;
+  width: 35px;
 }
 
 /* SCOPE: Menu-Icon {(in: Header-one)} */
@@ -111,7 +111,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 17.5px 5px 0px;
+  margin: 25px 17.5px 5px 0px;
   justify-content: space-between;
 }
 
@@ -142,11 +142,11 @@
 
 
 /* SCOPE: menu-icon-animate {(in: Header-one)} */
-.menu-icon:active .menu-icon-item-1{
+.menu-icon:active .menu-icon-item-1 {
   width: 55%;
 }
 
-.menu-icon:active .menu-icon-item-3{
+.menu-icon:active .menu-icon-item-3 {
   width: 55%;
 }
 
@@ -187,7 +187,7 @@
 /* SCOPE: NavBar {(in: Nav)} */
 .navbar-nav {
   margin-right: 10px;
-  margin-top: 25px;
+  margin-top: 40px;
   padding-left: 10px;
   overflow: hidden;
   overflow-y: auto;
@@ -273,8 +273,9 @@
 }
 
 .search-ul {
-  display: grid;
-  justify-items: start;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
 .setting {
@@ -283,7 +284,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 200px;
 }
 
 .setting-1 {
@@ -444,10 +444,10 @@
 @media (max-width: 992px) {
   .nav-main-grid-block {
     /* display: block !important; */
-    
+
   }
 
-  .fix-zindex{
+  .fix-zindex {
     background-color: var(--background-color);
     z-index: 999;
   }
@@ -471,7 +471,8 @@
   .displayNone-tablet {
     display: none;
   }
-  .displayBlock{
+
+  .displayBlock {
     display: block !important;
   }
 
@@ -485,8 +486,7 @@
   }
 
   .header-one {
-    padding-right: 80px;
-    transition: padding 250ms;
+    padding-right: 65px;
   }
 }
 
@@ -1042,31 +1042,4 @@
     display: none;
   }
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.lock-scrollbar{
-  position: fixed;
-  overflow-y: scroll;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }

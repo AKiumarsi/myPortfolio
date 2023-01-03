@@ -17,24 +17,30 @@ function changeVisibility() {
   if (window.innerWidth > 992) {
     if (navlinkTextStyleDisplay === "block") {
       menuIcon.setAttribute("data-visible", true);
+      body.classList.remove("lock-scrollbar");
+      window.scrollTo(0, scrollValue);
     } else if (navlinkTextStyleDisplay === "none") {
       menuIcon.setAttribute("data-visible", false);
+      body.classList.remove("lock-scrollbar");
+      window.scrollTo(0, scrollValue);
     }
   } else if (window.innerWidth <= 992) {
     if (navlinkTextStyleDisplay === "block") {
       menuIcon.setAttribute("data-visible", true);
+      body.classList.add("lock-scrollbar");
+      body.style.top = -scrollValue + "px";
     } else if (navlinkTextStyleDisplay === "none") {
       menuIcon.setAttribute("data-visible", false);
     }
   }
 }
 
+// NOTE: added because the user cannot scroll on the page when extend nav mode
 let scrollValue = window.scrollY;
 window.addEventListener("scroll", () => {
   if (window.scrollY != 0) {
     scrollValue = window.scrollY;
   } else if (window.scrollY == 0) {
-    console.log(scrollValue);
   }
 });
 
@@ -80,7 +86,6 @@ menuIcon.addEventListener("click", () => {
 
         navFix.classList.remove("fix-zindex");
 
-        console.log(scrollValue + "من اسکرول می کنم");
         body.classList.remove("lock-scrollbar");
         window.scrollTo(0, scrollValue);
       }
@@ -115,7 +120,6 @@ menuIcon.addEventListener("click", () => {
 
         body.classList.add("lock-scrollbar");
         body.style.top = -scrollValue + "px";
-        console.log(scrollValue + "من فیکس می کنم");
       }
     }
   }
@@ -146,10 +150,11 @@ navbarHeight();
 function navbarHeight() {
   const navbarNav = document.getElementById("navbarNav");
   let heightnav = window.innerHeight;
+  let searchUl = document.getElementById("searchUl");
   if (window.innerWidth > 576) {
-    navbarNav.style.height = heightnav - 63 - 80 + "px";
+    searchUl.style.height = heightnav - 44 + "px";
   } else if (window.innerWidth < 577) {
-    navbarNav.style.height = "fit-content";
+    searchUl.style.height = "fit-content";
   }
 }
 
@@ -293,6 +298,8 @@ function activeLink(li) {
   li.classList.add("active");
 }
 
+// UNDONE: added because the user cannot scroll on the page when extend nav mode ane this is new code:
+//  TODO: This code and function is not standard, please create a code with better logic later.
 window.onscroll = () => {
   if (window.scrollY != 0) {
     section.forEach((sec) => {
