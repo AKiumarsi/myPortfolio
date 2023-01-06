@@ -12,22 +12,14 @@ function homeSecPargF() {
     (window.innerHeight < 2001) &
     (window.innerWidth < 4001)
   ) {
-    homeSecParg.style.height = window.innerHeight - 151 + "px";
+    homeSecParg.style.height = window.innerHeight - 160 + "px";
   } else if (window.innerWidth <= 576) {
     homeSecParg.style.height = "fit-content"
   }
 }
 
-// NOTE: This is to remove the scroll guide by scrolling
-window.addEventListener("scroll", angleDownScrollF);
-window.addEventListener("resize", angleDownScrollF);
-angleDownScrollF();
-function angleDownScrollF() {
-  const angleDownScroll = document.getElementById("angleDownScroll");
-  if (scrollY > 100 || window.innerHeight < 500) {
-    angleDownScroll.style.display = "none";
-  }
-}
+
+
 
 
 

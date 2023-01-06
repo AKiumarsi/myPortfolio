@@ -18,6 +18,11 @@ body {
   color: white;
 }
 
+.fix-zindex{
+  background-color: #19191f;
+}
+
+
 .active-setting {
   background-color: #2c4793c9 !important;
   color: white;
