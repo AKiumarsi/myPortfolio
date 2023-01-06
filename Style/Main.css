@@ -36,7 +36,7 @@ nav {
 
 /* UNDONE: In the past, the home section did not have a top margin and it was added because of the decibel scroll and active|||See // SCOPE: Active-linkItem in Header&Nav.js */
 .sec1-home {
-  margin-top: 1px;
+  margin-top: 3px;
 }
 
 .home-sec-cont {

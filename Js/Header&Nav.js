@@ -3,11 +3,22 @@ const menuIcon = document.getElementById("menuIcon");
 const body = document.getElementById("body");
 const header = document.getElementById("header");
 
+
+// NOTE: added because the user cannot scroll on the page when extend nav mode
+let scrollValue = window.scrollY;
+window.addEventListener("scroll", () => {
+  if (window.scrollY != 0) {
+    scrollValue = window.scrollY;
+  } else if (window.scrollY == 0) {
+  }
+});
+
 /*
 UNDONE: The codes related to clicking the icon in desktop and tablet mode have been completely changed...
 UNDONE: ---Because the codes were not optimal and did not have standard conditions...
 UNDONE: ---The codes were optimized and reconstructed for better readability and understanding.
 */
+// TODO: please add lock-scroll on max-width: 576px
 changeVisibility();
 window.addEventListener("resize", changeVisibility);
 function changeVisibility() {
@@ -24,7 +35,7 @@ function changeVisibility() {
       body.classList.remove("lock-scrollbar");
       window.scrollTo(0, scrollValue);
     }
-  } else if (window.innerWidth <= 992) {
+  } else if (window.innerWidth <= 992 & window.innerWidth > 576) {
     if (navlinkTextStyleDisplay === "block") {
       menuIcon.setAttribute("data-visible", true);
       body.classList.add("lock-scrollbar");
@@ -35,15 +46,8 @@ function changeVisibility() {
   }
 }
 
-// NOTE: added because the user cannot scroll on the page when extend nav mode
-let scrollValue = window.scrollY;
-window.addEventListener("scroll", () => {
-  if (window.scrollY != 0) {
-    scrollValue = window.scrollY;
-  } else if (window.scrollY == 0) {
-  }
-});
 
+// TODO: please add lock-scroll on max-width: 576px
 menuIcon.addEventListener("click", () => {
   const visibility = menuIcon.getAttribute("data-visible");
   const menuIconItem1 = document.getElementById("menuIconItem1");
@@ -153,8 +157,10 @@ function navbarHeight() {
   let searchUl = document.getElementById("searchUl");
   if (window.innerWidth > 576) {
     searchUl.style.height = heightnav - 44 + "px";
+    console.log("nav")
   } else if (window.innerWidth < 577) {
     searchUl.style.height = "fit-content";
+    console.log("fit")
   }
 }
 
