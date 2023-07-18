@@ -177,7 +177,6 @@ menuIconMobile.addEventListener("click", () => {
   const taskbarMobile = document.getElementById("taskbarMobile");
   const arrowUpIcon = document.getElementById("arrowUpIcon");
   const searchBoxDiv = document.getElementById("searchBoxDiv");
-  const dateClockMenu = document.getElementById("dateClockMenu");
   const searchUl = document.getElementById("searchUl");
 
   if (visibilityMobile === "false") {
@@ -205,7 +204,6 @@ menuIconMobile.addEventListener("click", () => {
 
     searchBoxDiv.classList.add("display-none-search-div");
 
-    dateClockMenu.classList.add("display-none-date");
 
     searchUl.classList.remove("disply-none-searchUl");
 
@@ -234,8 +232,6 @@ menuIconMobile.addEventListener("click", () => {
     menuDarkBack.classList.remove("menu-dark-back");
 
     searchBoxDiv.classList.remove("display-none-search-div");
-
-    dateClockMenu.classList.remove("display-none-date");
 
     searchUl.classList.add("disply-none-searchUl");
 
@@ -373,23 +369,5 @@ navItem.forEach((NI) => {
   });
 });
 
-// SCOPE: Clock in the menu
-body.addEventListener("load", startTime());
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  let bb = (document.getElementById("dateClockMenu").innerHTML =
-    h + ":" + m + ":" + s);
-  setTimeout(startTime, 1000);
-}
+// undone: قبلا اینجا ساعت داشته که برش داشتم
 
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  } // add zero in front of numbers < 10
-  return i;
-}

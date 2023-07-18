@@ -169,6 +169,10 @@ main article>section {
     width: 100%;
   }
 
+  .setting{
+    margin: 0;
+  }
+
   .setting-item-text {
     padding: 0;
   }

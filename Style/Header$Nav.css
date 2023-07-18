@@ -534,6 +534,21 @@
     border: 3px solid rgb(197 197 197);
   }
 
+  .nav .fix{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+.dark-mode-icon-setting,
+.translate-icon-setting {
+  padding: 0px;
+}
+
   .mobile-nav-height {
     height: var(--mobile-nav-height);
     box-shadow: 0px 0px 60px 30px #2a2a2a;
@@ -684,14 +699,15 @@
   .search-box-div {
     display: none;
     width: 95%;
-    margin: 10px auto 5px auto;
+    margin: 10px auto 20px auto;
     padding: 5px 0px 5px 0px;
     background-color: #d1d4ff;
-    border-radius: 20px;
+    border-radius: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 45px;
   }
 
   .search-box {
@@ -718,7 +734,7 @@
 
   .search-box-icon {
     fill: #858585;
-    width: 20px;
+    width: 30px;
     margin-left: 8px;
   }
 
@@ -755,10 +771,11 @@
     width: 100%;
     transition: none;
     margin-bottom: 0px;
+    padding: 8px;
   }
 
   .setting-link span:first-child {
-    padding: 0px 5px 0 1px;
+    padding: 0;
   }
 
   .setting-1 {
@@ -809,7 +826,7 @@
     width: inherit;
     justify-content: space-around;
     align-items: flex-end;
-    padding: 8px 0px;
+    padding: 13px 0px;
   }
 
   .taskbar-borderup {
